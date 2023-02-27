@@ -74,3 +74,27 @@ tasks {
         dependsOn(runWithHelpFlag, runWithArgsFile)
     }
 }
+
+private val cliUsagesOutput = layout.buildDirectory.dir("output/cli-usage.md")
+
+private val cliUsage by tasks.registering(JavaExec::class) {
+    outputs.file(cliUsagesOutput)
+
+    classpath(
+        configurations.compileClasspath,
+        sourceSets.main.map { it.output },
+    )
+    mainClass.set("io.gitlab.arturbosch.detekt.cli.CliUsage")
+    args(cliUsagesOutput.get())
+}
+
+private val generatedCliUsage: Configuration by configurations.creating {
+    isCanBeConsumed = true
+    isCanBeResolved = false
+}
+
+artifacts {
+    add(generatedCliUsage.name, cliUsagesOutput) {
+        builtBy(cliUsage)
+    }
+}
