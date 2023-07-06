@@ -1,0 +1,250 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 79 callable methods in 16 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 1% ___________________________
+INFO  #____________________________ 2% ___________________________
+INFO  ##___________________________ 3% ___________________________
+INFO  ###__________________________ 5% ___________________________
+INFO  ###__________________________ 6% ___________________________
+INFO                                                              
+INFO   [1/16] io.gitlab.arturbosch.detekt.rules.documentation.AbsentOrWrongFileLicense
+INFO  ###__________________________ 6% ___________________________
+INFO                                                              
+INFO   [1/16]   Tests created: 0
+INFO  ###__________________________ 6% ___________________________
+INFO  ####_________________________ 7% ___________________________
+INFO                                                              
+INFO   [2/16] io.gitlab.arturbosch.detekt.rules.documentation.AbsentOrWrongFileLicense$Companion
+INFO  ####_________________________ 7% ___________________________
+INFO                                                              
+INFO   [2/16]   Tests created: 0
+INFO  ####_________________________ 7% ___________________________
+INFO  #####________________________ 8% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO  ######______________________ 11% ___________________________
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [3/16] io.gitlab.arturbosch.detekt.rules.documentation.CommentOverPrivateFunction
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [3/16]   Tests created: 0
+INFO  #######_____________________ 12% ___________________________
+INFO  ########____________________ 13% ___________________________
+INFO  #########___________________ 15% ___________________________
+INFO  #########___________________ 16% ___________________________
+INFO  ##########__________________ 17% ___________________________
+INFO                                                              
+INFO   [4/16] io.gitlab.arturbosch.detekt.rules.documentation.CommentOverPrivateProperty
+INFO  ##########__________________ 17% ___________________________
+INFO                                                              
+INFO   [4/16]   Tests created: 0
+INFO  ##########__________________ 17% ___________________________
+INFO  ############________________ 20% ___________________________
+INFO  ############________________ 21% ___________________________
+INFO                                                              
+INFO   [5/16] io.gitlab.arturbosch.detekt.rules.documentation.CommentSmellProvider
+INFO  ############________________ 21% ___________________________
+INFO                                                              
+INFO   [5/16]   Tests created: 1
+INFO  ############________________ 21% ___________________________
+INFO  #############_______________ 22% ___________________________
+INFO                                                              
+INFO   [6/16] io.gitlab.arturbosch.detekt.rules.documentation.CommentUtilKt
+INFO  #############_______________ 22% ___________________________
+INFO                                                              
+INFO   [6/16]   Tests created: 0
+INFO  #############_______________ 22% ___________________________
+INFO  ##############______________ 24% ___________________________
+INFO  ###############_____________ 25% ___________________________
+INFO  ###############_____________ 26% ___________________________
+INFO  ################____________ 27% ___________________________
+INFO                                                              
+INFO   [7/16] io.gitlab.arturbosch.detekt.rules.documentation.DeprecatedBlockTag
+INFO  ################____________ 27% ___________________________
+INFO                                                              
+INFO   [7/16]   Tests created: 0
+INFO  ################____________ 27% ___________________________
+INFO  #################___________ 29% ___________________________
+INFO  ##################__________ 30% ___________________________
+INFO  ##################__________ 31% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO   [8/16] io.gitlab.arturbosch.detekt.rules.documentation.EndOfSentenceFormat
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO   [8/16]   Tests created: 0
+INFO  ###################_________ 32% ___________________________
+INFO  ####################________ 34% ___________________________
+INFO  #####################_______ 35% ___________________________
+INFO  ######################______ 36% ___________________________
+INFO  ######################______ 37% ___________________________
+INFO  #######################_____ 39% ___________________________
+INFO                                                              
+INFO   [9/16] io.gitlab.arturbosch.detekt.rules.documentation.KDocReferencesNonPublicProperty
+INFO  #######################_____ 39% ___________________________
+INFO                                                              
+INFO   [9/16]   Tests created: 0
+INFO  #######################_____ 39% ___________________________
+INFO  ########################____ 40% ___________________________
+INFO  #########################___ 41% ___________________________
+INFO  #########################___ 43% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO  ############################ 46% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 49% ___________________________
+INFO  ############################ 50% ___________________________
+INFO  ############################ 51% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 54% ___________________________
+INFO  ############################ 55% ___________________________
+INFO                                                              
+INFO  [10/16] io.gitlab.arturbosch.detekt.rules.documentation.LicenceHeaderLoaderExtension
+INFO  ############################ 55% ___________________________
+INFO                                                              
+INFO  [10/16]   Tests created: 3
+INFO  ############################ 55% ___________________________
+INFO  ############################ 63% ####_______________________
+INFO                                                              
+INFO  [11/16] io.gitlab.arturbosch.detekt.rules.documentation.LicenceHeaderLoaderExtensionKt
+INFO  ############################ 63% ####_______________________
+INFO                                                              
+INFO  [11/16]   Tests created: 0
+INFO  ############################ 63% ####_______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 68% ########___________________
+INFO  ############################ 69% ########___________________
+INFO  ############################ 70% #########__________________
+INFO                                                              
+INFO  [12/16] io.gitlab.arturbosch.detekt.rules.documentation.OutdatedDocumentation
+INFO  ############################ 70% #########__________________
+INFO                                                              
+INFO  [12/16]   Tests created: 0
+INFO  ############################ 70% #########__________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 77% #############______________
+INFO  ############################ 78% ##############_____________
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 81% ###############____________
+INFO  ############################ 82% ################___________
+INFO                                                              
+INFO  [13/16] io.gitlab.arturbosch.detekt.rules.documentation.OutdatedDocumentation$Declaration
+INFO  ############################ 82% ################___________
+INFO                                                              
+INFO  [13/16]   Tests created: 11
+INFO  ############################ 82% ################___________
+INFO  ############################ 83% #################__________
+INFO  ############################ 84% #################__________
+INFO  ############################ 86% ##################_________
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ####################_______
+INFO                                                              
+INFO  [14/16] io.gitlab.arturbosch.detekt.rules.documentation.UndocumentedPublicClass
+INFO  ############################ 88% ####################_______
+INFO                                                              
+INFO  [14/16]   Tests created: 0
+INFO  ############################ 88% ####################_______
+INFO  ############################ 89% ####################_______
+INFO  ############################ 91% #####################______
+INFO  ############################ 92% ######################_____
+INFO  ############################ 93% #######################____
+INFO                                                              
+INFO  [15/16] io.gitlab.arturbosch.detekt.rules.documentation.UndocumentedPublicFunction
+INFO  ############################ 93% #######################____
+INFO                                                              
+INFO  [15/16]   Tests created: 0
+INFO  ############################ 93% #######################____
+INFO  ############################ 94% #######################____
+INFO  ############################ 96% ########################___
+INFO  ############################ 97% #########################__
+INFO  ############################ 98% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [16/16] io.gitlab.arturbosch.detekt.rules.documentation.UndocumentedPublicProperty
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [16/16]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              79 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  15 tests created for:                               14 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               65 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     24 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     19 R034: Diffblue Cover can't complete test
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     10 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      9 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 15 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-rules-documentation/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-rules-documentation/.diffblue/log/user-20230706T132134.log
+INFO  Finished in 1m 7s

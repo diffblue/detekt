@@ -1,0 +1,521 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:25:51.203285+01:00",
+    "command" : "dcover create --working-directory detekt-rules-ruleauthors io.github io.gitlab",
+    "totalTime" : 55.063,
+    "environmentDetectionTime" : 0.911,
+    "indexingTime" : 0.197,
+    "entryPointsTime" : 0.896,
+    "generationTime" : 43.359,
+    "timeToFirstTest" : 28.515,
+    "timeToLastTest" : 54.333,
+    "indexQueryTime" : 11.362,
+    "verificationTime" : 0.909,
+    "validationTime" : 0.517
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R034" : "Diffblue Cover can't complete test",
+    "R081" : "Exception in arrange section",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 6,
+    "methodsCount" : 26,
+    "completeTestCount" : 1,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 9,
+      "T001" : 3,
+      "T003" : 2,
+      "T004" : 4,
+      "T005" : 1,
+      "T012" : 7
+    },
+    "perMethodOutcome" : {
+      "F009" : 1,
+      "R000" : 2,
+      "R011" : 2,
+      "R013" : 2,
+      "R034" : 4,
+      "R081" : 2,
+      "T003" : 2,
+      "T004" : 4,
+      "T012" : 7
+    },
+    "perTestOutcome" : {
+      "R000" : 1
+    },
+    "perTestValidation" : {
+      "V000" : 1
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.authors.RuleAuthorsProvider" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R034" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 5,
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.authors.RuleAuthorsProvider.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        17,
+        20,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.RuleAuthorsProvider.getRuleSetId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.RuleAuthorsProvider.instance:(Lio/gitlab/arturbosch/detekt/api/Config;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        22,
+        23,
+        25,
+        26,
+        25,
+        24,
+        22,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        28,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26,
+        83
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.findNameIdentifierReceiver:(Lorg/jetbrains/kotlin/psi/KtExpression;)Lorg/jetbrains/kotlin/psi/KtExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        60,
+        61,
+        62,
+        63,
+        65,
+        68,
+        69,
+        71,
+        72,
+        75,
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.isEntityFromCall:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        79,
+        80,
+        81,
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.UseEntityAtName.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        43,
+        42,
+        51
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        30,
+        37,
+        37,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        29,
+        79
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.visitClass:(Lorg/jetbrains/kotlin/psi/KtClass;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        67,
+        69,
+        107,
+        108,
+        107,
+        108,
+        107,
+        110,
+        111,
+        112,
+        113,
+        111,
+        111,
+        113,
+        114,
+        108,
+        69,
+        70,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        41,
+        42,
+        98,
+        43,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        103,
+        103,
+        104,
+        105,
+        99,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        46,
+        45,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        54,
+        53,
+        61,
+        98,
+        106,
+        62,
+        63,
+        64
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirements.visitReferenceExpression:(Lorg/jetbrains/kotlin/psi/KtReferenceExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        75,
+        76,
+        77,
+        76,
+        78
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        93
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$1.invoke:(Lorg/jetbrains/kotlin/psi/KtAnnotationEntry;)Lorg/jetbrains/kotlin/psi/KtTypeReference;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        93
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$2.<init>:(Lio/gitlab/arturbosch/detekt/api/BaseRule;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt$isAnnotatedWith$2.invoke:(Lorg/jetbrains/kotlin/psi/KtTypeReference;)Lorg/jetbrains/kotlin/types/KotlinType;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt.extendsFrom:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/psi/KtClass;Lkotlin/reflect/KClass;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        84,
+        83,
+        84,
+        83,
+        84,
+        85,
+        86,
+        98,
+        99,
+        86,
+        86,
+        99,
+        100,
+        83
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.authors.ViolatesTypeResolutionRequirementsKt.isAnnotatedWith:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/psi/KtClass;Lkotlin/reflect/KClass;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        91,
+        92,
+        93,
+        94,
+        95,
+        101,
+        95,
+        95,
+        101,
+        102,
+        91
+      ]
+    }
+  }
+}

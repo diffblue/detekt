@@ -1,0 +1,445 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 165 callable methods in 43 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 1% ___________________________
+INFO  #____________________________ 1% ___________________________
+INFO                                                              
+INFO   [1/43] io.gitlab.arturbosch.detekt.rules.bugs.AvoidReferentialEquality
+INFO  #____________________________ 1% ___________________________
+INFO                                                              
+INFO   [1/43]   Tests created: 0
+INFO  #____________________________ 1% ___________________________
+INFO  #____________________________ 2% ___________________________
+INFO  #____________________________ 3% ___________________________
+INFO  ##___________________________ 4% ___________________________
+INFO                                                              
+INFO   [2/43] io.gitlab.arturbosch.detekt.rules.bugs.CastNullableToNonNullableType
+INFO  ##___________________________ 4% ___________________________
+INFO                                                              
+INFO   [2/43]   Tests created: 0
+INFO  ##___________________________ 4% ___________________________
+INFO  ###__________________________ 5% ___________________________
+INFO  ###__________________________ 6% ___________________________
+INFO                                                              
+INFO   [3/43] io.gitlab.arturbosch.detekt.rules.bugs.CastToNullableType
+INFO  ###__________________________ 6% ___________________________
+INFO                                                              
+INFO   [3/43]   Tests created: 0
+INFO  ###__________________________ 6% ___________________________
+INFO  ####_________________________ 7% ___________________________
+INFO  #####________________________ 8% ___________________________
+INFO  #####________________________ 9% ___________________________
+INFO                                                              
+INFO   [4/43] io.gitlab.arturbosch.detekt.rules.bugs.Deprecation
+INFO  #####________________________ 9% ___________________________
+INFO                                                              
+INFO   [4/43]   Tests created: 0
+INFO  #####________________________ 9% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO  ######______________________ 11% ___________________________
+INFO                                                              
+INFO   [5/43] io.gitlab.arturbosch.detekt.rules.bugs.DontDowncastCollectionTypes
+INFO  ######______________________ 11% ___________________________
+INFO                                                              
+INFO   [5/43]   Tests created: 0
+INFO  ######______________________ 11% ___________________________
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [6/43] io.gitlab.arturbosch.detekt.rules.bugs.DontDowncastCollectionTypes$Companion
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [6/43]   Tests created: 0
+INFO  #######_____________________ 12% ___________________________
+INFO  ########____________________ 13% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO  #########___________________ 15% ___________________________
+INFO  #########___________________ 15% ___________________________
+INFO                                                              
+INFO   [7/43] io.gitlab.arturbosch.detekt.rules.bugs.DoubleMutabilityForCollection
+INFO  #########___________________ 15% ___________________________
+INFO                                                              
+INFO   [7/43]   Tests created: 0
+INFO  #########___________________ 15% ___________________________
+INFO  #########___________________ 16% ___________________________
+INFO                                                              
+INFO   [8/43] io.gitlab.arturbosch.detekt.rules.bugs.DoubleMutabilityForCollection$Companion
+INFO  #########___________________ 16% ___________________________
+INFO                                                              
+INFO   [8/43]   Tests created: 0
+INFO  #########___________________ 16% ___________________________
+INFO  ##########__________________ 17% ___________________________
+INFO  ##########__________________ 18% ___________________________
+INFO                                                              
+INFO   [9/43] io.gitlab.arturbosch.detekt.rules.bugs.DuplicateCaseInWhenExpression
+INFO  ##########__________________ 18% ___________________________
+INFO                                                              
+INFO   [9/43]   Tests created: 0
+INFO  ##########__________________ 18% ___________________________
+INFO  ###########_________________ 19% ___________________________
+INFO  ############________________ 20% ___________________________
+INFO                                                              
+INFO  [10/43] io.gitlab.arturbosch.detekt.rules.bugs.ElseCaseInsteadOfExhaustiveWhen
+INFO  ############________________ 20% ___________________________
+INFO                                                              
+INFO  [10/43]   Tests created: 0
+INFO  ############________________ 20% ___________________________
+INFO  ############________________ 21% ___________________________
+INFO  #############_______________ 22% ___________________________
+INFO  #############_______________ 23% ___________________________
+INFO                                                              
+INFO  [11/43] io.gitlab.arturbosch.detekt.rules.bugs.EqualsAlwaysReturnsTrueOrFalse
+INFO  #############_______________ 23% ___________________________
+INFO                                                              
+INFO  [11/43]   Tests created: 0
+INFO  #############_______________ 23% ___________________________
+INFO  ##############______________ 24% ___________________________
+INFO  ###############_____________ 25% ___________________________
+INFO  ###############_____________ 26% ___________________________
+INFO                                                              
+INFO  [12/43] io.gitlab.arturbosch.detekt.rules.bugs.EqualsWithHashCodeExist
+INFO  ###############_____________ 26% ___________________________
+INFO                                                              
+INFO  [12/43]   Tests created: 0
+INFO  ###############_____________ 26% ___________________________
+INFO  ################____________ 27% ___________________________
+INFO  #################___________ 28% ___________________________
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO  [13/43] io.gitlab.arturbosch.detekt.rules.bugs.ExitOutsideMain
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO  [13/43]   Tests created: 0
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO  [14/43] io.gitlab.arturbosch.detekt.rules.bugs.ExitOutsideMain$Companion
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO  [14/43]   Tests created: 0
+INFO  #################___________ 29% ___________________________
+INFO  ##################__________ 30% ___________________________
+INFO  ##################__________ 31% ___________________________
+INFO                                                              
+INFO  [15/43] io.gitlab.arturbosch.detekt.rules.bugs.ExplicitGarbageCollectionCall
+INFO  ##################__________ 31% ___________________________
+INFO                                                              
+INFO  [15/43]   Tests created: 0
+INFO  ##################__________ 31% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO  ####################________ 33% ___________________________
+INFO                                                              
+INFO  [16/43] io.gitlab.arturbosch.detekt.rules.bugs.HasPlatformType
+INFO  ####################________ 33% ___________________________
+INFO                                                              
+INFO  [16/43]   Tests created: 0
+INFO  ####################________ 33% ___________________________
+INFO  ####################________ 34% ___________________________
+INFO  #####################_______ 35% ___________________________
+INFO                                                              
+INFO  [17/43] io.gitlab.arturbosch.detekt.rules.bugs.IgnoredReturnValue
+INFO  #####################_______ 35% ___________________________
+INFO                                                              
+INFO  [17/43]   Tests created: 0
+INFO  #####################_______ 35% ___________________________
+INFO  #####################_______ 36% ___________________________
+INFO  ######################______ 37% ___________________________
+INFO  ######################______ 38% ___________________________
+INFO                                                              
+INFO  [18/43] io.gitlab.arturbosch.detekt.rules.bugs.ImplicitDefaultLocale
+INFO  ######################______ 38% ___________________________
+INFO                                                              
+INFO  [18/43]   Tests created: 0
+INFO  ######################______ 38% ___________________________
+INFO  #######################_____ 39% ___________________________
+INFO  ########################____ 40% ___________________________
+INFO                                                              
+INFO  [19/43] io.gitlab.arturbosch.detekt.rules.bugs.ImplicitUnitReturnType
+INFO  ########################____ 40% ___________________________
+INFO                                                              
+INFO  [19/43]   Tests created: 0
+INFO  ########################____ 40% ___________________________
+INFO  ########################____ 41% ___________________________
+INFO  #########################___ 42% ___________________________
+INFO  #########################___ 43% ___________________________
+INFO                                                              
+INFO  [20/43] io.gitlab.arturbosch.detekt.rules.bugs.InvalidRange
+INFO  #########################___ 43% ___________________________
+INFO                                                              
+INFO  [20/43]   Tests created: 0
+INFO  #########################___ 43% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO                                                              
+INFO  [21/43] io.gitlab.arturbosch.detekt.rules.bugs.IteratorHasNextCallsNextMethod
+INFO  ###########################_ 45% ___________________________
+INFO                                                              
+INFO  [21/43]   Tests created: 0
+INFO  ###########################_ 45% ___________________________
+INFO  ###########################_ 46% ___________________________
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO  [22/43] io.gitlab.arturbosch.detekt.rules.bugs.IteratorNotThrowingNoSuchElementException
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO  [22/43]   Tests created: 0
+INFO  ############################ 47% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 49% ___________________________
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO  [23/43] io.gitlab.arturbosch.detekt.rules.bugs.LateinitUsage
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO  [23/43]   Tests created: 0
+INFO  ############################ 50% ___________________________
+INFO  ############################ 51% ___________________________
+INFO  ############################ 52% ___________________________
+INFO                                                              
+INFO  [24/43] io.gitlab.arturbosch.detekt.rules.bugs.MapGetWithNotNullAssertionOperator
+INFO  ############################ 52% ___________________________
+INFO                                                              
+INFO  [24/43]   Tests created: 0
+INFO  ############################ 52% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 54% ___________________________
+INFO  ############################ 55% ___________________________
+INFO                                                              
+INFO  [25/43] io.gitlab.arturbosch.detekt.rules.bugs.MissingPackageDeclaration
+INFO  ############################ 55% ___________________________
+INFO                                                              
+INFO  [25/43]   Tests created: 0
+INFO  ############################ 55% ___________________________
+INFO  ############################ 56% ___________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 58% #__________________________
+INFO                                                              
+INFO  [26/43] io.gitlab.arturbosch.detekt.rules.bugs.MissingWhenCase
+INFO  ############################ 58% #__________________________
+INFO                                                              
+INFO  [26/43]   Tests created: 0
+INFO  ############################ 58% #__________________________
+INFO  ############################ 59% ##_________________________
+INFO  ############################ 60% ###________________________
+INFO                                                              
+INFO  [27/43] io.gitlab.arturbosch.detekt.rules.bugs.NullCheckOnMutableProperty
+INFO  ############################ 60% ###________________________
+INFO                                                              
+INFO  [27/43]   Tests created: 0
+INFO  ############################ 60% ###________________________
+INFO  ############################ 61% ###________________________
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO  [28/43] io.gitlab.arturbosch.detekt.rules.bugs.NullableToStringCall
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO  [28/43]   Tests created: 0
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 63% ####_______________________
+INFO                                                              
+INFO  [29/43] io.gitlab.arturbosch.detekt.rules.bugs.NullableToStringCall$Companion
+INFO  ############################ 63% ####_______________________
+INFO                                                              
+INFO  [29/43]   Tests created: 0
+INFO  ############################ 63% ####_______________________
+INFO  ############################ 64% #####______________________
+INFO                                                              
+INFO  [30/43] io.gitlab.arturbosch.detekt.rules.bugs.PotentialBugProvider
+INFO  ############################ 64% #####______________________
+INFO                                                              
+INFO  [30/43]   Tests created: 1
+INFO  ############################ 64% #####______________________
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 66% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO                                                              
+INFO  [31/43] io.gitlab.arturbosch.detekt.rules.bugs.PropertyUsedBeforeDeclaration
+INFO  ############################ 67% #######____________________
+INFO                                                              
+INFO  [31/43]   Tests created: 0
+INFO  ############################ 67% #######____________________
+INFO  ############################ 68% ########___________________
+INFO  ############################ 69% ########___________________
+INFO                                                              
+INFO  [32/43] io.gitlab.arturbosch.detekt.rules.bugs.RedundantElseInWhen
+INFO  ############################ 69% ########___________________
+INFO                                                              
+INFO  [32/43]   Tests created: 0
+INFO  ############################ 69% ########___________________
+INFO  ############################ 70% #########__________________
+INFO  ############################ 71% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO                                                              
+INFO  [33/43] io.gitlab.arturbosch.detekt.rules.bugs.UnconditionalJumpStatementInLoop
+INFO  ############################ 72% ##########_________________
+INFO                                                              
+INFO  [33/43]   Tests created: 0
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 73% ###########________________
+INFO  ############################ 74% ###########________________
+INFO                                                              
+INFO  [34/43] io.gitlab.arturbosch.detekt.rules.bugs.UnnecessaryNotNullCheck
+INFO  ############################ 74% ###########________________
+INFO                                                              
+INFO  [34/43]   Tests created: 0
+INFO  ############################ 74% ###########________________
+INFO  ############################ 75% ############_______________
+INFO  ############################ 76% ############_______________
+INFO                                                              
+INFO  [35/43] io.gitlab.arturbosch.detekt.rules.bugs.UnnecessaryNotNullOperator
+INFO  ############################ 76% ############_______________
+INFO                                                              
+INFO  [35/43]   Tests created: 0
+INFO  ############################ 76% ############_______________
+INFO  ############################ 77% #############______________
+INFO  ############################ 78% #############______________
+INFO  ############################ 79% ##############_____________
+INFO                                                              
+INFO  [36/43] io.gitlab.arturbosch.detekt.rules.bugs.UnnecessarySafeCall
+INFO  ############################ 79% ##############_____________
+INFO                                                              
+INFO  [36/43]   Tests created: 0
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 80% ###############____________
+INFO  ############################ 81% ###############____________
+INFO                                                              
+INFO  [37/43] io.gitlab.arturbosch.detekt.rules.bugs.UnreachableCatchBlock
+INFO  ############################ 81% ###############____________
+INFO                                                              
+INFO  [37/43]   Tests created: 0
+INFO  ############################ 81% ###############____________
+INFO  ############################ 82% ################___________
+INFO  ############################ 83% ################___________
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [38/43] io.gitlab.arturbosch.detekt.rules.bugs.UnreachableCode
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [38/43]   Tests created: 0
+INFO  ############################ 84% #################__________
+INFO  ############################ 85% ##################_________
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [39/43] io.gitlab.arturbosch.detekt.rules.bugs.UnsafeCallOnNullableType
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [39/43]   Tests created: 0
+INFO  ############################ 86% ##################_________
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ####################_______
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [40/43] io.gitlab.arturbosch.detekt.rules.bugs.UnsafeCast
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [40/43]   Tests created: 0
+INFO  ############################ 89% ####################_______
+INFO  ############################ 90% #####################______
+INFO  ############################ 91% #####################______
+INFO  ############################ 92% ######################_____
+INFO                                                              
+INFO  [41/43] io.gitlab.arturbosch.detekt.rules.bugs.UnusedUnaryOperator
+INFO  ############################ 92% ######################_____
+INFO                                                              
+INFO  [41/43]   Tests created: 0
+INFO  ############################ 92% ######################_____
+INFO  ############################ 93% #######################____
+INFO  ############################ 94% #######################____
+INFO  ############################ 95% ########################___
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [42/43] io.gitlab.arturbosch.detekt.rules.bugs.UselessPostfixExpression
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [42/43]   Tests created: 0
+INFO  ############################ 96% ########################___
+INFO  ############################ 97% #########################__
+INFO  ############################ 98% #########################__
+INFO  ############################ 99% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [43/43] io.gitlab.arturbosch.detekt.rules.bugs.WrongEqualsTypeParameter
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [43/43]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                             165 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  1 test created for:                                  2 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                              163 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     55 R034: Diffblue Cover can't complete test
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     43 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     31 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     29 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      5 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  1 created test was successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-rules-errorprone/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-rules-errorprone/.diffblue/log/user-20230706T132647.log
+INFO  Finished in 1m 31s
