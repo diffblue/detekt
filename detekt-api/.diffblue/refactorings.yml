@@ -1,0 +1,21 @@
+name: com.diffblue.cover.refactoring.Recipe
+recipeList:
+- org.openrewrite.java.format.AutoFormat: &id001 {}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.api.SingleAssign,
+    fieldName: _value}
+- org.openrewrite.java.format.AutoFormat: *id001
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.ArrayList$Itr,
+    fieldName: cursor}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.ArrayList$Itr,
+    fieldName: expectedModCount}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.ArrayList$Itr,
+    fieldName: lastRet}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.util.ArrayList$Itr,
+    fieldName: this$0}
+- org.openrewrite.java.format.AutoFormat: *id001
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.api.internal.PathFilters,
+    fieldName: excludes}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.api.internal.PathFilters,
+    fieldName: includes}
+- org.openrewrite.java.format.AutoFormat: *id001
+type: specs.openrewrite.org/v1beta/recipe
