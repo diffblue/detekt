@@ -1,0 +1,5963 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T12:44:33.762588+01:00",
+    "command" : "dcover create --working-directory detekt-formatting io.github io.gitlab",
+    "totalTime" : 1285.676,
+    "environmentDetectionTime" : 1.294,
+    "indexingTime" : 0.212,
+    "entryPointsTime" : 1.277,
+    "generationTime" : 1272.786,
+    "timeToFirstTest" : 29.184,
+    "timeToLastTest" : 1284.729,
+    "indexQueryTime" : 10.077,
+    "verificationTime" : 1.01,
+    "validationTime" : 0.556
+  },
+  "codes" : {
+    "R000" : "Success",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R081" : "Exception in arrange section",
+    "R083" : "Can't find a suitable constructor",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T008" : "Private and never called",
+    "T010" : "Abstract or interface method",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 90,
+    "methodsCount" : 444,
+    "completeTestCount" : 1,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 196,
+      "T001" : 79,
+      "T003" : 69,
+      "T004" : 6,
+      "T005" : 1,
+      "T008" : 1,
+      "T010" : 2,
+      "T012" : 90
+    },
+    "perMethodOutcome" : {
+      "R000" : 2,
+      "R013" : 191,
+      "R081" : 77,
+      "R083" : 6,
+      "T003" : 69,
+      "T004" : 6,
+      "T008" : 1,
+      "T010" : 2,
+      "T012" : 90
+    },
+    "perTestOutcome" : {
+      "R000" : 1
+    },
+    "perTestValidation" : {
+      "V000" : 1
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.formatting.EditorConfigConstantsKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1,
+        "T005" : 1,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R013" : 1,
+        "T012" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T003" : 1,
+        "T012" : 4
+      },
+      "perMethodOutcome" : {
+        "R083" : 2,
+        "T003" : 1,
+        "T012" : 4
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule" : {
+      "methodsCount" : 19,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 5,
+        "T003" : 10,
+        "T010" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 5,
+        "T003" : 10,
+        "T010" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$afterVisitChildNodes$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$beforeVisitChildNodes$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRuleComparator" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 2,
+        "T003" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 9,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 9,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$SegmentTree" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 4
+      },
+      "perMethodOutcome" : {
+        "T003" : 4
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$buildPositionInTextLocator$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.BlockCommentInitialStarAlignment" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ClassName" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.DiscouragedCommentLocation" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumEntryNameCase" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Filename" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunKeywordSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionName" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature" : {
+      "methodsCount" : 13,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 4,
+        "T012" : 5
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 4,
+        "T012" : 5
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionStartOfBodySpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionTypeReferenceSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T008" : 1,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T008" : 1,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 4,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierListSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierOrdering" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineBeforeRbrace" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineInList" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLinesInChainedMethodCalls" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveBlankLines" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveComments" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyClassBody" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInMethodBlock" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakAfterElse" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakBeforeAssignment" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoMultipleSpaces" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSemicolons" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoTrailingSpaces" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnitReturn" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnusedImports" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NullableTypeSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PackageName" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListSpacing" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyName" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundAngleBrackets" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundColon" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundComma" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundCurly" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDot" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDoubleColon" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundKeyword" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundOperators" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundParens" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundRangeOperator" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundUnaryOperator" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithAnnotations" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithComments" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenFunctionNameAndOpeningParenthesis" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplate" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.UnnecessaryParenthesesBeforeTrailingLambda" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 2,
+        "R081" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R013" : 3,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.formatting.EditorConfigConstantsKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        8,
+        9,
+        10,
+        9,
+        11,
+        9,
+        12,
+        9,
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.EditorConfigConstantsKt.getKnownEditorConfigProps:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        192,
+        195
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        190
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.getAndroid$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.getAndroid:()Lio/gitlab/arturbosch/detekt/api/internal/RuleSetConfigProperty;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        192,
+        1,
+        192
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.getAutoCorrect$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider$Companion.getAutoCorrect:()Lio/gitlab/arturbosch/detekt/api/internal/RuleSetConfigProperty;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        195,
+        1,
+        195
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        192,
+        195
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        98,
+        101,
+        99
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider.access$getAndroid$delegate$cp:()Lkotlin/properties/ReadOnlyProperty;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        98
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider.access$getAutoCorrect$delegate$cp:()Lkotlin/properties/ReadOnlyProperty;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        98
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider.getRuleSetId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        101
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingProvider.instance:(Lio/gitlab/arturbosch/detekt/api/Config;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        104,
+        105,
+        108,
+        109,
+        108,
+        110,
+        108,
+        111,
+        108,
+        112,
+        108,
+        113,
+        108,
+        114,
+        108,
+        115,
+        108,
+        116,
+        108,
+        117,
+        108,
+        118,
+        108,
+        119,
+        108,
+        120,
+        108,
+        121,
+        108,
+        122,
+        108,
+        123,
+        108,
+        124,
+        108,
+        125,
+        108,
+        126,
+        108,
+        127,
+        108,
+        128,
+        108,
+        129,
+        108,
+        130,
+        108,
+        131,
+        108,
+        132,
+        108,
+        133,
+        108,
+        134,
+        108,
+        135,
+        108,
+        136,
+        108,
+        137,
+        108,
+        138,
+        108,
+        139,
+        108,
+        140,
+        108,
+        141,
+        108,
+        142,
+        108,
+        143,
+        108,
+        144,
+        108,
+        145,
+        108,
+        146,
+        108,
+        147,
+        108,
+        148,
+        108,
+        149,
+        108,
+        150,
+        108,
+        151,
+        108,
+        152,
+        108,
+        153,
+        108,
+        154,
+        108,
+        155,
+        108,
+        156,
+        108,
+        157,
+        108,
+        158,
+        108,
+        159,
+        108,
+        160,
+        108,
+        161,
+        108,
+        162,
+        108,
+        163,
+        108,
+        164,
+        108,
+        165,
+        108,
+        166,
+        108,
+        167,
+        108,
+        168,
+        108,
+        169,
+        108,
+        172,
+        108,
+        173,
+        108,
+        174,
+        108,
+        175,
+        108,
+        176,
+        108,
+        177,
+        108,
+        178,
+        108,
+        179,
+        108,
+        180,
+        108,
+        181,
+        108,
+        182,
+        108,
+        183,
+        108,
+        184,
+        108,
+        185,
+        108,
+        186,
+        108,
+        106,
+        187,
+        104,
+        188
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$afterVisitChildNodes$1.<init>:(Lio/gitlab/arturbosch/detekt/formatting/FormattingRule;Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$afterVisitChildNodes$1.invoke:(ILjava/lang/String;Z)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        104,
+        105
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$afterVisitChildNodes$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        103
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$beforeVisitChildNodes$1.<init>:(Lio/gitlab/arturbosch/detekt/formatting/FormattingRule;Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$beforeVisitChildNodes$1.invoke:(ILjava/lang/String;Z)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        98,
+        99
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule$beforeVisitChildNodes$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        97
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        40,
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010",
+      "lineNumbers" : [
+        26,
+        40,
+        41,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.access$emitFinding:(Lio/gitlab/arturbosch/detekt/formatting/FormattingRule;Ljava/lang/String;ZLorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.afterVisitChildNodes:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        103,
+        106
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.beforeVisitChildNodes:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        97,
+        100
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.computeEditorConfigProperties:()Lcom/pinterest/ktlint/rule/engine/core/api/editorconfig/EditorConfig;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        59,
+        60,
+        59,
+        62,
+        63,
+        65,
+        68,
+        70,
+        71,
+        126,
+        126,
+        71,
+        71,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        72,
+        80,
+        126,
+        127,
+        81,
+        70,
+        70,
+        83
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.emitFinding:(Ljava/lang/String;ZLorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        87,
+        89,
+        90,
+        92,
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.getPositionByOffset:()Lkotlin/jvm/functions/Function1;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        40,
+        1,
+        40
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.getRoot:()Lorg/jetbrains/kotlin/psi/KtFile;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        41,
+        1,
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.getRunAsLateAsPossible:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.getWrapping:()Lcom/pinterest/ktlint/rule/engine/core/api/Rule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.isAndroid:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.isNotDummyElement:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        121,
+        122
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.issueFor:(Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        56
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.setPositionByOffset:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        40,
+        1,
+        40
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.setRoot:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        41,
+        1,
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.visit:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        47,
+        48,
+        49,
+        48,
+        51,
+        52,
+        53,
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRule.visitASTNodes:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        109,
+        110,
+        112,
+        128,
+        113,
+        114,
+        128,
+        129,
+        115,
+        116,
+        118
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRuleComparator.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRuleComparator.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        7
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRuleComparator.compare:(Lio/gitlab/arturbosch/detekt/formatting/FormattingRule;Lio/gitlab/arturbosch/detekt/formatting/FormattingRule;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        9,
+        10,
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.FormattingRuleComparator.compare:(Ljava/lang/Object;Ljava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        7
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.<init>:(II)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        91,
+        92,
+        93,
+        91
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.component1:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.component2:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.copy$default:(Lio/gitlab/arturbosch/detekt/formatting/KtLintLineColCalculator$Segment;IIILjava/lang/Object;)Lio/gitlab/arturbosch/detekt/formatting/KtLintLineColCalculator$Segment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.copy:(II)Lio/gitlab/arturbosch/detekt/formatting/KtLintLineColCalculator$Segment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.getLeft:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        92
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.getRight:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        93
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.hashCode:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$Segment.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$SegmentTree.<init>:([I)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        52,
+        56,
+        57,
+        97,
+        57,
+        57,
+        58,
+        98,
+        98,
+        99,
+        100,
+        101,
+        102,
+        59,
+        97,
+        59,
+        59,
+        60,
+        102,
+        104,
+        62,
+        66,
+        64,
+        65,
+        66,
+        105,
+        106,
+        107,
+        108,
+        108,
+        67,
+        108,
+        109,
+        105,
+        66,
+        52
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$SegmentTree.binarySearch:(III)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        77,
+        78,
+        80,
+        81,
+        82,
+        83,
+        85,
+        88
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$SegmentTree.get:(I)Lio/gitlab/arturbosch/detekt/formatting/KtLintLineColCalculator$Segment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        70
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$SegmentTree.indexOf:(I)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$buildPositionInTextLocator$1.<init>:(Lio/gitlab/arturbosch/detekt/formatting/KtLintLineColCalculator$SegmentTree;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$buildPositionInTextLocator$1.invoke:(I)Lkotlin/Pair;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        42,
+        43,
+        44,
+        45,
+        47,
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator$buildPositionInTextLocator$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator.buildPositionInTextLocator:(Ljava/lang/String;)Lkotlin/jvm/functions/Function1;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        28,
+        29,
+        31,
+        33,
+        34,
+        35,
+        37,
+        39,
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator.calculateLineColByOffset:(Ljava/lang/String;)Lkotlin/jvm/functions/Function1;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.KtLintLineColCalculator.normalizeText:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        13,
+        14,
+        15,
+        16,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/AnnotationRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationOnSeparateLine.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        18,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.AnnotationSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/AnnotationSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        26,
+        29,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        26,
+        1,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        29,
+        1,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ArgumentListWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ArgumentListWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33,
+        34,
+        33,
+        32,
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.BlockCommentInitialStarAlignment.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.BlockCommentInitialStarAlignment.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.BlockCommentInitialStarAlignment.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/BlockCommentInitialStarAlignmentRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ChainWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ChainWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ClassName.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11,
+        12,
+        14,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ClassName.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ClassName.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ClassNamingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/CommentSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/CommentWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.CommentWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        27,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        27,
+        1,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ContextReceiverWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ContextReceiverMapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        31,
+        32,
+        31,
+        30,
+        33
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.DiscouragedCommentLocation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13,
+        15,
+        16,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.DiscouragedCommentLocation.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.DiscouragedCommentLocation.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/DiscouragedCommentLocationRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumEntryNameCase.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumEntryNameCase.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumEntryNameCase.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/EnumEntryNameCaseRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16,
+        18,
+        20,
+        23,
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        23,
+        1,
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/EnumWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.EnumWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Filename.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Filename.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Filename.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FilenameRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        21,
+        23,
+        24,
+        27,
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.getInsertFinalNewLine$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.getInsertFinalNewLine:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        27,
+        1,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FinalNewlineRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FinalNewline.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunKeywordSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunKeywordSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunKeywordSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FunKeywordSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionName.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11,
+        12,
+        14,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionName.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionName.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FunctionNamingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        19,
+        21,
+        22,
+        25,
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        25,
+        1,
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FunctionReturnTypeSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionReturnTypeSpacing.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        29,
+        28,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        25,
+        28,
+        31,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        19,
+        21,
+        22,
+        25,
+        28,
+        31,
+        34,
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getForceMultilineWhenParameterCountGreaterOrEqualThan$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getForceMultilineWhenParameterCountGreaterOrEqualThan:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        25,
+        1,
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getFunctionBodyExpressionWrapping$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getFunctionBodyExpressionWrapping:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        28,
+        1,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        34,
+        1,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        31,
+        1,
+        31
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FunctionSignatureRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionSignature.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        38,
+        39,
+        38,
+        40,
+        38,
+        41,
+        38,
+        42,
+        38,
+        37,
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionStartOfBodySpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionStartOfBodySpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionStartOfBodySpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FunctionStartOfBodySpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionTypeReferenceSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        19,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionTypeReferenceSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.FunctionTypeReferenceSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/FunctionTypeReferenceSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16,
+        18,
+        19,
+        22,
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        22,
+        1,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/IfElseBracingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseBracing.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        26,
+        25,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16,
+        18,
+        19,
+        22,
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        22,
+        1,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/IfElseWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.IfElseWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        26,
+        25,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        26,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.getLayout$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.getLayout:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        26,
+        1,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ImportOrderingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ImportOrdering.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        29,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.getContinuationIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.getContinuationIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T008",
+      "perMethodOutcome" : "T008",
+      "lineNumbers" : [
+        29,
+        1,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/IndentationRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Indentation.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33,
+        32,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/KdocWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.KdocWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        30,
+        33
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        21,
+        23,
+        24,
+        30,
+        33,
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getDefaultRuleIdAliases:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getIgnoreBackTickedIdentifier$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getIgnoreBackTickedIdentifier:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        33,
+        1,
+        33
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        30,
+        1,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/MaxLineLengthRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MaximumLineLength.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        37,
+        38,
+        37,
+        36,
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierListSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        18,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierListSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierListSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ModifierListSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierOrdering.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17,
+        19,
+        20,
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierOrdering.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ModifierOrdering.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ModifierOrderRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18,
+        20,
+        21,
+        24,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/MultiLineIfElseRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultiLineIfElse.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17,
+        19,
+        21,
+        24,
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        24,
+        1,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/MultilineExpressionWrapping;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.MultilineExpressionWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineBeforeRbrace.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineBeforeRbrace.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineBeforeRbrace.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoBlankLineBeforeRbraceRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineInList.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12,
+        14,
+        16,
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineInList.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLineInList.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoBlankLineInListRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLinesInChainedMethodCalls.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLinesInChainedMethodCalls.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoBlankLinesInChainedMethodCalls.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoBlankLinesInChainedMethodCallsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveBlankLines.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveBlankLines.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveBlankLines.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoConsecutiveBlankLinesRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveComments.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        10,
+        12,
+        13,
+        10
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveComments.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoConsecutiveComments.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoConsecutiveCommentsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyClassBody.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyClassBody.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyClassBody.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoEmptyClassBodyRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17,
+        19,
+        20,
+        23,
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        23,
+        1,
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoEmptyFirstLineInClassBodyRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInClassBody.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInMethodBlock.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInMethodBlock.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoEmptyFirstLineInMethodBlock.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoEmptyFirstLineInMethodBlockRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakAfterElse.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakAfterElse.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakAfterElse.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoLineBreakAfterElseRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakBeforeAssignment.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakBeforeAssignment.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoLineBreakBeforeAssignment.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoLineBreakBeforeAssignmentRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoMultipleSpaces.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoMultipleSpaces.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoMultipleSpaces.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoMultipleSpacesRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSemicolons.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSemicolons.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSemicolons.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoSemicolonsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16,
+        18,
+        19,
+        22,
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        22,
+        1,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoSingleLineBlockCommentRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoSingleLineBlockComment.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        26,
+        25,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoTrailingSpaces.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoTrailingSpaces.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoTrailingSpaces.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoTrailingSpacesRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnitReturn.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnitReturn.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnitReturn.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoUnitReturnRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnusedImports.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnusedImports.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoUnusedImports.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoUnusedImportsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        21,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.getPackagesToUseImportOnDemandProperty$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.getPackagesToUseImportOnDemandProperty:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        21,
+        1,
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NoWildcardImportsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NoWildcardImports.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        25,
+        24,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NullableTypeSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NullableTypeSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.NullableTypeSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/NullableTypeSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PackageName.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PackageName.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PackageName.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/PackageNameRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13,
+        15,
+        16,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ParameterListSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        26,
+        29,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        29,
+        1,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        26,
+        1,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ParameterListWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterListWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33,
+        34,
+        33,
+        32,
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        27,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        22,
+        24,
+        27,
+        30,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        27,
+        1,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        30,
+        1,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/ParameterWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.ParameterWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        34,
+        35,
+        34,
+        33,
+        36
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyName.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11,
+        12,
+        14,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyName.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyName.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/PropertyNamingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        26,
+        29,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        26,
+        1,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        29,
+        1,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/PropertyWrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.PropertyWrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33,
+        34,
+        33,
+        32,
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundAngleBrackets.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundAngleBrackets.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundAngleBrackets.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundAngleBracketsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundColon.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundColon.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundColon.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundColonRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundComma.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundComma.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundComma.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundCommaRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundCurly.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundCurly.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundCurly.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundCurlyRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDot.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDot.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDot.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundDotRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDoubleColon.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDoubleColon.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundDoubleColon.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundDoubleColonRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundKeyword.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundKeyword.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundKeyword.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundKeywordRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundOperators.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundOperators.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundOperators.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundOperatorsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundParens.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundParens.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundParens.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundParensRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundRangeOperator.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundRangeOperator.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundRangeOperator.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundRangeOperatorRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundUnaryOperator.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundUnaryOperator.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingAroundUnaryOperator.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingAroundUnaryOperatorRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithAnnotations.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        20,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithAnnotations.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithAnnotations.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingBetweenDeclarationsWithAnnotationsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithComments.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        20,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithComments.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenDeclarationsWithComments.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingBetweenDeclarationsWithCommentsRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenFunctionNameAndOpeningParenthesis.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenFunctionNameAndOpeningParenthesis.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.SpacingBetweenFunctionNameAndOpeningParenthesis.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/SpacingBetweenFunctionNameAndOpeningParenthesisRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplate.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplate.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplate.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/StringTemplateRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16,
+        18,
+        20,
+        23,
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        23,
+        1,
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/StringTemplateIndentRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.StringTemplateIndent.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        22,
+        24,
+        25,
+        28,
+        29,
+        30,
+        28,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.getUseTrailingCommaOnCallSite$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.getUseTrailingCommaOnCallSite:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        28,
+        1,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/TrailingCommaOnCallSiteRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnCallSite.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        35,
+        34,
+        36
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        22,
+        24,
+        25,
+        28,
+        29,
+        30,
+        28,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.getUseTrailingCommaOnDeclarationSite$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.getUseTrailingCommaOnDeclarationSite:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        28,
+        1,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/TrailingCommaOnDeclarationSiteRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TrailingCommaOnDeclarationSite.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        35,
+        36,
+        35,
+        34,
+        37
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17,
+        19,
+        20,
+        23,
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        23,
+        1,
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/TryCatchFinallySpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TryCatchFinallySpacing.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17,
+        19,
+        20,
+        23,
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        23,
+        1,
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/TypeArgumentListSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeArgumentListSpacing.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        17,
+        19,
+        20,
+        23,
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        23,
+        1,
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/TypeParameterListSpacingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.TypeParameterListSpacing.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.UnnecessaryParenthesesBeforeTrailingLambda.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        17,
+        18,
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.UnnecessaryParenthesesBeforeTrailingLambda.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.UnnecessaryParenthesesBeforeTrailingLambda.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/UnnecessaryParenthesesBeforeTrailingLambdaRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        26,
+        29,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.getIndentSize$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.getIndentSize:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        26,
+        1,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.getMaxLineLength$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.getMaxLineLength:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        29,
+        1,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.getWrapping:()Lcom/pinterest/ktlint/ruleset/standard/rules/WrappingRule;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.formatting.wrappers.Wrapping.overrideEditorConfigProperties:()Ljava/util/Map;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33,
+        34,
+        33,
+        32,
+        35
+      ]
+    }
+  }
+}
