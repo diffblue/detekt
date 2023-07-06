@@ -1,0 +1,401 @@
+13:08:10.291 [INFO]  [Preparing] Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+13:08:10.292 [INFO]  [Preparing] 
+13:08:10.292 [INFO]  [Preparing] Running: dcover create --working-directory detekt-report-txt io.github io.gitlab
+13:08:10.446 [INFO]  [Checking] Detecting environment:
+13:08:10.446 [INFO]  [Checking] ----------------------
+13:08:10.492 [INFO]  [Checking] Detected Java version 11.0.18
+13:08:13.175 [INFO]  [Checking] Detected build system: Gradle 8.2
+13:08:13.175 [INFO]  [Checking] Operating System: Mac OS X aarch64 13.4.1
+13:08:13.175 [INFO]  [Checking] Default charset: UTF-8
+13:08:13.175 [INFO]  [Checking] Default locale: en_GB
+13:08:13.175 [INFO]  [Checking] Default time zone: Europe/London
+13:08:13.177 [INFO]  [Checking] Selected build system: Gradle
+13:08:13.180 [INFO]  [Checking] Selected classpath from build system Gradle
+13:08:13.181 [INFO]  [Checking] Expanded classpath: 
+/Users/mnedzelskii/gits/detekt/detekt-report-txt/build/classes/kotlin/test
+/Users/mnedzelskii/gits/detekt/detekt-report-txt/build/classes/kotlin/main (code under test)
+/Users/mnedzelskii/gits/detekt/detekt-report-txt/build/resources/test
+/Users/mnedzelskii/gits/detekt/detekt-report-txt/build/classes/java/main
+/Users/mnedzelskii/gits/detekt/detekt-report-txt/build/resources/main
+/Users/mnedzelskii/gits/detekt/detekt-api/build/libs/detekt-api-1.23.0-test-fixtures.jar
+/Users/mnedzelskii/gits/detekt/detekt-api/build/libs/detekt-api-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-psi-utils/build/libs/detekt-psi-utils-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/libs/detekt-utils-1.23.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.22/b25c86d47d6b962b9cf0f8c3f320c8a10eea3dd1/kotlin-stdlib-jdk8-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.24.2/ebbf338e33f893139459ce5df023115971c2786f/assertj-core-3.24.2.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.3/355322b03bf39306a183162cd06626c206f0286b/junit-jupiter-engine-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.9.3/9e2a4bf6016a1975f408a73523392875cff7c26f/junit-jupiter-params-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.3/815818ad6ffcc8d320d8fbdf3d748c753cf83201/junit-jupiter-api-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.9.3/485650bfe2a2f39b606a6ca013285afda2eaee79/junit-platform-launcher-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.3/8616734a190f8d307376aeb7353dba0a2c037a09/junit-platform-engine-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.3/36b2e26a90c41603be7f0094bee80e3f8a2cd4d4/junit-platform-commons-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.9.3/72e840501e1550e9799c9a5cc9483d7d6b29e0ba/junit-jupiter-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.22/4dabb8248310d833bb6a8b516024a91fd3d275c/kotlin-stdlib-jdk7-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.8.22/e2cf111da088dc807a74157741b4cd4b664edfb7/kotlin-compiler-embeddable-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.22/636bf8b320e7627482771bbac9ed7246773c02bd/kotlin-stdlib-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.22/1a8e3601703ae14bb58757ea6b2d8e8e5935a586/kotlin-stdlib-common-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.21/1a257bbdb9288f2558d3767cc2cc22b499d5091c/byte-buddy-1.12.21.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.22/ce5ff1f309623f8c1be5143bdba032c4a04cec3a/kotlin-script-runtime-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.8.22/7d9f7e06a59d2fcbc9b373400c146f42fd722e81/kotlin-daemon-embeddable-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar
+13:08:13.247 [INFO]  [Checking] Detected test framework: JUnit Jupiter 5.9.3
+13:08:13.255 [INFO]  [Checking] Detected JUnit Jupiter Engine version 5.9.3
+13:08:13.260 [INFO]  [Checking] Detected JUnit Jupiter Params version 5.9.3
+13:08:13.343 [INFO]  [Checking] Selected test output directory: /Users/mnedzelskii/gits/detekt/detekt-report-txt/src/test/java
+13:08:13.345 [INFO]  [Checking] Selected test framework: JUnit Jupiter
+13:08:13.421 [INFO]  [Checking] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-report-txt : gradle test -i  DummyJupiterDiffblueTest
+13:08:15.138 [INFO]  [Checking] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-report-txt : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+13:08:16.866 [INFO]  [Checking] Detected JVM architecture: 64-Bit
+13:08:16.870 [INFO]  [Checking] Indexing...
+13:08:19.445 [INFO]  [Checking] Selected Java language compliance level: 1.8
+13:08:19.446 [INFO]  [Checking] Selected test validation: enabled
+13:08:19.447 [INFO]  [Checking] Prefixes for filtering classes/methods:
+13:08:19.447 [INFO]  [Checking] - io.github
+13:08:19.448 [INFO]  [Checking] - io.gitlab
+13:08:19.448 [INFO]  [Checking] Gathering methods to test...
+13:08:20.066 [WARN]  [Checking] E052: Missing dependency
+Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+Required dependencies were not found.
+Please add the following dependencies to your project:
+  testImplementation("org.mockito:mockito-core:4.11.0")
+13:08:20.079 [INFO]  [Reporting] 
+13:08:20.079 [INFO]  [Reporting] Environment summary:
+13:08:20.079 [INFO]  [Reporting] --------------------
+13:08:20.081 [INFO]  [Reporting] Java version                  11.0.18                       SUCCESS        
+13:08:20.081 [INFO]  [Reporting] Build system                  Gradle                        SUCCESS        
+13:08:20.081 [WARN]  [Reporting] Mocking Framework                                           WARNING        
+13:08:20.081 [INFO]  [Reporting] Testing framework             JUnit Jupiter 5               SUCCESS        
+13:08:20.081 [INFO]  [Reporting] Launcher                      JUnit Jupiter                 SUCCESS        
+13:08:20.081 [INFO]  [Reporting] Test validation               Enabled                       SUCCESS        
+13:08:20.081 [INFO]  [Reporting] 
+13:08:20.081 [WARN]  [Reporting] Environment check status: WARNING
+13:08:20.102 [INFO]  [Creating] Found 4 callable methods in 1 class
+13:08:20.103 [INFO]  [Creating] 
+13:08:20.103 [INFO]  [Creating] Creating tests:
+13:08:20.103 [INFO]  [Creating] ---------------
+13:08:20.114 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.report.txt.TxtOutputReport'
+================================================================================
+13:08:20.114 [INFO]  [Creating] Filtering out non-testable methods...
+13:08:20.661 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+13:08:20.662 [INFO]  [Creating] Attempting to get service client, retry 1.
+13:08:20.675 [INFO]  [Creating] Starting monitoring server.
+13:08:20.799 [INFO]  [Creating] Monitoring server listening on localhost/127.0.0.1:62456
+13:08:20.799 [INFO]  [Creating] Starting analyzer server process...
+13:08:20.799 [INFO]  [Creating] Server command-line: /Users/mnedzelskii/.sdkman/candidates/java/11.0.18-amzn/bin/java -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:/Users/mnedzelskii/gits/cover/cover-cli/target/launcher-2023.07.02-SNAPSHOT-shared-jar.jar -Dlogback.configurationFile=/var/folders/84/svd_5_t17l36s2xgx_7spshr0000gp/T/diffblue/config/logback-remote-service.xml -Dcom.diffblue.springIsolationJar=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-isolation-layer-2023.07.02-SNAPSHOT.jar -Dcover.jar.path=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-service-analyzer-2023.07.02-SNAPSHOT-jar-with-dependencies.jar -Dcom.diffblue.assertionSuggestionJar=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-service-analyzer-2023.07.02-SNAPSHOT-jar-with-dependencies.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar /Users/mnedzelskii/gits/cover/cover-cli/target/launcher-2023.07.02-SNAPSHOT-shared-jar.jar --service-lifespan 120 --monitoring-service-port 62456 --index-service-port 62456
+13:08:20.815 [INFO]  [Creating] Server started. Waiting up to 300 seconds for a connection to be established...
+13:08:21.183 [INFO]  [Creating] Starting new remote monitor client
+13:08:21.459 [INFO]  [Creating] Attempting to start remote server.
+13:08:21.871 [INFO]  [Creating] Server started, listening on localhost/127.0.0.1:62459
+13:08:22.827 [INFO]  [Creating] Expect analyzer service to be listening on port 62459.
+13:08:23.368 [INFO]  [Creating] Started analyzer service and client retrieved.
+13:08:24.310 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.report.txt.TxtOutputReport.<init>:()V, io.github.detekt.report.txt.TxtOutputReport.getEnding:()Ljava/lang/String;, io.github.detekt.report.txt.TxtOutputReport.getName:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+13:08:28.400 [INFO]  [Creating]     [1/4] io.github.detekt.report.txt.TxtOutputReport.<init>
+13:08:28.400 [INFO]  [Creating]     [2/4] io.github.detekt.report.txt.TxtOutputReport.getEnding
+13:08:28.400 [INFO]  [Creating]     [3/4] io.github.detekt.report.txt.TxtOutputReport.getName
+13:08:28.400 [INFO]  [Creating]     [3/4]   Tests created: 1
+13:08:28.401 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.report.txt.TxtOutputReport.render:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+13:09:02.626 [INFO]  [Creating]     [4/4] io.github.detekt.report.txt.TxtOutputReport.render
+13:09:02.626 [INFO]  [Creating]     [4/4]   Diffblue AI was unable to find a test
+13:09:02.631 [INFO]  [Creating] [1/1] io.github.detekt.report.txt.TxtOutputReport
+13:09:02.631 [INFO]  [Creating] [1/1]   Tests created: 1
+13:09:02.634 [INFO]  [Reporting] 
+13:09:02.634 [INFO]  [Reporting] Summary:
+13:09:02.634 [INFO]  [Reporting] --------
+13:09:02.634 [INFO]  [Reporting] Total:                                               4 methods
+13:09:02.634 [INFO]  [Reporting] 1 test created for:                                  3 methods
+13:09:02.634 [INFO]  [Reporting] 
+13:09:02.634 [INFO]  [Reporting] No tests created for:                                1 method
+13:09:02.682 [INFO]  [Validating] 
+13:09:02.682 [INFO]  [Validating] Running validation command.
+13:09:02.685 [INFO]  [Validating] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-report-txt : gradle test -i  
+13:09:03.150 [INFO]  [Validating] Standard output of build tool (Gradle)
+13:09:03.150 [INFO]  [Validating] > The client will now receive all logging from the daemon (pid: 15147). The daemon log file: /Users/mnedzelskii/.gradle/daemon/8.2/daemon-15147.out.log
+13:09:03.150 [INFO]  [Validating] > Starting 97th build in daemon [uptime: 3 hrs 4 mins 27.106 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 8 GiB]
+13:09:03.150 [INFO]  [Validating] > Closing daemon's stdin at end of input.
+13:09:03.150 [INFO]  [Validating] > The daemon will no longer process any standard input.
+13:09:03.150 [INFO]  [Validating] > Using 10 worker leases.
+13:09:03.150 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt, /Users/mnedzelskii/gits/detekt/detekt-gradle-plugin, /Users/mnedzelskii/gits/detekt/build-logic] as hierarchies to watch
+13:09:03.150 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt/build-logic, /Users/mnedzelskii/gits/detekt, /Users/mnedzelskii/gits/detekt/detekt-gradle-plugin] as hierarchies to watch
+13:09:03.150 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt/detekt-gradle-plugin, /Users/mnedzelskii/gits/detekt/build-logic, /Users/mnedzelskii/gits/detekt] as hierarchies to watch
+13:09:03.150 [INFO]  [Validating] > Reusing configuration cache.
+13:09:03.150 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt, /Users/mnedzelskii/gits/detekt/detekt-gradle-plugin, /Users/mnedzelskii/gits/detekt/build-logic] as hierarchies to watch
+13:09:03.150 [INFO]  [Validating] > Watching the file system is configured to be enabled if available
+13:09:03.150 [INFO]  [Validating] > File system watching is active
+13:09:03.150 [INFO]  [Validating] > Using local directory build cache for the root build (location = /Users/mnedzelskii/.gradle/caches/build-cache-1, removeUnusedEntriesAfter = 7 days).
+13:09:03.150 [INFO]  [Validating] > Using remote HTTP build cache for the root build (pull-only, allowInsecureProtocol = false, allowUntrustedServer = false, authenticated = false, url = https://ge.detekt.dev/cache/, useExpectContinue = false).
+13:09:03.150 [INFO]  [Validating] > Tasks to be executed: [task ':detekt-psi-utils:compileKotlin', task ':detekt-psi-utils:compileJava', task ':detekt-utils:compileKotlin', task ':detekt-utils:compileJava', task ':detekt-api:compileKotlin', task ':detekt-api:compileJava', task ':detekt-api:processResources', task ':detekt-api:classes', task ':detekt-api:jar', task ':detekt-api:compileTestFixturesKotlin', task ':detekt-api:compileTestFixturesJava', task ':detekt-api:processTestFixturesResources', task ':detekt-api:testFixturesClasses', task ':detekt-api:testFixturesJar', task ':detekt-psi-utils:processResources', task ':detekt-psi-utils:classes', task ':detekt-psi-utils:jar', task ':detekt-report-txt:compileKotlin', task ':detekt-report-txt:compileJava', task ':detekt-report-txt:processResources', task ':detekt-report-txt:classes', task ':detekt-report-txt:compileTestKotlin', task ':detekt-report-txt:compileTestJava', task ':detekt-report-txt:processTestResources', task ':detekt-report-txt:testClasses', task ':detekt-utils:processResources', task ':detekt-utils:classes', task ':detekt-utils:jar', task ':detekt-report-txt:test']
+13:09:03.150 [INFO]  [Validating] > Tasks that were excluded: []
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-psi-utils:compileKotlin (Thread[Execution worker,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-utils:compileKotlin (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-api:processResources (Thread[Execution worker Thread 3,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-api:processResources (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-api:processTestFixturesResources (Thread[Execution worker Thread 3,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:processResources (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-api:processTestFixturesResources (Thread[Execution worker Thread 3,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-psi-utils:compileKotlin (Thread[Execution worker,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:processTestResources (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-psi-utils:processResources (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-report-txt:processTestResources (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-psi-utils:processResources (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-utils:compileKotlin (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > Resolve mutations for :detekt-utils:processResources (Thread[Execution worker Thread 8,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-report-txt:processResources (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > :detekt-utils:processResources (Thread[Execution worker Thread 8,5,main]) started.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-api:processResources NO-SOURCE
+13:09:03.150 [INFO]  [Validating] > Skipping task ':detekt-api:processResources' as it has no source files and no previous output files.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-utils:processResources NO-SOURCE
+13:09:03.150 [INFO]  [Validating] > Skipping task ':detekt-utils:processResources' as it has no source files and no previous output files.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-psi-utils:processResources NO-SOURCE
+13:09:03.150 [INFO]  [Validating] > Skipping task ':detekt-psi-utils:processResources' as it has no source files and no previous output files.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-api:processTestFixturesResources NO-SOURCE
+13:09:03.150 [INFO]  [Validating] > Skipping task ':detekt-api:processTestFixturesResources' as it has no source files and no previous output files.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-report-txt:processTestResources NO-SOURCE
+13:09:03.150 [INFO]  [Validating] > Skipping task ':detekt-report-txt:processTestResources' as it has no source files and no previous output files.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-report-txt:processResources UP-TO-DATE
+13:09:03.150 [INFO]  [Validating] > Caching disabled for task ':detekt-report-txt:processResources' because:
+13:09:03.150 [INFO]  [Validating] >   Not worth caching
+13:09:03.150 [INFO]  [Validating] > Skipping task ':detekt-report-txt:processResources' as it is up-to-date.
+13:09:03.150 [INFO]  [Validating] > 
+13:09:03.150 [INFO]  [Validating] > > Task :detekt-psi-utils:compileKotlin UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-compiler-embeddable-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Build cache key for task ':detekt-psi-utils:compileKotlin' is c72e17ff81c85e7351df478815002d0c
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-psi-utils:compileKotlin' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-utils:compileKotlin UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Build cache key for task ':detekt-utils:compileKotlin' is 4bc3c8215f701e9ef21d31281b92246d
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-utils:compileKotlin' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-psi-utils:compileJava (Thread[Execution worker,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-utils:compileJava (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-psi-utils) (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-utils) (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-psi-utils:compileJava (Thread[Execution worker,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-utils:compileJava (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-utils:compileJava NO-SOURCE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-utils:compileJava' as it has no source files and no previous output files.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-psi-utils:compileJava NO-SOURCE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-psi-utils:compileJava' as it has no source files and no previous output files.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-utils) (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-psi-utils) (Thread[Execution worker Thread 9,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-psi-utils) (Thread[Execution worker,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-utils) (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-utils:classes (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-psi-utils:classes (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:compileKotlin (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-psi-utils:classes (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-utils:classes (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-psi-utils:classes UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-psi-utils:classes' as it has no actions.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-psi-utils:jar (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:compileKotlin (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-utils:classes UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-utils:classes' as it has no actions.
+13:09:03.151 [INFO]  [Validating] > :detekt-psi-utils:jar (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-utils:jar (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-utils:jar (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-api:compileKotlin UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-compiler-embeddable-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Build cache key for task ':detekt-api:compileKotlin' is bc24205c2f4f61f8518d6a26cd3c1b64
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-api:compileKotlin' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:compileJava (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-api) (Thread[Execution worker Thread 3,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:compileJava (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-api:compileJava NO-SOURCE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-api:compileJava' as it has no source files and no previous output files.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:classes (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-api) (Thread[included builds,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:classes (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve main (project :detekt-api) (Thread[Execution worker,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:compileTestFixturesKotlin (Thread[Execution worker,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:compileKotlin (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-api:classes UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-api:classes' as it has no actions.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:jar (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:compileTestFixturesKotlin (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-report-txt:compileKotlin (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:jar (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-psi-utils:jar UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Caching disabled for task ':detekt-psi-utils:jar' because:
+13:09:03.151 [INFO]  [Validating] >   Not worth caching
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-psi-utils:jar' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > work action resolve detekt-psi-utils-1.23.0.jar (project :detekt-psi-utils) (Thread[Execution worker Thread 7,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-utils:jar UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Caching disabled for task ':detekt-utils:jar' because:
+13:09:03.151 [INFO]  [Validating] >   Not worth caching
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-utils:jar' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > work action resolve detekt-utils-1.23.0.jar (project :detekt-utils) (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-report-txt:compileKotlin UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-compiler-embeddable-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Build cache key for task ':detekt-report-txt:compileKotlin' is 3ded245b414360810ee29353612bdefd
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-report-txt:compileKotlin' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-api:compileTestFixturesKotlin UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-compiler-embeddable-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.151 [INFO]  [Validating] > Build cache key for task ':detekt-api:compileTestFixturesKotlin' is 1e846b74c55d598d532faacc4ca81582
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-api:compileTestFixturesKotlin' as it is up-to-date.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:compileTestFixturesJava (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:compileJava (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:compileTestFixturesJava (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-report-txt:compileJava (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-api:compileTestFixturesJava NO-SOURCE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-api:compileTestFixturesJava' as it has no source files and no previous output files.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:testFixturesClasses (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve testFixtures (project :detekt-api) (Thread[Execution worker Thread 4,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > work action resolve testFixtures (project :detekt-api) (Thread[Execution worker Thread 3,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-report-txt:compileJava NO-SOURCE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-report-txt:compileJava' as it has no source files and no previous output files.
+13:09:03.151 [INFO]  [Validating] > :detekt-api:testFixturesClasses (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:classes (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > :detekt-report-txt:classes (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-api:testFixturesClasses UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-api:testFixturesClasses' as it has no actions.
+13:09:03.151 [INFO]  [Validating] > 
+13:09:03.151 [INFO]  [Validating] > > Task :detekt-report-txt:classes UP-TO-DATE
+13:09:03.151 [INFO]  [Validating] > Skipping task ':detekt-report-txt:classes' as it has no actions.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-api:testFixturesJar (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.151 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:compileTestKotlin (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > :detekt-api:testFixturesJar (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > :detekt-report-txt:compileTestKotlin (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > > Task :detekt-api:jar UP-TO-DATE
+13:09:03.152 [INFO]  [Validating] > Caching disabled for task ':detekt-api:jar' because:
+13:09:03.152 [INFO]  [Validating] >   Not worth caching
+13:09:03.152 [INFO]  [Validating] > Skipping task ':detekt-api:jar' as it is up-to-date.
+13:09:03.152 [INFO]  [Validating] > work action resolve detekt-api-1.23.0.jar (project :detekt-api) (Thread[Execution worker Thread 6,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > > Task :detekt-api:testFixturesJar UP-TO-DATE
+13:09:03.152 [INFO]  [Validating] > Caching disabled for task ':detekt-api:testFixturesJar' because:
+13:09:03.152 [INFO]  [Validating] >   Not worth caching
+13:09:03.152 [INFO]  [Validating] > Skipping task ':detekt-api:testFixturesJar' as it is up-to-date.
+13:09:03.152 [INFO]  [Validating] > work action resolve detekt-api-1.23.0-test-fixtures.jar (project :detekt-api) (Thread[Execution worker Thread 2,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > > Task :detekt-report-txt:compileTestKotlin FROM-CACHE
+13:09:03.152 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming testFixtures with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming assertj-core-3.24.2.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming junit-jupiter-params-5.9.3.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming junit-jupiter-api-5.9.3.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming junit-platform-commons-1.9.3.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming junit-jupiter-5.9.3.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming kotlin-compiler-embeddable-1.8.22.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming byte-buddy-1.12.21.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming opentest4j-1.2.0.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Transforming apiguardian-api-1.1.2.jar with ClasspathEntrySnapshotTransform
+13:09:03.152 [INFO]  [Validating] > Build cache key for task ':detekt-report-txt:compileTestKotlin' is 4c372c484da48d1e700c5fb66befb63a
+13:09:03.152 [INFO]  [Validating] > Task ':detekt-report-txt:compileTestKotlin' is not up-to-date because:
+13:09:03.152 [INFO]  [Validating] >   Input property 'javaSources' file /Users/mnedzelskii/gits/detekt/detekt-report-txt/src/test/java/DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+13:09:03.152 [INFO]  [Validating] >   Input property 'javaSources' file /Users/mnedzelskii/gits/detekt/detekt-report-txt/src/test/java/io/github/detekt/report/txt/TxtOutputReportDiffblueTest.java has been added.
+13:09:03.152 [INFO]  [Validating] > Loaded cache entry for task ':detekt-report-txt:compileTestKotlin' with cache key 4c372c484da48d1e700c5fb66befb63a
+13:09:03.152 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:compileTestJava (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > :detekt-report-txt:compileTestJava (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > > Task :detekt-report-txt:compileTestJava FROM-CACHE
+13:09:03.152 [INFO]  [Validating] > Build cache key for task ':detekt-report-txt:compileTestJava' is 0210ecd24ffdca2d6d13a31b9b70ecc4
+13:09:03.152 [INFO]  [Validating] > Task ':detekt-report-txt:compileTestJava' is not up-to-date because:
+13:09:03.152 [INFO]  [Validating] >   Input property 'stableSources' file /Users/mnedzelskii/gits/detekt/detekt-report-txt/src/test/java/DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+13:09:03.152 [INFO]  [Validating] >   Input property 'stableSources' file /Users/mnedzelskii/gits/detekt/detekt-report-txt/src/test/java/io/github/detekt/report/txt/TxtOutputReportDiffblueTest.java has been added.
+13:09:03.152 [INFO]  [Validating] > Loaded cache entry for task ':detekt-report-txt:compileTestJava' with cache key 0210ecd24ffdca2d6d13a31b9b70ecc4
+13:09:03.152 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:testClasses (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > :detekt-report-txt:testClasses (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > > Task :detekt-report-txt:testClasses UP-TO-DATE
+13:09:03.152 [INFO]  [Validating] > Skipping task ':detekt-report-txt:testClasses' as it has no actions.
+13:09:03.152 [INFO]  [Validating] > Resolve mutations for :detekt-report-txt:test (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > :detekt-report-txt:test (Thread[Execution worker Thread 5,5,main]) started.
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > > Task :detekt-report-txt:test FROM-CACHE
+13:09:03.152 [INFO]  [Validating] > Build cache key for task ':detekt-report-txt:test' is faf685dc2bba9ea24243b28138bd54fc
+13:09:03.152 [INFO]  [Validating] > Task ':detekt-report-txt:test' is not up-to-date because:
+13:09:03.152 [INFO]  [Validating] >   Value of input property 'filter.failOnNoMatchingTests' has changed for task ':detekt-report-txt:test'
+13:09:03.152 [INFO]  [Validating] >   Value of input property 'filter.includePatterns' has changed for task ':detekt-report-txt:test'
+13:09:03.152 [INFO]  [Validating] > Loaded cache entry for task ':detekt-report-txt:test' with cache key faf685dc2bba9ea24243b28138bd54fc
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.152 [INFO]  [Validating] > BUILD SUCCESSFUL in 294ms
+13:09:03.152 [INFO]  [Validating] > 13 actionable tasks: 3 from cache, 10 up-to-date
+13:09:03.152 [INFO]  [Validating] > Watched directory hierarchies: [/Users/mnedzelskii/gits/detekt]
+13:09:03.152 [INFO]  [Validating] > Configuration cache entry reused.
+13:09:03.152 [INFO]  [Validating] Standard error of build tool (Gradle)
+13:09:03.152 [INFO]  [Validating] > 
+13:09:03.166 [INFO]  [Validating] 1 created test was successfully validated.
+13:09:03.255 [INFO]  [Reporting] Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-report-txt/.diffblue/reports/report.json
+13:09:03.281 [INFO]  [Reporting] 
+13:09:03.281 [WARN]  [Reporting] Cover completed with warnings
+  The following warnings should be addressed to ensure that
+  the highest quantity and quality of tests can be created:
+-----------------------------------------------------------
+13:08:20.066 [WARN]  [Checking] E052: Missing dependency
+Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+Required dependencies were not found.
+Please add the following dependencies to your project:
+  testImplementation("org.mockito:mockito-core:4.11.0")
+13:09:03.281 [INFO]  [Reporting] Log file: /Users/mnedzelskii/gits/detekt/detekt-report-txt/.diffblue/log/user-20230706T130810.log
+13:09:03.281 [INFO]  [Reporting] Finished in 52s

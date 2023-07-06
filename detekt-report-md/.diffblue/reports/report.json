@@ -1,0 +1,738 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:10:27.223453+01:00",
+    "command" : "dcover create --testing-framework=junit-5 --working-directory detekt-report-md io.github io.gitlab",
+    "totalTime" : 56.348,
+    "environmentDetectionTime" : 0.659,
+    "indexingTime" : 0.197,
+    "entryPointsTime" : 0.646,
+    "generationTime" : 43.62,
+    "timeToFirstTest" : 24.801,
+    "timeToLastTest" : 55.66,
+    "indexQueryTime" : 9.21,
+    "verificationTime" : 1.051,
+    "validationTime" : 0.523
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 8,
+    "methodsCount" : 38,
+    "completeTestCount" : 2,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 2,
+      "T001" : 2,
+      "T003" : 10,
+      "T004" : 12,
+      "T005" : 1,
+      "T012" : 11
+    },
+    "perMethodOutcome" : {
+      "F009" : 1,
+      "R000" : 4,
+      "T003" : 10,
+      "T004" : 12,
+      "T012" : 11
+    },
+    "perTestOutcome" : {
+      "R000" : 2
+    },
+    "perTestValidation" : {
+      "V000" : 2
+    }
+  },
+  "classes" : {
+    "io.github.detekt.report.md.MdOutputReport" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2,
+        "T003" : 3,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "R000" : 3,
+        "T003" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 7,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "T003" : 7,
+        "T012" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$$inlined$sortedBy$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$total$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderGroup$$inlined$sortedBy$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$3" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    }
+  },
+  "methods" : {
+    "io.github.detekt.report.md.MdOutputReport.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        36,
+        37,
+        39,
+        36
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReport.getComplexityMetrics:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        67,
+        67
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReport.getEnding:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        37
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReport.getName:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReport.render:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        41,
+        176,
+        177,
+        42,
+        178,
+        42,
+        178,
+        44,
+        179,
+        44,
+        179,
+        45,
+        47,
+        180,
+        47,
+        180,
+        48,
+        50,
+        51,
+        53,
+        181,
+        54,
+        55,
+        181,
+        57,
+        177,
+        182,
+        176,
+        176,
+        57
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReport.renderDate:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        62,
+        63
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReport.renderVersion:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        59
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$$inlined$sortedBy$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$$inlined$sortedBy$1.compare:(Ljava/lang/Object;Ljava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        102,
+        329,
+        102,
+        329,
+        102,
+        102
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$total$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$total$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$total$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        116
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderFindings$total$1.invoke:(Ljava/util/List;)Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        116
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderGroup$$inlined$sortedBy$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderGroup$$inlined$sortedBy$1.compare:(Ljava/lang/Object;Ljava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        102,
+        329,
+        102,
+        329,
+        102,
+        102
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$1.invoke:(Lio/gitlab/arturbosch/detekt/api/Finding;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$2.invoke:(Lio/gitlab/arturbosch/detekt/api/Finding;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$3.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$3.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$3.invoke:(Lio/gitlab/arturbosch/detekt/api/Finding;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt$renderRule$4$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.access$renderComplexity:(Lio/github/detekt/utils/MarkdownContent;Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        1
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.access$renderFindings:(Lio/github/detekt/utils/MarkdownContent;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        1
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.access$renderMetrics:(Lio/github/detekt/utils/MarkdownContent;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        1
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.link:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        174
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.renderComplexity:(Lio/github/detekt/utils/MarkdownContent;Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        78,
+        185,
+        186,
+        79,
+        187,
+        79,
+        188,
+        79,
+        79,
+        188,
+        79,
+        187,
+        189,
+        80,
+        186,
+        190,
+        190,
+        191,
+        193,
+        185,
+        185,
+        81
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.renderFinding:(Lio/github/detekt/utils/MarkdownContent;Lio/gitlab/arturbosch/detekt/api/Finding;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        131,
+        133,
+        132,
+        135,
+        135,
+        136,
+        237,
+        136,
+        237,
+        137,
+        135,
+        139,
+        140,
+        141,
+        142,
+        143,
+        140,
+        145
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.renderFindings:(Lio/github/detekt/utils/MarkdownContent;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        114,
+        115,
+        116,
+        117,
+        223,
+        224,
+        117,
+        224,
+        225,
+        117,
+        114,
+        119,
+        226,
+        119,
+        119,
+        226,
+        121,
+        122,
+        227,
+        228,
+        228,
+        229,
+        122,
+        122,
+        229,
+        230,
+        233,
+        227,
+        123,
+        124,
+        234,
+        234,
+        125,
+        235,
+        125,
+        126,
+        127,
+        235,
+        236,
+        128
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.renderGroup:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        84,
+        85,
+        194,
+        195,
+        196,
+        85,
+        196,
+        197,
+        198,
+        199,
+        200,
+        197,
+        200,
+        201,
+        202,
+        204,
+        199,
+        197,
+        205,
+        207,
+        194,
+        86,
+        87,
+        208,
+        208,
+        88,
+        209,
+        88,
+        89,
+        90,
+        209,
+        210,
+        91
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.renderMetrics:(Lio/github/detekt/utils/MarkdownContent;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        72,
+        176,
+        177,
+        73,
+        178,
+        73,
+        179,
+        73,
+        73,
+        179,
+        73,
+        178,
+        180,
+        74,
+        177,
+        181,
+        181,
+        182,
+        184,
+        176,
+        176,
+        75
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.renderRule:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        94,
+        211,
+        94,
+        94,
+        211,
+        95,
+        212,
+        95,
+        212,
+        97,
+        213,
+        98,
+        99,
+        100,
+        100,
+        100,
+        98,
+        213,
+        104,
+        214,
+        215,
+        105,
+        106,
+        107,
+        216,
+        108,
+        217,
+        108,
+        217,
+        109,
+        216,
+        218,
+        110,
+        215,
+        219,
+        219,
+        220,
+        222,
+        214,
+        214,
+        111
+      ]
+    },
+    "io.github.detekt.report.md.MdOutputReportKt.snippetCode:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/sequences/Sequence;Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        149,
+        149,
+        150,
+        150,
+        151,
+        152,
+        154,
+        156,
+        157,
+        158,
+        159,
+        238,
+        160,
+        161,
+        163,
+        164,
+        165,
+        166,
+        168,
+        169,
+        238,
+        239,
+        171,
+        240,
+        171,
+        240,
+        171
+      ]
+    }
+  }
+}

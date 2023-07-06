@@ -1,0 +1,4 @@
+name: com.diffblue.cover.refactoring.Recipe
+recipeList:
+- org.openrewrite.java.format.AutoFormat: {}
+type: specs.openrewrite.org/v1beta/recipe

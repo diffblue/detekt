@@ -1,0 +1,14 @@
+[WARN] E118: JUnit Vintage Engine not found
+Diffblue Cover cannot validate tests because JUnit Vintage Engine was not found,
+but we have detected dependencies on both JUnit 4 and JUnit Jupiter 5.
+While JUnit 5 tests created by Diffblue will run, JUnit 4 tests will not run.
+Please make the following updates to your configuration:
+  testImplementation("org.junit.vintage:junit-vintage-engine:5.9.3")
+[WARN] E052: Missing dependency
+Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+Required dependencies were not found.
+Please add the following dependencies to your project:
+  testImplementation("org.mockito:mockito-core:4.11.0")
+[WARN] Mocking Framework                                           WARNING        
+[WARN] JUnit Vintage Engine                                        WARNING        
+[WARN] Environment check status: WARNING

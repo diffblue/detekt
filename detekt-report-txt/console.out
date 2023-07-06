@@ -1,0 +1,77 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 4 callable methods in 1 class
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  ############################ 75% ############_______________
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [1/1] io.github.detekt.report.txt.TxtOutputReport
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [1/1]   Tests created: 1
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                               4 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  1 test created for:                                  3 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                                1 method
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  1 created test was successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-report-txt/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-report-txt/.diffblue/log/user-20230706T130810.log
+INFO  Finished in 52s
