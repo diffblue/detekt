@@ -71,14 +71,14 @@ hs_err_pid*
 *.ind
 *.ist
 *.lof
-*.log
+#*.log
 *.lot
 *.maf
 *.mtc
 *.mtc0
 *.nav
 *.nlo
-*.out
+#*.out
 *.pdfsync
 *.ps
 *.snm
