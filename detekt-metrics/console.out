@@ -1,0 +1,456 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+WARN  E118: JUnit Vintage Engine not found
+      Diffblue Cover cannot validate tests because JUnit Vintage Engine was not found,
+      but we have detected dependencies on both JUnit 4 and JUnit Jupiter 5.
+      While JUnit 5 tests created by Diffblue will run, JUnit 4 tests will not run.
+      Please make the following updates to your configuration:
+        testImplementation("org.junit.vintage:junit-vintage-engine:5.9.3")
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 159 callable methods in 46 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO   [1/46] io.github.detekt.metrics.CognitiveComplexity
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO   [1/46]   Tests created: 0
+INFO  _____________________________ 0% ___________________________
+INFO  #____________________________ 3% ___________________________
+INFO  ##___________________________ 4% ___________________________
+INFO  ###__________________________ 5% ___________________________
+INFO  ###__________________________ 6% ___________________________
+INFO  ####_________________________ 7% ___________________________
+INFO                                                              
+INFO   [2/46] io.github.detekt.metrics.CognitiveComplexity$BinExprHolder
+INFO  ####_________________________ 7% ___________________________
+INFO                                                              
+INFO   [2/46]   Tests created: 0
+INFO  ####_________________________ 7% ___________________________
+INFO  ####_________________________ 8% ___________________________
+INFO                                                              
+INFO   [3/46] io.github.detekt.metrics.CognitiveComplexity$Companion
+INFO  ####_________________________ 8% ___________________________
+INFO                                                              
+INFO   [3/46]   Tests created: 0
+INFO  ####_________________________ 8% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO  ######______________________ 11% ___________________________
+INFO  #######_____________________ 12% ___________________________
+INFO  #######_____________________ 13% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO  #########___________________ 15% ___________________________
+INFO  #########___________________ 16% ___________________________
+INFO  ##########__________________ 17% ___________________________
+INFO  ##########__________________ 18% ___________________________
+INFO                                                              
+INFO   [4/46] io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity
+INFO  ##########__________________ 18% ___________________________
+INFO                                                              
+INFO   [4/46]   Tests created: 0
+INFO  ##########__________________ 18% ___________________________
+INFO  #############_______________ 23% ___________________________
+INFO  ##############______________ 23% ___________________________
+INFO                                                              
+INFO   [5/46] io.github.detekt.metrics.ComplexityMetric
+INFO  ##############______________ 23% ___________________________
+INFO                                                              
+INFO   [5/46]   Tests created: 0
+INFO  ##############______________ 23% ___________________________
+INFO  ##############______________ 24% ___________________________
+INFO  ###############_____________ 25% ___________________________
+INFO                                                              
+INFO   [6/46] io.github.detekt.metrics.ComplexityReportGenerator
+INFO  ###############_____________ 25% ___________________________
+INFO                                                              
+INFO   [6/46]   Tests created: 0
+INFO  ###############_____________ 25% ___________________________
+INFO                                                              
+INFO   [7/46] io.github.detekt.metrics.ComplexityReportGenerator$Factory
+INFO  ###############_____________ 25% ___________________________
+INFO                                                              
+INFO   [7/46]   Tests created: 0
+INFO  ###############_____________ 25% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO   [8/46] io.github.detekt.metrics.CyclomaticComplexity
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO   [8/46]   Tests created: 0
+INFO  ###################_________ 32% ___________________________
+INFO  ####################________ 33% ___________________________
+INFO  ####################________ 34% ___________________________
+INFO                                                              
+INFO   [9/46] io.github.detekt.metrics.CyclomaticComplexity$Companion
+INFO  ####################________ 34% ___________________________
+INFO                                                              
+INFO   [9/46]   Tests created: 0
+INFO  ####################________ 34% ___________________________
+INFO  #######################_____ 38% ___________________________
+INFO  #######################_____ 39% ___________________________
+INFO                                                              
+INFO  [10/46] io.github.detekt.metrics.CyclomaticComplexity$Config
+INFO  #######################_____ 39% ___________________________
+INFO                                                              
+INFO  [10/46]   Tests created: 1
+INFO  #######################_____ 39% ___________________________
+INFO  ########################____ 40% ___________________________
+INFO  ########################____ 41% ___________________________
+INFO                                                              
+INFO  [11/46] io.github.detekt.metrics.LinesOfCodeKt
+INFO  ########################____ 41% ___________________________
+INFO                                                              
+INFO  [11/46]   Tests created: 0
+INFO  ########################____ 41% ___________________________
+INFO  #########################___ 42% ___________________________
+INFO  ##########################__ 43% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO  ###########################_ 46% ___________________________
+INFO  ############################ 47% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 49% ___________________________
+INFO                                                              
+INFO  [12/46] io.github.detekt.metrics.processors.AbstractProcessor
+INFO  ############################ 49% ___________________________
+INFO                                                              
+INFO  [12/46]   Tests created: 0
+INFO  ############################ 49% ___________________________
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO  [13/46] io.github.detekt.metrics.processors.AbstractProjectMetricProcessor
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO  [13/46]   Tests created: 0
+INFO  ############################ 50% ___________________________
+INFO  ############################ 52% ___________________________
+INFO  ############################ 53% ___________________________
+INFO                                                              
+INFO  [14/46] io.github.detekt.metrics.processors.CLOCCountVisitor
+INFO  ############################ 53% ___________________________
+INFO                                                              
+INFO  [14/46]   Tests created: 1
+INFO  ############################ 53% ___________________________
+INFO  ############################ 54% ___________________________
+INFO                                                              
+INFO  [15/46] io.github.detekt.metrics.processors.CLOCVisitor
+INFO  ############################ 54% ___________________________
+INFO                                                              
+INFO  [15/46]   Tests created: 0
+INFO  ############################ 54% ___________________________
+INFO  ############################ 55% ___________________________
+INFO  ############################ 56% ___________________________
+INFO                                                              
+INFO  [16/46] io.github.detekt.metrics.processors.ClassCountProcessor
+INFO  ############################ 56% ___________________________
+INFO                                                              
+INFO  [16/46]   Tests created: 0
+INFO  ############################ 56% ___________________________
+INFO  ############################ 57% #__________________________
+INFO                                                              
+INFO  [17/46] io.github.detekt.metrics.processors.ClassCountProcessorKt
+INFO  ############################ 57% #__________________________
+INFO                                                              
+INFO  [17/46]   Tests created: 0
+INFO  ############################ 57% #__________________________
+INFO  ############################ 58% ##_________________________
+INFO                                                              
+INFO  [18/46] io.github.detekt.metrics.processors.ClassCountVisitor
+INFO  ############################ 58% ##_________________________
+INFO                                                              
+INFO  [18/46]   Tests created: 0
+INFO  ############################ 58% ##_________________________
+INFO  ############################ 59% ##_________________________
+INFO                                                              
+INFO  [19/46] io.github.detekt.metrics.processors.ComplexityVisitor
+INFO  ############################ 59% ##_________________________
+INFO                                                              
+INFO  [19/46]   Tests created: 0
+INFO  ############################ 59% ##_________________________
+INFO  ############################ 60% ###________________________
+INFO  ############################ 61% ###________________________
+INFO                                                              
+INFO  [20/46] io.github.detekt.metrics.processors.FunctionCountProcessor
+INFO  ############################ 61% ###________________________
+INFO                                                              
+INFO  [20/46]   Tests created: 0
+INFO  ############################ 61% ###________________________
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO  [21/46] io.github.detekt.metrics.processors.FunctionCountProcessorKt
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO  [21/46]   Tests created: 0
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 63% #####______________________
+INFO                                                              
+INFO  [22/46] io.github.detekt.metrics.processors.FunctionCountVisitor
+INFO  ############################ 63% #####______________________
+INFO                                                              
+INFO  [22/46]   Tests created: 0
+INFO  ############################ 63% #####______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 65% ######_____________________
+INFO                                                              
+INFO  [23/46] io.github.detekt.metrics.processors.KtFileCountProcessor
+INFO  ############################ 65% ######_____________________
+INFO                                                              
+INFO  [23/46]   Tests created: 0
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 66% ######_____________________
+INFO                                                              
+INFO  [24/46] io.github.detekt.metrics.processors.KtFileCountProcessorKt
+INFO  ############################ 66% ######_____________________
+INFO                                                              
+INFO  [24/46]   Tests created: 0
+INFO  ############################ 66% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO                                                              
+INFO  [25/46] io.github.detekt.metrics.processors.KtFileCountVisitor
+INFO  ############################ 67% #######____________________
+INFO                                                              
+INFO  [25/46]   Tests created: 0
+INFO  ############################ 67% #######____________________
+INFO  ############################ 68% ########___________________
+INFO                                                              
+INFO  [26/46] io.github.detekt.metrics.processors.LLOCVisitor
+INFO  ############################ 68% ########___________________
+INFO                                                              
+INFO  [26/46]   Tests created: 0
+INFO  ############################ 68% ########___________________
+INFO  ############################ 69% ########___________________
+INFO                                                              
+INFO  [27/46] io.github.detekt.metrics.processors.LOCVisitor
+INFO  ############################ 69% ########___________________
+INFO                                                              
+INFO  [27/46]   Tests created: 0
+INFO  ############################ 69% ########___________________
+INFO  ############################ 70% #########__________________
+INFO  ############################ 71% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 73% ###########________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 75% ############_______________
+INFO  ############################ 76% ############_______________
+INFO  ############################ 77% #############______________
+INFO                                                              
+INFO  [28/46] io.github.detekt.metrics.processors.PackageCountProcessor
+INFO  ############################ 77% #############______________
+INFO                                                              
+INFO  [28/46]   Tests created: 0
+INFO  ############################ 77% #############______________
+INFO  ############################ 78% ##############_____________
+INFO                                                              
+INFO  [29/46] io.github.detekt.metrics.processors.PackageCountProcessorKt
+INFO  ############################ 78% ##############_____________
+INFO                                                              
+INFO  [29/46]   Tests created: 0
+INFO  ############################ 78% ##############_____________
+INFO  ############################ 79% ##############_____________
+INFO                                                              
+INFO  [30/46] io.github.detekt.metrics.processors.PackageCountVisitor
+INFO  ############################ 79% ##############_____________
+INFO                                                              
+INFO  [30/46]   Tests created: 0
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 80% ###############____________
+INFO  ############################ 81% ###############____________
+INFO                                                              
+INFO  [31/46] io.github.detekt.metrics.processors.ProjectCLOCProcessor
+INFO  ############################ 81% ###############____________
+INFO                                                              
+INFO  [31/46]   Tests created: 0
+INFO  ############################ 81% ###############____________
+INFO  ############################ 82% ################___________
+INFO                                                              
+INFO  [32/46] io.github.detekt.metrics.processors.ProjectCLOCProcessorKt
+INFO  ############################ 82% ################___________
+INFO                                                              
+INFO  [32/46]   Tests created: 0
+INFO  ############################ 82% ################___________
+INFO  ############################ 83% #################__________
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [33/46] io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [33/46]   Tests created: 0
+INFO  ############################ 84% #################__________
+INFO  ############################ 85% ##################_________
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [34/46] io.github.detekt.metrics.processors.ProjectComplexityProcessor
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [34/46]   Tests created: 0
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [35/46] io.github.detekt.metrics.processors.ProjectComplexityProcessorKt
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [35/46]   Tests created: 0
+INFO  ############################ 86% ##################_________
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ###################________
+INFO                                                              
+INFO  [36/46] io.github.detekt.metrics.processors.ProjectLLOCProcessor
+INFO  ############################ 88% ###################________
+INFO                                                              
+INFO  [36/46]   Tests created: 0
+INFO  ############################ 88% ###################________
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [37/46] io.github.detekt.metrics.processors.ProjectLLOCProcessorKt
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [37/46]   Tests created: 0
+INFO  ############################ 89% ####################_______
+INFO  ############################ 90% #####################______
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [38/46] io.github.detekt.metrics.processors.ProjectLOCProcessor
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [38/46]   Tests created: 0
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [39/46] io.github.detekt.metrics.processors.ProjectLOCProcessorKt
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [39/46]   Tests created: 0
+INFO  ############################ 91% #####################______
+INFO  ############################ 93% ######################_____
+INFO                                                              
+INFO  [40/46] io.github.detekt.metrics.processors.ProjectSLOCProcessor
+INFO  ############################ 93% ######################_____
+INFO                                                              
+INFO  [40/46]   Tests created: 0
+INFO  ############################ 93% ######################_____
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [41/46] io.github.detekt.metrics.processors.ProjectSLOCProcessorKt
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [41/46]   Tests created: 0
+INFO  ############################ 94% #######################____
+INFO  ############################ 95% ########################___
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [42/46] io.github.detekt.metrics.processors.PropertyCountProcessor
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [42/46]   Tests created: 0
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [43/46] io.github.detekt.metrics.processors.PropertyCountProcessorKt
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [43/46]   Tests created: 0
+INFO  ############################ 96% ########################___
+INFO  ############################ 97% #########################__
+INFO  ############################ 98% #########################__
+INFO                                                              
+INFO  [44/46] io.github.detekt.metrics.processors.PropertyCountVisitor
+INFO  ############################ 98% #########################__
+INFO                                                              
+INFO  [44/46]   Tests created: 0
+INFO  ############################ 98% #########################__
+INFO  ############################ 99% ##########################_
+INFO                                                              
+INFO  [45/46] io.github.detekt.metrics.processors.SLOCVisitor
+INFO  ############################ 99% ##########################_
+INFO                                                              
+INFO  [45/46]   Tests created: 0
+INFO  ############################ 99% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [46/46] io.github.detekt.metrics.processors.util.LLOC
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [46/46]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                             159 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  2 tests created for:                                 4 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                              155 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     77 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     33 R034: Diffblue Cover can't complete test
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     26 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     10 R002: Missing observers
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      7 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 2 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-metrics/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E118: JUnit Vintage Engine not found
+      Diffblue Cover cannot validate tests because JUnit Vintage Engine was not found,
+      but we have detected dependencies on both JUnit 4 and JUnit Jupiter 5.
+      While JUnit 5 tests created by Diffblue will run, JUnit 4 tests will not run.
+      Please make the following updates to your configuration:
+        testImplementation("org.junit.vintage:junit-vintage-engine:5.9.3")
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-metrics/.diffblue/log/user-20230706T130600.log
+INFO  Finished in 1m 13s

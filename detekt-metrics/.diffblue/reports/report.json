@@ -1,0 +1,3976 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:06:00.906499+01:00",
+    "command" : "dcover create --testing-framework=junit-5 --working-directory detekt-metrics io.github io.gitlab",
+    "totalTime" : 73.798,
+    "environmentDetectionTime" : 0.915,
+    "indexingTime" : 0.22,
+    "entryPointsTime" : 0.901,
+    "generationTime" : 59.076,
+    "timeToFirstTest" : 63.051,
+    "timeToLastTest" : 73.084,
+    "indexQueryTime" : 9.961,
+    "verificationTime" : 1.284,
+    "validationTime" : 0.495
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "R002" : "Missing observers",
+    "R011" : "Sandboxing policy violation",
+    "R034" : "Diffblue Cover can't complete test",
+    "R081" : "Exception in arrange section",
+    "R083" : "Can't find a suitable constructor",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T002" : "Trivial setter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T010" : "Abstract or interface method",
+    "T012" : "Synthetic method",
+    "T020" : "Other trivial method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 68,
+    "methodsCount" : 283,
+    "completeTestCount" : 2,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 103,
+      "T001" : 39,
+      "T002" : 5,
+      "T003" : 24,
+      "T004" : 42,
+      "T005" : 11,
+      "T010" : 4,
+      "T012" : 54,
+      "T020" : 1
+    },
+    "perMethodOutcome" : {
+      "F009" : 2,
+      "R000" : 4,
+      "R002" : 10,
+      "R011" : 77,
+      "R034" : 33,
+      "R081" : 26,
+      "R083" : 7,
+      "T003" : 24,
+      "T004" : 42,
+      "T010" : 4,
+      "T012" : 54
+    },
+    "perTestOutcome" : {
+      "R000" : 2
+    },
+    "perTestValidation" : {
+      "V000" : 2
+    }
+  },
+  "classes" : {
+    "io.github.detekt.metrics.CognitiveComplexity" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 5
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "T003" : 1,
+        "T012" : 5
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder" : {
+      "methodsCount" : 12,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 7,
+        "T001" : 3,
+        "T012" : 1,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 11,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$Companion" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 2,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity" : {
+      "methodsCount" : 21,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 14,
+        "T001" : 1,
+        "T002" : 1,
+        "T003" : 5
+      },
+      "perMethodOutcome" : {
+        "R011" : 16,
+        "T003" : 5
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$3" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$sortedBy$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.ComplexityMetric" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 7
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R081" : 7
+      }
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "R011" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator$Factory" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity" : {
+      "methodsCount" : 17,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 10,
+        "T001" : 1,
+        "T003" : 3,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R011" : 11,
+        "T003" : 3,
+        "T012" : 3
+      }
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R083" : 3,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 3,
+        "T002" : 3,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R011" : 1,
+        "R081" : 6,
+        "T012" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$extractEntries$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 3,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$linesOfCode$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$tokenSequence$1" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 4,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 4,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor" : {
+      "methodsCount" : 15,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 12,
+        "T010" : 3
+      },
+      "perMethodOutcome" : {
+        "R034" : 12,
+        "T010" : 3
+      }
+    },
+    "io.github.detekt.metrics.processors.AbstractProjectMetricProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T010" : 1
+      },
+      "perMethodOutcome" : {
+        "R034" : 2,
+        "T010" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T002" : 1,
+        "T003" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 3,
+        "R011" : 2,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.CLOCVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor$visitKtFile$complexity$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.KtFileCountVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.LLOCVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.LOCVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor" : {
+      "methodsCount" : 13,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 13
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 12
+      }
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PackageCountVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R081" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor$visitor$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R081" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R081" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessor" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 1,
+        "R081" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessorKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.SLOCVisitor" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1
+      }
+    },
+    "io.github.detekt.metrics.processors.SLOCVisitor$SLOC" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 2
+      },
+      "perMethodOutcome" : {
+        "T003" : 2
+      }
+    },
+    "io.github.detekt.metrics.processors.util.LLOC" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 4
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 4
+      }
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 7,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 7,
+        "T012" : 1
+      }
+    }
+  },
+  "methods" : {
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.<init>:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;Z)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.component1:()Lorg/jetbrains/kotlin/psi/KtBinaryExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.component2:()Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.component3:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.copy$default:(Lio/github/detekt/metrics/CognitiveComplexity$BinExprHolder;Lorg/jetbrains/kotlin/psi/KtBinaryExpression;Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;ZILjava/lang/Object;)Lio/github/detekt/metrics/CognitiveComplexity$BinExprHolder;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.copy:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;Z)Lio/github/detekt/metrics/CognitiveComplexity$BinExprHolder;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.getExpr:()Lorg/jetbrains/kotlin/psi/KtBinaryExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.getOp:()Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.hashCode:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.isEnclosed:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$BinExprHolder.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        203
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$Companion.calculate:(Lorg/jetbrains/kotlin/psi/KtElement;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        210,
+        211,
+        212
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$Companion.getKEY:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        205
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$2.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$3.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$collectDescendantsOfType$default$3.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$sortedBy$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$$inlined$sortedBy$1.compare:(Ljava/lang/Object;Ljava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        102,
+        329,
+        102,
+        329,
+        102,
+        102
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        181
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$1.invoke:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;)Lio/github/detekt/metrics/CognitiveComplexity$BinExprHolder;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        181
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$2.invoke:(Lio/github/detekt/metrics/CognitiveComplexity$BinExprHolder;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        182
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity$visitBinaryExpression$nestedBinExprs$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        182
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.<init>:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        52
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.addComplexity:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        60,
+        61
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.calculateBinaryExprComplexity:(Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        198,
+        200
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.getComplexity$detekt_metrics:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.isRecursion:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        76,
+        77,
+        78,
+        77,
+        79,
+        80,
+        81,
+        79
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.nestAround:(Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.setComplexity$detekt_metrics:(I)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.testJumpWithLabel:(Lorg/jetbrains/kotlin/psi/KtExpressionWithLabel;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        70,
+        71,
+        73
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitBinaryExpression:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        174,
+        175,
+        177,
+        178,
+        179,
+        253,
+        254,
+        260,
+        267,
+        268,
+        269,
+        270,
+        260,
+        254,
+        180,
+        181,
+        182,
+        183,
+        271,
+        271,
+        184,
+        179,
+        185,
+        186,
+        188
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitBreakExpression:(Lorg/jetbrains/kotlin/psi/KtBreakExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        125,
+        126,
+        127
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        163,
+        164,
+        166,
+        167
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitCatchSection:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        148,
+        149,
+        237,
+        238,
+        149,
+        238,
+        239,
+        240,
+        150
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitContinueExpression:(Lorg/jetbrains/kotlin/psi/KtContinueExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        130,
+        131,
+        132
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitDoWhileExpression:(Lorg/jetbrains/kotlin/psi/KtDoWhileExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        158,
+        159,
+        245,
+        246,
+        159,
+        246,
+        247,
+        248,
+        160
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitForExpression:(Lorg/jetbrains/kotlin/psi/KtForExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        90,
+        91,
+        221,
+        222,
+        91,
+        222,
+        223,
+        224,
+        92
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitKtElement:(Lorg/jetbrains/kotlin/psi/KtElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        102,
+        104,
+        225,
+        226,
+        104,
+        226,
+        227,
+        228,
+        107,
+        108,
+        109,
+        111,
+        112,
+        229,
+        230,
+        112,
+        230,
+        231,
+        232,
+        117,
+        120,
+        122
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitLambdaExpression:(Lorg/jetbrains/kotlin/psi/KtLambdaExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        170,
+        249,
+        250,
+        170,
+        250,
+        251,
+        252,
+        171
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        140,
+        141,
+        233,
+        234,
+        141,
+        234,
+        235,
+        236,
+        143,
+        145
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitReturnExpression:(Lorg/jetbrains/kotlin/psi/KtReturnExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        135,
+        136,
+        137
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitWhenExpression:(Lorg/jetbrains/kotlin/psi/KtWhenExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        85,
+        86,
+        217,
+        218,
+        86,
+        218,
+        219,
+        220,
+        87
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity$FunctionComplexity.visitWhileExpression:(Lorg/jetbrains/kotlin/psi/KtWhileExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        153,
+        154,
+        241,
+        242,
+        154,
+        242,
+        243,
+        244,
+        155
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        205,
+        207
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.access$getComplexity$p:(Lio/github/detekt/metrics/CognitiveComplexity;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.access$getKEY$cp:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.access$getLogicalOps$cp:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "io.github.detekt.metrics.CognitiveComplexity.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.<init>:(Lio/gitlab/arturbosch/detekt/api/Detektion;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        10
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getCloc:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getCognitiveComplexity:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getFindings:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getLloc:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getLoc:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getMcc:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityMetric.getSloc:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator$Factory.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        48
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator$Factory.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator$Factory.create:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Lio/github/detekt/metrics/ComplexityReportGenerator;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator.<init>:(Lio/github/detekt/metrics/ComplexityMetric;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator.cannotGenerate:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        30,
+        32,
+        33,
+        32,
+        34,
+        32,
+        31,
+        35,
+        36,
+        37,
+        39,
+        54,
+        39,
+        39,
+        39,
+        40,
+        41,
+        41,
+        42,
+        42,
+        43,
+        30
+      ]
+    },
+    "io.github.detekt.metrics.ComplexityReportGenerator.generate:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        14,
+        16,
+        16,
+        17,
+        16,
+        18,
+        16,
+        19,
+        16,
+        20,
+        16,
+        21,
+        16,
+        22,
+        16,
+        23,
+        16,
+        24,
+        16,
+        25,
+        16,
+        15
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        104
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion.calculate$default:(Lio/github/detekt/metrics/CyclomaticComplexity$Companion;Lorg/jetbrains/kotlin/psi/KtElement;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        119
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion.calculate:(Lorg/jetbrains/kotlin/psi/KtElement;Lkotlin/jvm/functions/Function1;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        120,
+        121,
+        122,
+        123,
+        124
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion.getCONDITIONALS:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        106
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Companion.getDEFAULT_NESTING_FUNCTIONS:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        107
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.<init>:(ZZLjava/util/Set;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27,
+        28,
+        29,
+        30,
+        27
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.<init>:(ZZLjava/util/Set;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        27,
+        28,
+        27,
+        29,
+        27,
+        30,
+        27,
+        31
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.getIgnoreNestingFunctions:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.getIgnoreSimpleWhenEntries:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.getNestingFunctions:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.setIgnoreNestingFunctions:(Z)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.setIgnoreSimpleWhenEntries:(Z)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$Config.setNestingFunctions:(Ljava/util/Set;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$extractEntries$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$extractEntries$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$extractEntries$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        81
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity$extractEntries$1.invoke:(Lorg/jetbrains/kotlin/psi/KtWhenEntry;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        81
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        106,
+        107,
+        108,
+        109,
+        108,
+        110,
+        108,
+        111,
+        108,
+        112,
+        108,
+        113,
+        108,
+        114,
+        108,
+        115,
+        108,
+        116,
+        108,
+        107
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.<init>:(Lio/github/detekt/metrics/CyclomaticComplexity$Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        25
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.access$getCONDITIONALS$cp:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.access$getDEFAULT_NESTING_FUNCTIONS$cp:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.extractEntries:(Lorg/jetbrains/kotlin/psi/KtWhenExpression;)Lkotlin/sequences/Sequence;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        80,
+        81
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.getComplexity:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        33
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.isInsideObjectLiteral:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        44,
+        129,
+        44
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.isUsedForNesting:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        89,
+        90,
+        91,
+        92
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitBinaryExpression:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        47,
+        48,
+        50,
+        51
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitBreakExpression:(Lorg/jetbrains/kotlin/psi/KtBreakExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        59,
+        60,
+        61
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        95,
+        96,
+        97,
+        98,
+        101,
+        102
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitContinueExpression:(Lorg/jetbrains/kotlin/psi/KtContinueExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        54,
+        55,
+        56
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitIfExpression:(Lorg/jetbrains/kotlin/psi/KtIfExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        64,
+        65,
+        66
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitLoopExpression:(Lorg/jetbrains/kotlin/psi/KtLoopExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        69,
+        70,
+        71
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        37,
+        38,
+        39,
+        41
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitTryExpression:(Lorg/jetbrains/kotlin/psi/KtTryExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        85,
+        86,
+        87
+      ]
+    },
+    "io.github.detekt.metrics.CyclomaticComplexity.visitWhenExpression:(Lorg/jetbrains/kotlin/psi/KtWhenExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        74,
+        75,
+        76,
+        77
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$linesOfCode$1.<init>:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$linesOfCode$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        40
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$linesOfCode$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;)Ljava/lang/Integer;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        40
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$tokenSequence$1.<init>:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;Ljava/util/Set;Lkotlin/coroutines/Continuation;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$tokenSequence$1.create:(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$tokenSequence$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$tokenSequence$1.invoke:(Lkotlin/sequences/SequenceScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt$tokenSequence$1.invokeSuspend:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        22,
+        33,
+        35,
+        36,
+        22
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        46,
+        47,
+        46
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt.line:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;Lorg/jetbrains/kotlin/psi/KtFile;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        44
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt.linesOfCode$default:(Lorg/jetbrains/kotlin/psi/KtElement;Lorg/jetbrains/kotlin/psi/KtFile;ILjava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt.linesOfCode:(Lorg/jetbrains/kotlin/psi/KtElement;Lorg/jetbrains/kotlin/psi/KtFile;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    "io.github.detekt.metrics.LinesOfCodeKt.tokenSequence:(Lorg/jetbrains/kotlin/com/intellij/lang/ASTNode;Ljava/util/Set;)Lkotlin/sequences/Sequence;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        22,
+        36
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.getId:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.getPriority:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.getVisitor:()Lio/gitlab/arturbosch/detekt/api/DetektVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.init:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.init:(Lio/gitlab/arturbosch/detekt/api/SetupContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        20,
+        21,
+        27,
+        35,
+        36,
+        35,
+        21,
+        35,
+        37,
+        35,
+        35,
+        35,
+        36,
+        38,
+        39,
+        27,
+        22,
+        20,
+        23,
+        24
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onProcess:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onProcess:(Lorg/jetbrains/kotlin/psi/KtFile;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        16,
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onProcessComplete:(Lorg/jetbrains/kotlin/psi/KtFile;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onProcessComplete:(Lorg/jetbrains/kotlin/psi/KtFile;Ljava/util/Map;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onStart:(Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProcessor.onStart:(Ljava/util/List;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProjectMetricProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProjectMetricProcessor.getType:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.AbstractProjectMetricProcessor.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        13,
+        14,
+        20,
+        28,
+        29,
+        28,
+        14,
+        28,
+        30,
+        28,
+        28,
+        28,
+        29,
+        31,
+        32,
+        20,
+        15,
+        13,
+        16,
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor.getCount$detekt_metrics:()I" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor.increment:(I)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        32,
+        33
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor.setCount$detekt_metrics:(I)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor.visitComment:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiComment;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        36,
+        37
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCCountVisitor.visitDeclaration:(Lorg/jetbrains/kotlin/psi/KtDeclaration;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        40,
+        41,
+        42,
+        44,
+        45
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.CLOCVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        20,
+        21,
+        22,
+        23,
+        20,
+        24
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        9,
+        11,
+        12,
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessor.getVisitor:()Lio/github/detekt/metrics/processors/ClassCountVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountProcessorKt.getNumberOfClassesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.ClassCountVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        20,
+        21,
+        25,
+        26,
+        32,
+        39,
+        40,
+        41,
+        42,
+        32,
+        26,
+        21,
+        22
+      ]
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor$visitKtFile$complexity$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor$visitKtFile$complexity$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor$visitKtFile$complexity$1.invoke:(Lio/github/detekt/metrics/CyclomaticComplexity$Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        20,
+        21
+      ]
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor$visitKtFile$complexity$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.metrics.processors.ComplexityVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        19,
+        22,
+        23
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        9,
+        11,
+        12,
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessor.getVisitor:()Lio/github/detekt/metrics/processors/FunctionCountVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountProcessorKt.getNumberOfFunctionsKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.FunctionCountVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        20,
+        21,
+        25,
+        26,
+        32,
+        39,
+        40,
+        41,
+        42,
+        32,
+        26,
+        21,
+        22
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        7,
+        9,
+        10,
+        7
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessor.getVisitor:()Lio/github/detekt/metrics/processors/KtFileCountVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        7
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountProcessorKt.getNumberOfFilesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.KtFileCountVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        17,
+        18
+      ]
+    },
+    "io.github.detekt.metrics.processors.LLOCVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.metrics.processors.LLOCVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    "io.github.detekt.metrics.processors.LOCVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.github.detekt.metrics.processors.LOCVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        16,
+        23,
+        24,
+        16,
+        24,
+        25,
+        16,
+        17,
+        18
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        11,
+        13,
+        14,
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.getId:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.getPriority:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.init:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.init:(Lio/gitlab/arturbosch/detekt/api/SetupContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        21,
+        22,
+        39,
+        47,
+        48,
+        47,
+        22,
+        47,
+        49,
+        47,
+        47,
+        47,
+        48,
+        50,
+        51,
+        39,
+        23,
+        24,
+        21,
+        25,
+        26
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onProcess:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onProcess:(Lorg/jetbrains/kotlin/psi/KtFile;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        17,
+        18
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onProcessComplete:(Lorg/jetbrains/kotlin/psi/KtFile;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onProcessComplete:(Lorg/jetbrains/kotlin/psi/KtFile;Ljava/util/Map;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onStart:(Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessor.onStart:(Ljava/util/List;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountProcessorKt.getNumberOfPackagesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "io.github.detekt.metrics.processors.PackageCountVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        34,
+        35,
+        36
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        9,
+        11,
+        12,
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessor.getVisitor:()Lio/github/detekt/metrics/processors/CLOCVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCLOCProcessorKt.getCommentLinesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor$visitor$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor$visitor$1.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        12,
+        13,
+        14
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        7,
+        9,
+        17,
+        7
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectCognitiveComplexityProcessor.getVisitor:()Lio/gitlab/arturbosch/detekt/api/DetektVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        8,
+        10,
+        11,
+        8
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessor.getVisitor:()Lio/github/detekt/metrics/processors/ComplexityVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectComplexityProcessorKt.getComplexityKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        8,
+        10,
+        11,
+        8
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessor.getVisitor:()Lio/github/detekt/metrics/processors/LLOCVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLLOCProcessorKt.getLogicalLinesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        7,
+        9,
+        10,
+        7
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessor.getVisitor:()Lio/gitlab/arturbosch/detekt/api/DetektVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectLOCProcessorKt.getLinesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        21
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        7,
+        9,
+        10,
+        7
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessor.getVisitor:()Lio/gitlab/arturbosch/detekt/api/DetektVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        33
+      ]
+    },
+    "io.github.detekt.metrics.processors.ProjectSLOCProcessorKt.getSourceLinesKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        33
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        9,
+        11,
+        12,
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessor.getKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessor.getVisitor:()Lio/github/detekt/metrics/processors/PropertyCountVisitor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessorKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountProcessorKt.getNumberOfFieldsKey:()Lorg/jetbrains/kotlin/com/intellij/openapi/util/Key;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$2.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor$visitKtFile$$inlined$collectDescendantsOfType$default$3.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.metrics.processors.PropertyCountVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        20,
+        21,
+        25,
+        26,
+        32,
+        39,
+        40,
+        41,
+        42,
+        32,
+        26,
+        21,
+        22
+      ]
+    },
+    "io.github.detekt.metrics.processors.SLOCVisitor$SLOC.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        21,
+        23,
+        21
+      ]
+    },
+    "io.github.detekt.metrics.processors.SLOCVisitor$SLOC.count:(Ljava/util/List;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        26,
+        27,
+        35,
+        36,
+        37,
+        27,
+        27,
+        37,
+        38,
+        35,
+        28,
+        39,
+        40,
+        41,
+        28,
+        28,
+        42,
+        28,
+        42,
+        43,
+        28,
+        41,
+        44,
+        26
+      ]
+    },
+    "io.github.detekt.metrics.processors.SLOCVisitor.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.github.detekt.metrics.processors.SLOCVisitor.visitKtFile:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.<init>:(Ljava/util/List;ZZ)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        14,
+        15,
+        16,
+        17,
+        14
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.<init>:(Ljava/util/List;ZZILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        14,
+        16,
+        14,
+        17,
+        14,
+        99
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.countOrEscapeAdditionalStatements:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        67,
+        68,
+        69,
+        71
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.countOrEscapeComment:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        74,
+        75,
+        76,
+        78
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.countStatementsAndDeclarations:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        51,
+        52,
+        55,
+        56,
+        57,
+        58,
+        61,
+        62,
+        64
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.frequency:(Ljava/lang/String;Ljava/lang/String;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        85,
+        85,
+        85,
+        86,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        97
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.isEscaped:(Ljava/lang/String;[Ljava/lang/String;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        81,
+        102,
+        81,
+        102,
+        103,
+        81
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC$LLOCCounter.run:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        27,
+        28,
+        28,
+        30,
+        30,
+        31,
+        34,
+        35,
+        36,
+        39,
+        40,
+        41,
+        44,
+        47
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        5,
+        6
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        3
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC.access$getComments$p:()[Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        3
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC.access$getEscapes$p:()[Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        3
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC.analyze$default:(Lio/github/detekt/metrics/processors/util/LLOC;Ljava/util/List;ZZILjava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        8,
+        10,
+        8,
+        11,
+        8
+      ]
+    },
+    "io.github.detekt.metrics.processors.util.LLOC.analyze:(Ljava/util/List;ZZ)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        12
+      ]
+    }
+  }
+}

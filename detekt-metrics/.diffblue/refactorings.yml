@@ -1,0 +1,13 @@
+name: com.diffblue.cover.refactoring.Recipe
+recipeList:
+- org.openrewrite.java.format.AutoFormat: &id001 {}
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+type: specs.openrewrite.org/v1beta/recipe
