@@ -1,0 +1,1094 @@
+12:38:53.666 [INFO]  [Preparing] Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+12:38:53.666 [INFO]  [Preparing] 
+12:38:53.666 [INFO]  [Preparing] Running: dcover create --working-directory detekt-tooling io.github io.gitlab
+12:38:53.810 [INFO]  [Checking] Detecting environment:
+12:38:53.810 [INFO]  [Checking] ----------------------
+12:38:53.852 [INFO]  [Checking] Detected Java version 11.0.18
+12:38:56.541 [INFO]  [Checking] Detected build system: Gradle 8.2
+12:38:56.542 [INFO]  [Checking] Operating System: Mac OS X aarch64 13.4.1
+12:38:56.542 [INFO]  [Checking] Default charset: UTF-8
+12:38:56.542 [INFO]  [Checking] Default locale: en_GB
+12:38:56.542 [INFO]  [Checking] Default time zone: Europe/London
+12:38:56.543 [INFO]  [Checking] Selected build system: Gradle
+12:38:56.546 [INFO]  [Checking] Selected classpath from build system Gradle
+12:38:56.547 [INFO]  [Checking] Expanded classpath: 
+/Users/mnedzelskii/gits/detekt/detekt-tooling/build/classes/kotlin/test
+/Users/mnedzelskii/gits/detekt/detekt-tooling/build/classes/kotlin/main (code under test)
+/Users/mnedzelskii/gits/detekt/detekt-tooling/build/resources/test
+/Users/mnedzelskii/gits/detekt/detekt-tooling/build/classes/java/main
+/Users/mnedzelskii/gits/detekt/detekt-tooling/build/resources/main
+/Users/mnedzelskii/gits/detekt/detekt-test/build/libs/detekt-test-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-core/build/libs/detekt-core-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-tooling/build/libs/detekt-tooling-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-report-md/build/libs/detekt-report-md-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-metrics/build/libs/detekt-metrics-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-api/build/libs/detekt-api-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-test-utils/build/libs/detekt-test-utils-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-parser/build/libs/detekt-parser-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-psi-utils/build/libs/detekt-psi-utils-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-report-html/build/libs/detekt-report-html-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/libs/detekt-utils-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-report-txt/build/libs/detekt-report-txt-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-report-xml/build/libs/detekt-report-xml-1.23.0.jar
+/Users/mnedzelskii/gits/detekt/detekt-report-sarif/build/libs/detekt-report-sarif-1.23.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.7.2/27cb5db69aeef59d8cc2a2cc2be4200f26091e72/kotlinx-coroutines-core-jvm-1.7.2.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/io.github.detekt.sarif4k/sarif4k-jvm/0.4.0/d3060993cd73b57ee61b260841bedcabb7dcbb02/sarif4k-jvm-0.4.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.4.1/e6430b33f06dcdff88998abfcb2e78bc3cd0a1f6/kotlinx-serialization-json-jvm-1.4.1.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.4.1/e0c2c11e5d0d541ca343c8f09602c0c2287d15a1/kotlinx-serialization-core-jvm-1.4.1.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.22/b25c86d47d6b962b9cf0f8c3f320c8a10eea3dd1/kotlin-stdlib-jdk8-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.24.2/ebbf338e33f893139459ce5df023115971c2786f/assertj-core-3.24.2.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.3/355322b03bf39306a183162cd06626c206f0286b/junit-jupiter-engine-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.9.3/9e2a4bf6016a1975f408a73523392875cff7c26f/junit-jupiter-params-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.3/815818ad6ffcc8d320d8fbdf3d748c753cf83201/junit-jupiter-api-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.9.3/485650bfe2a2f39b606a6ca013285afda2eaee79/junit-platform-launcher-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.3/8616734a190f8d307376aeb7353dba0a2c037a09/junit-platform-engine-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.3/36b2e26a90c41603be7f0094bee80e3f8a2cd4d4/junit-platform-commons-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.9.3/72e840501e1550e9799c9a5cc9483d7d6b29e0ba/junit-jupiter-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.8.22/e2cf111da088dc807a74157741b4cd4b664edfb7/kotlin-compiler-embeddable-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.22/4dabb8248310d833bb6a8b516024a91fd3d275c/kotlin-stdlib-jdk7-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-main-kts/1.8.22/2b1a8c5bfeb080adb7358a936c90792ce83e305a/kotlin-main-kts-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.8.22/b52be44bc57cb6fd2169a29aefa4507c4e49c858/kotlin-reflect-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.8.22/3ab8e0416ba65a54c227c806cc034a462a08ff7/kotlin-scripting-compiler-embeddable-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-impl-embeddable/1.8.22/5703e4c2d1596a35912296fe484400d19129b3d2/kotlin-scripting-compiler-impl-embeddable-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.8.22/3291898dd4e49d49b921cd7baf679399ddfcd49d/kotlin-scripting-jvm-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.8.22/2ceb06ea7e19b183f3363ca8961be973c232937a/kotlin-scripting-common-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.22/636bf8b320e7627482771bbac9ed7246773c02bd/kotlin-stdlib-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.22/1a8e3601703ae14bb58757ea6b2d8e8e5935a586/kotlin-stdlib-common-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.21/1a257bbdb9288f2558d3767cc2cc22b499d5091c/byte-buddy-1.12.21.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.8.22/ce5ff1f309623f8c1be5143bdba032c4a04cec3a/kotlin-script-runtime-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.8.22/7d9f7e06a59d2fcbc9b373400c146f42fd722e81/kotlin-daemon-embeddable-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.snakeyaml/snakeyaml-engine/2.6/235a7e571b33eda1a81e0f73a3173ef95dd020e5/snakeyaml-engine-2.6.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/io.github.davidburstrom.contester/contester-breakpoint/0.2.0/a560e5402378928e889b2eab0cc958cbed8cfe5e/contester-breakpoint-0.2.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-html-jvm/0.8.1/1395513588aabf353f15a9f8023098651f1d76a/kotlinx-html-jvm-0.8.1.jar
+12:38:56.695 [INFO]  [Checking] Detected test framework: JUnit Jupiter 5.9.3
+12:38:56.704 [INFO]  [Checking] Detected JUnit Jupiter Engine version 5.9.3
+12:38:56.713 [INFO]  [Checking] Detected JUnit Jupiter Params version 5.9.3
+12:38:56.809 [INFO]  [Checking] Selected test output directory: /Users/mnedzelskii/gits/detekt/detekt-tooling/src/test/java
+12:38:56.810 [INFO]  [Checking] Selected test framework: JUnit Jupiter
+12:38:56.906 [INFO]  [Checking] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-tooling : gradle test -i  DummyJupiterDiffblueTest
+12:38:58.703 [INFO]  [Checking] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-tooling : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+12:39:00.637 [INFO]  [Checking] Detected JVM architecture: 64-Bit
+12:39:00.640 [INFO]  [Checking] Indexing...
+12:39:03.213 [INFO]  [Checking] Selected Java language compliance level: 1.8
+12:39:03.214 [INFO]  [Checking] Selected test validation: enabled
+12:39:03.215 [INFO]  [Checking] Prefixes for filtering classes/methods:
+12:39:03.215 [INFO]  [Checking] - io.github
+12:39:03.216 [INFO]  [Checking] - io.gitlab
+12:39:03.217 [INFO]  [Checking] Gathering methods to test...
+12:39:04.296 [WARN]  [Checking] E052: Missing dependency
+Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+Required dependencies were not found.
+Please add the following dependencies to your project:
+  testImplementation("org.mockito:mockito-core:4.11.0")
+12:39:04.309 [INFO]  [Reporting] 
+12:39:04.309 [INFO]  [Reporting] Environment summary:
+12:39:04.309 [INFO]  [Reporting] --------------------
+12:39:04.311 [INFO]  [Reporting] Java version                  11.0.18                       SUCCESS        
+12:39:04.311 [INFO]  [Reporting] Build system                  Gradle                        SUCCESS        
+12:39:04.311 [WARN]  [Reporting] Mocking Framework                                           WARNING        
+12:39:04.311 [INFO]  [Reporting] Testing framework             JUnit Jupiter 5               SUCCESS        
+12:39:04.311 [INFO]  [Reporting] Launcher                      JUnit Jupiter                 SUCCESS        
+12:39:04.311 [INFO]  [Reporting] Test validation               Enabled                       SUCCESS        
+12:39:04.311 [INFO]  [Reporting] 
+12:39:04.311 [WARN]  [Reporting] Environment check status: WARNING
+12:39:04.332 [INFO]  [Creating] Found 282 callable methods in 41 classes
+12:39:04.333 [INFO]  [Creating] 
+12:39:04.333 [INFO]  [Creating] Creating tests:
+12:39:04.333 [INFO]  [Creating] ---------------
+12:39:04.343 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.AnalysisResultKt'
+================================================================================
+12:39:04.344 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:04.352 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:04.353 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:04.362 [INFO]  [Creating] Starting monitoring server.
+12:39:04.473 [INFO]  [Creating] Monitoring server listening on localhost/127.0.0.1:61944
+12:39:04.474 [INFO]  [Creating] Starting analyzer server process...
+12:39:04.474 [INFO]  [Creating] Server command-line: /Users/mnedzelskii/.sdkman/candidates/java/11.0.18-amzn/bin/java -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:/Users/mnedzelskii/gits/cover/cover-cli/target/launcher-2023.07.02-SNAPSHOT-shared-jar.jar -Dlogback.configurationFile=/var/folders/84/svd_5_t17l36s2xgx_7spshr0000gp/T/diffblue/config/logback-remote-service.xml -Dcom.diffblue.springIsolationJar=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-isolation-layer-2023.07.02-SNAPSHOT.jar -Dcover.jar.path=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-service-analyzer-2023.07.02-SNAPSHOT-jar-with-dependencies.jar -Dcom.diffblue.assertionSuggestionJar=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-service-analyzer-2023.07.02-SNAPSHOT-jar-with-dependencies.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar /Users/mnedzelskii/gits/cover/cover-cli/target/launcher-2023.07.02-SNAPSHOT-shared-jar.jar --service-lifespan 120 --monitoring-service-port 61944 --index-service-port 61944
+12:39:04.489 [INFO]  [Creating] Server started. Waiting up to 300 seconds for a connection to be established...
+12:39:04.845 [INFO]  [Creating] Starting new remote monitor client
+12:39:05.106 [INFO]  [Creating] Attempting to start remote server.
+12:39:05.533 [INFO]  [Creating] Server started, listening on localhost/127.0.0.1:61946
+12:39:06.509 [INFO]  [Creating] Expect analyzer service to be listening on port 61946.
+12:39:07.006 [INFO]  [Creating] Started analyzer service and client retrieved.
+12:39:07.937 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.AnalysisResultKt.exitCode:(Lio/github/detekt/tooling/api/AnalysisResult;)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:24.684 [INFO]  [Creating]       [1/282] io.github.detekt.tooling.api.AnalysisResultKt.exitCode
+12:39:24.684 [INFO]  [Creating]       [1/282]   Diffblue AI was unable to find a test
+12:39:24.689 [INFO]  [Creating]  [1/41] io.github.detekt.tooling.api.AnalysisResultKt
+12:39:24.689 [INFO]  [Creating]  [1/41]   Tests created: 0
+12:39:24.689 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.BaselineProvider$Companion'
+================================================================================
+12:39:24.689 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:25.048 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:25.048 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:25.091 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.BaselineProvider$Companion.load:(Ljava/lang/ClassLoader;)Lio/github/detekt/tooling/api/BaselineProvider;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:25.791 [INFO]  [Creating]       [2/282] io.github.detekt.tooling.api.BaselineProvider$Companion.load
+12:39:25.791 [INFO]  [Creating]       [2/282]   R083: Can't find a suitable constructor
+12:39:25.791 [INFO]  [Creating]       [2/282]     Diffblue Cover was unable to construct an instance of BaselineProvider.Companion.
+12:39:25.791 [INFO]  [Creating]       [2/282]     No suitable constructor or factory method found. Please check that the class
+12:39:25.791 [INFO]  [Creating]       [2/282]     under test has a non-private constructor or factory method.
+12:39:25.791 [INFO]  [Creating]       [2/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:39:25.794 [INFO]  [Creating]  [2/41] io.github.detekt.tooling.api.BaselineProvider$Companion
+12:39:25.794 [INFO]  [Creating]  [2/41]   Tests created: 0
+12:39:25.794 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.DefaultConfigurationProvider$Companion'
+================================================================================
+12:39:25.794 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:25.801 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:25.801 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:25.841 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.DefaultConfigurationProvider$Companion.load:(Lio/github/detekt/tooling/api/spec/ExtensionsSpec;Ljava/lang/ClassLoader;)Lio/github/detekt/tooling/api/DefaultConfigurationProvider;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:25.942 [INFO]  [Creating]       [3/282] io.github.detekt.tooling.api.DefaultConfigurationProvider$Companion.load
+12:39:25.942 [INFO]  [Creating]       [3/282]   R083: Can't find a suitable constructor
+12:39:25.942 [INFO]  [Creating]       [3/282]     Diffblue Cover was unable to construct an instance of DefaultConfigurationProvider.Companion.
+12:39:25.942 [INFO]  [Creating]       [3/282]     No suitable constructor or factory method found. Please check that the class
+12:39:25.942 [INFO]  [Creating]       [3/282]     under test has a non-private constructor or factory method.
+12:39:25.942 [INFO]  [Creating]       [3/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:39:25.945 [INFO]  [Creating]  [3/41] io.github.detekt.tooling.api.DefaultConfigurationProvider$Companion
+12:39:25.945 [INFO]  [Creating]  [3/41]   Tests created: 0
+12:39:25.945 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.DetektCli$Companion'
+================================================================================
+12:39:25.945 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:25.950 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:25.950 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:25.979 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.DetektCli$Companion.load:(Ljava/lang/ClassLoader;)Lio/github/detekt/tooling/api/DetektCli;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:26.052 [INFO]  [Creating]       [4/282] io.github.detekt.tooling.api.DetektCli$Companion.load
+12:39:26.052 [INFO]  [Creating]       [4/282]   R083: Can't find a suitable constructor
+12:39:26.052 [INFO]  [Creating]       [4/282]     Diffblue Cover was unable to construct an instance of DetektCli.Companion.
+12:39:26.053 [INFO]  [Creating]       [4/282]     No suitable constructor or factory method found. Please check that the class
+12:39:26.053 [INFO]  [Creating]       [4/282]     under test has a non-private constructor or factory method.
+12:39:26.053 [INFO]  [Creating]       [4/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:39:26.055 [INFO]  [Creating]  [4/41] io.github.detekt.tooling.api.DetektCli$Companion
+12:39:26.055 [INFO]  [Creating]  [4/41]   Tests created: 0
+12:39:26.055 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.DetektProvider$Companion'
+================================================================================
+12:39:26.055 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:26.060 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:26.060 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:26.085 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.DetektProvider$Companion.load:(Ljava/lang/ClassLoader;)Lio/github/detekt/tooling/api/DetektProvider;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:34.008 [INFO]  [Creating]       [5/282] io.github.detekt.tooling.api.DetektProvider$Companion.load
+12:39:34.009 [INFO]  [Creating]       [5/282]   R083: Can't find a suitable constructor
+12:39:34.009 [INFO]  [Creating]       [5/282]     Diffblue Cover was unable to construct an instance of DetektProvider.Companion.
+12:39:34.009 [INFO]  [Creating]       [5/282]     No suitable constructor or factory method found. Please check that the class
+12:39:34.009 [INFO]  [Creating]       [5/282]     under test has a non-private constructor or factory method.
+12:39:34.009 [INFO]  [Creating]       [5/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:39:34.011 [INFO]  [Creating]  [5/41] io.github.detekt.tooling.api.DetektProvider$Companion
+12:39:34.011 [INFO]  [Creating]  [5/41]   Tests created: 0
+12:39:34.012 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.DetektProvider$DefaultImpls'
+================================================================================
+12:39:34.012 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:34.013 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:34.013 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:34.040 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.DetektProvider$DefaultImpls.getPriority:(Lio/github/detekt/tooling/api/DetektProvider;)I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:43.161 [INFO]  [Creating]       [6/282] io.github.detekt.tooling.api.DetektProvider$DefaultImpls.getPriority
+12:39:43.161 [INFO]  [Creating]       [6/282]   Tests created: 1
+12:39:43.165 [INFO]  [Creating]  [6/41] io.github.detekt.tooling.api.DetektProvider$DefaultImpls
+12:39:43.165 [INFO]  [Creating]  [6/41]   Tests created: 1
+12:39:43.165 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.FunctionMatcher$Companion'
+================================================================================
+12:39:43.166 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:43.191 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:43.191 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:43.215 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$Companion.fromFunctionSignature:(Ljava/lang/String;)Lio/github/detekt/tooling/api/FunctionMatcher;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:43.577 [INFO]  [Creating]       [7/282] io.github.detekt.tooling.api.FunctionMatcher$Companion.fromFunctionSignature
+12:39:43.577 [INFO]  [Creating]       [7/282]   R083: Can't find a suitable constructor
+12:39:43.577 [INFO]  [Creating]       [7/282]     Diffblue Cover was unable to construct an instance of FunctionMatcher.Companion.
+12:39:43.577 [INFO]  [Creating]       [7/282]     No suitable constructor or factory method found. Please check that the class
+12:39:43.577 [INFO]  [Creating]       [7/282]     under test has a non-private constructor or factory method.
+12:39:43.577 [INFO]  [Creating]       [7/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:39:43.579 [INFO]  [Creating]  [7/41] io.github.detekt.tooling.api.FunctionMatcher$Companion
+12:39:43.579 [INFO]  [Creating]  [7/41]   Tests created: 0
+12:39:43.579 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly'
+================================================================================
+12:39:43.579 [INFO]  [Creating] Filtering out non-testable methods...
+12:39:43.580 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:39:43.580 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:39:43.615 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:39:43.893 [INFO]  [Creating]       [8/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.toString
+12:39:43.893 [INFO]  [Creating]       [8/282]   Tests created: 1
+12:39:43.894 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.api.FunctionMatcher$NameOnly.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:39:45.117 [INFO]  [Creating]       [9/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.equals
+12:39:45.117 [INFO]  [Creating]      [10/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.hashCode
+12:39:45.117 [INFO]  [Creating]      [10/282]   Tests created: 5
+12:39:45.118 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly.<init>:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:45.742 [INFO]  [Creating]      [11/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.<init>
+12:39:45.742 [INFO]  [Creating]      [11/282]   Tests created: 1
+12:39:45.743 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly.copy:(Ljava/lang/String;)Lio/github/detekt/tooling/api/FunctionMatcher$NameOnly;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:39:46.590 [INFO]  [Creating]      [12/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.copy
+12:39:46.590 [INFO]  [Creating]      [12/282]   Tests created: 1
+12:39:46.592 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly.match:(Lorg/jetbrains/kotlin/descriptors/CallableDescriptor;)Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:07.067 [INFO]  [Creating]      [13/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.match
+12:40:07.067 [INFO]  [Creating]      [13/282]   R011: Sandboxing policy violation
+12:40:07.067 [INFO]  [Creating]      [13/282]     Diffblue Cover ran code in your project that tried
+12:40:07.067 [INFO]  [Creating]      [13/282]       to access 'sun.misc'.
+12:40:07.067 [INFO]  [Creating]      [13/282]     Diffblue Cover's default sandboxing policy disallows this in order to prevent
+12:40:07.067 [INFO]  [Creating]      [13/282]     your code from damaging your system environment.
+12:40:07.067 [INFO]  [Creating]      [13/282]     See https://diff.blue/R011 to resolve this issue.
+12:40:07.059 [INFO]  [Creating] Could not load class: Could not initialize class org.jetbrains.kotlin.com.intellij.openapi.util.Key
+12:40:07.060 [INFO]  [Creating] An exception occurred: java.lang.NoClassDefFoundError: Could not initialize class org.jetbrains.kotlin.com.intellij.openapi.util.Key
+	at org.jetbrains.kotlin.com.intellij.openapi.util.UserDataHolderBase.<clinit>(UserDataHolderBase.java:11)
+	< ... hidden frames ... >
+12:40:07.068 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$NameOnly.match:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;Lorg/jetbrains/kotlin/resolve/BindingContext;)Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:07.942 [INFO]  [Creating] Could not load class: Could not initialize class org.jetbrains.kotlin.com.intellij.openapi.util.UserDataHolderBase
+12:40:07.943 [INFO]  [Creating] An exception occurred: java.lang.NoClassDefFoundError: Could not initialize class org.jetbrains.kotlin.com.intellij.openapi.util.UserDataHolderBase
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+12:40:07.947 [INFO]  [Creating]      [14/282] io.github.detekt.tooling.api.FunctionMatcher$NameOnly.match
+12:40:07.947 [INFO]  [Creating]      [14/282]   R011: Sandboxing policy violation
+12:40:07.948 [INFO]  [Creating]      [14/282]     Diffblue Cover ran code in your project that tried
+12:40:07.948 [INFO]  [Creating]      [14/282]       to access 'sun.misc'.
+12:40:07.948 [INFO]  [Creating]      [14/282]     Diffblue Cover's default sandboxing policy disallows this in order to prevent
+12:40:07.948 [INFO]  [Creating]      [14/282]     your code from damaging your system environment.
+12:40:07.948 [INFO]  [Creating]      [14/282]     See https://diff.blue/R011 to resolve this issue.
+12:40:07.950 [INFO]  [Creating]  [8/41] io.github.detekt.tooling.api.FunctionMatcher$NameOnly
+12:40:07.950 [INFO]  [Creating]  [8/41]   Tests created: 8
+12:40:07.950 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters'
+================================================================================
+12:40:07.950 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:07.950 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:07.950 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:07.980 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:08.242 [INFO]  [Creating]      [15/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.toString
+12:40:08.242 [INFO]  [Creating]      [15/282]   Tests created: 1
+12:40:08.243 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.api.FunctionMatcher$WithParameters.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:09.748 [INFO]  [Creating]      [16/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.equals
+12:40:09.748 [INFO]  [Creating]      [17/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.hashCode
+12:40:09.748 [INFO]  [Creating]      [17/282]   Tests created: 6
+12:40:09.749 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters.<init>:(Ljava/lang/String;Ljava/util/List;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:10.816 [INFO]  [Creating]      [18/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.<init>
+12:40:10.816 [INFO]  [Creating]      [18/282]   Tests created: 1
+12:40:10.817 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters.copy:(Ljava/lang/String;Ljava/util/List;)Lio/github/detekt/tooling/api/FunctionMatcher$WithParameters;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:11.748 [INFO]  [Creating]      [19/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.copy
+12:40:11.748 [INFO]  [Creating]      [19/282]   R013: No inputs found that don't throw a trivial exception
+12:40:11.748 [INFO]  [Creating]      [19/282]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:40:11.748 [INFO]  [Creating]      [19/282]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.tooling.api.FunctionMatcher$WithParameters.copy, parameter parameters
+12:40:11.748 [INFO]  [Creating]      [19/282]         at io.github.detekt.tooling.api.FunctionMatcher$WithParameters.copy(FunctionMatcher.kt)
+12:40:11.748 [INFO]  [Creating]      [19/282]     In order to prevent copy(String, List)
+12:40:11.748 [INFO]  [Creating]      [19/282]     from throwing NullPointerException, add constructors or factory
+12:40:11.748 [INFO]  [Creating]      [19/282]     methods that make it easier to construct fully initialized objects used in
+12:40:11.748 [INFO]  [Creating]      [19/282]     copy(String, List).
+12:40:11.748 [INFO]  [Creating]      [19/282]     See https://diff.blue/R013 to resolve this issue.
+12:40:11.749 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters.match:(Lorg/jetbrains/kotlin/descriptors/CallableDescriptor;)Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:15.139 [INFO]  [Creating]      [20/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.match
+12:40:15.139 [INFO]  [Creating]      [20/282]   R011: Sandboxing policy violation
+12:40:15.139 [INFO]  [Creating]      [20/282]     Diffblue Cover ran code in your project that tried
+12:40:15.139 [INFO]  [Creating]      [20/282]       to access 'sun.misc'.
+12:40:15.139 [INFO]  [Creating]      [20/282]     Diffblue Cover's default sandboxing policy disallows this in order to prevent
+12:40:15.139 [INFO]  [Creating]      [20/282]     your code from damaging your system environment.
+12:40:15.139 [INFO]  [Creating]      [20/282]     See https://diff.blue/R011 to resolve this issue.
+12:40:15.134 [INFO]  [Creating] Could not load class: Could not initialize class org.jetbrains.kotlin.com.intellij.testFramework.LightVirtualFile
+12:40:15.134 [INFO]  [Creating] An exception occurred: java.lang.NoClassDefFoundError: Could not initialize class org.jetbrains.kotlin.com.intellij.testFramework.LightVirtualFile
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+12:40:15.140 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.FunctionMatcher$WithParameters.match:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;Lorg/jetbrains/kotlin/resolve/BindingContext;)Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:17.410 [INFO]  [Creating] Could not load class: Could not initialize class org.jetbrains.kotlin.com.intellij.psi.impl.source.PsiDiamondTypeElementImpl
+12:40:17.410 [INFO]  [Creating] An exception occurred: java.lang.NoClassDefFoundError: Could not initialize class org.jetbrains.kotlin.com.intellij.psi.impl.source.PsiDiamondTypeElementImpl
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+12:40:17.414 [INFO]  [Creating]      [21/282] io.github.detekt.tooling.api.FunctionMatcher$WithParameters.match
+12:40:17.414 [INFO]  [Creating]      [21/282]   R011: Sandboxing policy violation
+12:40:17.414 [INFO]  [Creating]      [21/282]     Diffblue Cover ran code in your project that tried
+12:40:17.414 [INFO]  [Creating]      [21/282]       to access 'sun.misc'.
+12:40:17.414 [INFO]  [Creating]      [21/282]     Diffblue Cover's default sandboxing policy disallows this in order to prevent
+12:40:17.414 [INFO]  [Creating]      [21/282]     your code from damaging your system environment.
+12:40:17.414 [INFO]  [Creating]      [21/282]     See https://diff.blue/R011 to resolve this issue.
+12:40:17.416 [INFO]  [Creating]  [9/41] io.github.detekt.tooling.api.FunctionMatcher$WithParameters
+12:40:17.416 [INFO]  [Creating]  [9/41]   Tests created: 8
+12:40:17.416 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.InvalidConfig'
+================================================================================
+12:40:17.416 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:17.416 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:17.416 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:17.434 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.InvalidConfig.<init>:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:17.685 [INFO]  [Creating]      [22/282] io.github.detekt.tooling.api.InvalidConfig.<init>
+12:40:17.685 [INFO]  [Creating]      [22/282]   Tests created: 1
+12:40:17.687 [INFO]  [Creating] [10/41] io.github.detekt.tooling.api.InvalidConfig
+12:40:17.687 [INFO]  [Creating] [10/41]   Tests created: 1
+12:40:17.687 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.MaxIssuesReached'
+================================================================================
+12:40:17.687 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:17.687 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:17.687 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:17.704 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.MaxIssuesReached.<init>:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:17.941 [INFO]  [Creating]      [23/282] io.github.detekt.tooling.api.MaxIssuesReached.<init>
+12:40:17.941 [INFO]  [Creating]      [23/282]   Tests created: 1
+12:40:17.943 [INFO]  [Creating] [11/41] io.github.detekt.tooling.api.MaxIssuesReached
+12:40:17.943 [INFO]  [Creating] [11/41]   Tests created: 1
+12:40:17.943 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.UnexpectedError'
+================================================================================
+12:40:17.943 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:17.943 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:17.943 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:17.962 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.UnexpectedError.getCause:()Ljava/lang/Throwable;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:18.032 [INFO]  [Creating]      [24/282] io.github.detekt.tooling.api.UnexpectedError.getCause
+12:40:18.032 [INFO]  [Creating]      [24/282]   Tests created: 1
+12:40:18.033 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.UnexpectedError.<init>:(Ljava/lang/Throwable;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:19.558 [INFO]  [Creating]      [25/282] io.github.detekt.tooling.api.UnexpectedError.<init>
+12:40:19.558 [INFO]  [Creating]      [25/282]   Tests created: 1
+12:40:19.560 [INFO]  [Creating] [12/41] io.github.detekt.tooling.api.UnexpectedError
+12:40:19.560 [INFO]  [Creating] [12/41]   Tests created: 2
+12:40:19.560 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.VersionProvider$Companion'
+================================================================================
+12:40:19.560 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:19.564 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:19.564 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:19.580 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.VersionProvider$Companion.load:(Ljava/lang/ClassLoader;)Lio/github/detekt/tooling/api/VersionProvider;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:19.627 [INFO]  [Creating]      [26/282] io.github.detekt.tooling.api.VersionProvider$Companion.load
+12:40:19.627 [INFO]  [Creating]      [26/282]   R083: Can't find a suitable constructor
+12:40:19.627 [INFO]  [Creating]      [26/282]     Diffblue Cover was unable to construct an instance of VersionProvider.Companion.
+12:40:19.627 [INFO]  [Creating]      [26/282]     No suitable constructor or factory method found. Please check that the class
+12:40:19.627 [INFO]  [Creating]      [26/282]     under test has a non-private constructor or factory method.
+12:40:19.627 [INFO]  [Creating]      [26/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:40:19.629 [INFO]  [Creating] [13/41] io.github.detekt.tooling.api.VersionProvider$Companion
+12:40:19.629 [INFO]  [Creating] [13/41]   Tests created: 0
+12:40:19.629 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.spec.ProcessingSpec$Companion'
+================================================================================
+12:40:19.629 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:19.678 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:19.678 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:19.697 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.spec.ProcessingSpec$Companion.invoke:(Lkotlin/jvm/functions/Function1;)Lio/github/detekt/tooling/api/spec/ProcessingSpec;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:23.835 [INFO]  [Creating]      [27/282] io.github.detekt.tooling.api.spec.ProcessingSpec$Companion.invoke
+12:40:23.836 [INFO]  [Creating]      [27/282]   R083: Can't find a suitable constructor
+12:40:23.836 [INFO]  [Creating]      [27/282]     Diffblue Cover was unable to construct an instance of ProcessingSpec.Companion.
+12:40:23.836 [INFO]  [Creating]      [27/282]     No suitable constructor or factory method found. Please check that the class
+12:40:23.836 [INFO]  [Creating]      [27/282]     under test has a non-private constructor or factory method.
+12:40:23.836 [INFO]  [Creating]      [27/282]     See https://diff.blue/R083 for further troubleshooting of this issue.
+12:40:23.837 [INFO]  [Creating] [14/41] io.github.detekt.tooling.api.spec.ProcessingSpec$Companion
+12:40:23.837 [INFO]  [Creating] [14/41]   Tests created: 0
+12:40:23.837 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.spec.RulesSpec$MaxIssuePolicy$AllowAmount'
+================================================================================
+12:40:23.837 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:23.838 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:23.838 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:23.860 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.spec.RulesSpec$MaxIssuePolicy$AllowAmount.<init>:(I)V, io.github.detekt.tooling.api.spec.RulesSpec$MaxIssuePolicy$AllowAmount.getAmount:()I' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:23.993 [INFO]  [Creating]      [28/282] io.github.detekt.tooling.api.spec.RulesSpec$MaxIssuePolicy$AllowAmount.<init>
+12:40:23.993 [INFO]  [Creating]      [29/282] io.github.detekt.tooling.api.spec.RulesSpec$MaxIssuePolicy$AllowAmount.getAmount
+12:40:23.993 [INFO]  [Creating]      [29/282]   Tests created: 1
+12:40:23.994 [INFO]  [Creating] [15/41] io.github.detekt.tooling.api.spec.RulesSpec$MaxIssuePolicy$AllowAmount
+12:40:23.994 [INFO]  [Creating] [15/41]   Tests created: 1
+12:40:23.994 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.api.spec.RulesSpec$RunPolicy$RestrictToSingleRule'
+================================================================================
+12:40:23.994 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:23.996 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:23.996 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:24.018 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.spec.RulesSpec$RunPolicy$RestrictToSingleRule.getId:()Lkotlin/Pair;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:27.020 [INFO]  [Creating]      [30/282] io.github.detekt.tooling.api.spec.RulesSpec$RunPolicy$RestrictToSingleRule.getId
+12:40:27.020 [INFO]  [Creating]      [30/282]   Tests created: 1
+12:40:27.021 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.api.spec.RulesSpec$RunPolicy$RestrictToSingleRule.<init>:(Lkotlin/Pair;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:27.227 [INFO]  [Creating]      [31/282] io.github.detekt.tooling.api.spec.RulesSpec$RunPolicy$RestrictToSingleRule.<init>
+12:40:27.227 [INFO]  [Creating]      [31/282]   Tests created: 1
+12:40:27.229 [INFO]  [Creating] [16/41] io.github.detekt.tooling.api.spec.RulesSpec$RunPolicy$RestrictToSingleRule
+12:40:27.229 [INFO]  [Creating] [16/41]   Tests created: 2
+12:40:27.229 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.BaselineModel'
+================================================================================
+12:40:27.229 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:27.230 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:27.230 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:27.257 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineModel.<init>:(Ljava/nio/file/Path;Z)V, io.github.detekt.tooling.dsl.BaselineModel.getPath:()Ljava/nio/file/Path;, io.github.detekt.tooling.dsl.BaselineModel.getShouldCreateDuringAnalysis:()Z, io.github.detekt.tooling.dsl.BaselineModel.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:27.460 [INFO]  [Creating]      [32/282] io.github.detekt.tooling.dsl.BaselineModel.<init>
+12:40:27.460 [INFO]  [Creating]      [33/282] io.github.detekt.tooling.dsl.BaselineModel.getPath
+12:40:27.460 [INFO]  [Creating]      [34/282] io.github.detekt.tooling.dsl.BaselineModel.getShouldCreateDuringAnalysis
+12:40:27.460 [INFO]  [Creating]      [35/282] io.github.detekt.tooling.dsl.BaselineModel.toString
+12:40:27.460 [INFO]  [Creating]      [35/282]   Tests created: 1
+12:40:27.461 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineModel.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.dsl.BaselineModel.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:28.650 [INFO]  [Creating]      [36/282] io.github.detekt.tooling.dsl.BaselineModel.equals
+12:40:28.650 [INFO]  [Creating]      [37/282] io.github.detekt.tooling.dsl.BaselineModel.hashCode
+12:40:28.650 [INFO]  [Creating]      [37/282]   Tests created: 6
+12:40:28.652 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineModel.component1:()Ljava/nio/file/Path;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:28.874 [INFO]  [Creating]      [38/282] io.github.detekt.tooling.dsl.BaselineModel.component1
+12:40:28.874 [INFO]  [Creating]      [38/282]   Tests created: 1
+12:40:28.875 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineModel.component2:()Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:29.287 [INFO]  [Creating]      [39/282] io.github.detekt.tooling.dsl.BaselineModel.component2
+12:40:29.287 [INFO]  [Creating]      [39/282]   Tests created: 2
+12:40:29.288 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineModel.copy:(Ljava/nio/file/Path;Z)Lio/github/detekt/tooling/dsl/BaselineModel;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:29.658 [INFO]  [Creating]      [40/282] io.github.detekt.tooling.dsl.BaselineModel.copy
+12:40:29.658 [INFO]  [Creating]      [40/282]   Tests created: 1
+12:40:29.660 [INFO]  [Creating] [17/41] io.github.detekt.tooling.dsl.BaselineModel
+12:40:29.660 [INFO]  [Creating] [17/41]   Tests created: 11
+12:40:29.660 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.BaselineSpecBuilder'
+================================================================================
+12:40:29.660 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:29.660 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:29.660 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:29.685 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineSpecBuilder.<init>:()V, io.github.detekt.tooling.dsl.BaselineSpecBuilder.getPath:()Ljava/nio/file/Path;, io.github.detekt.tooling.dsl.BaselineSpecBuilder.getShouldCreateDuringAnalysis:()Z, io.github.detekt.tooling.dsl.BaselineSpecBuilder.setPath:(Ljava/nio/file/Path;)V, io.github.detekt.tooling.dsl.BaselineSpecBuilder.setShouldCreateDuringAnalysis:(Z)V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:29.822 [INFO]  [Creating]      [41/282] io.github.detekt.tooling.dsl.BaselineSpecBuilder.<init>
+12:40:29.822 [INFO]  [Creating]      [42/282] io.github.detekt.tooling.dsl.BaselineSpecBuilder.getPath
+12:40:29.822 [INFO]  [Creating]      [43/282] io.github.detekt.tooling.dsl.BaselineSpecBuilder.getShouldCreateDuringAnalysis
+12:40:29.822 [INFO]  [Creating]      [44/282] io.github.detekt.tooling.dsl.BaselineSpecBuilder.setPath
+12:40:29.822 [INFO]  [Creating]      [45/282] io.github.detekt.tooling.dsl.BaselineSpecBuilder.setShouldCreateDuringAnalysis
+12:40:29.822 [INFO]  [Creating]      [45/282]   Tests created: 1
+12:40:29.823 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.BaselineSpecBuilder.build:()Lio/github/detekt/tooling/api/spec/BaselineSpec;' using 'B (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:29.906 [INFO]  [Creating]      [46/282] io.github.detekt.tooling.dsl.BaselineSpecBuilder.build
+12:40:29.906 [INFO]  [Creating]      [46/282]   Tests created: 1
+12:40:29.907 [INFO]  [Creating] [18/41] io.github.detekt.tooling.dsl.BaselineSpecBuilder
+12:40:29.907 [INFO]  [Creating] [18/41]   Tests created: 2
+12:40:29.908 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.CompilerModel'
+================================================================================
+12:40:29.908 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:29.909 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:29.909 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:29.943 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.getClasspath:()Ljava/lang/String;, io.github.detekt.tooling.dsl.CompilerModel.getJdkHome:()Ljava/nio/file/Path;, io.github.detekt.tooling.dsl.CompilerModel.getJvmTarget:()Ljava/lang/String;, io.github.detekt.tooling.dsl.CompilerModel.getLanguageVersion:()Ljava/lang/String;, io.github.detekt.tooling.dsl.CompilerModel.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:30.082 [INFO]  [Creating]      [47/282] io.github.detekt.tooling.dsl.CompilerModel.getClasspath
+12:40:30.082 [INFO]  [Creating]      [48/282] io.github.detekt.tooling.dsl.CompilerModel.getJdkHome
+12:40:30.082 [INFO]  [Creating]      [49/282] io.github.detekt.tooling.dsl.CompilerModel.getJvmTarget
+12:40:30.082 [INFO]  [Creating]      [50/282] io.github.detekt.tooling.dsl.CompilerModel.getLanguageVersion
+12:40:30.082 [INFO]  [Creating]      [51/282] io.github.detekt.tooling.dsl.CompilerModel.toString
+12:40:30.082 [INFO]  [Creating]      [51/282]   Tests created: 1
+12:40:30.083 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.dsl.CompilerModel.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:31.574 [INFO]  [Creating]      [52/282] io.github.detekt.tooling.dsl.CompilerModel.equals
+12:40:31.574 [INFO]  [Creating]      [53/282] io.github.detekt.tooling.dsl.CompilerModel.hashCode
+12:40:31.574 [INFO]  [Creating]      [53/282]   Tests created: 8
+12:40:31.575 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/nio/file/Path;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:32.005 [INFO]  [Creating]      [54/282] io.github.detekt.tooling.dsl.CompilerModel.<init>
+12:40:32.005 [INFO]  [Creating]      [54/282]   Tests created: 1
+12:40:32.006 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.component1:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:32.451 [INFO]  [Creating]      [55/282] io.github.detekt.tooling.dsl.CompilerModel.component1
+12:40:32.451 [INFO]  [Creating]      [55/282]   Tests created: 1
+12:40:32.452 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.component2:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:32.926 [INFO]  [Creating]      [56/282] io.github.detekt.tooling.dsl.CompilerModel.component2
+12:40:32.926 [INFO]  [Creating]      [56/282]   Tests created: 1
+12:40:32.927 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.component3:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:33.334 [INFO]  [Creating]      [57/282] io.github.detekt.tooling.dsl.CompilerModel.component3
+12:40:33.334 [INFO]  [Creating]      [57/282]   Tests created: 1
+12:40:33.335 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.component4:()Ljava/nio/file/Path;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:33.738 [INFO]  [Creating]      [58/282] io.github.detekt.tooling.dsl.CompilerModel.component4
+12:40:33.738 [INFO]  [Creating]      [58/282]   Tests created: 1
+12:40:33.739 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerModel.copy:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/nio/file/Path;)Lio/github/detekt/tooling/dsl/CompilerModel;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:34.500 [INFO]  [Creating]      [59/282] io.github.detekt.tooling.dsl.CompilerModel.copy
+12:40:34.500 [INFO]  [Creating]      [59/282]   Tests created: 1
+12:40:34.501 [INFO]  [Creating] [19/41] io.github.detekt.tooling.dsl.CompilerModel
+12:40:34.501 [INFO]  [Creating] [19/41]   Tests created: 15
+12:40:34.501 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.CompilerSpecBuilder'
+================================================================================
+12:40:34.501 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:34.502 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:34.502 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:34.531 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.CompilerSpecBuilder.<init>:()V, io.github.detekt.tooling.dsl.CompilerSpecBuilder.build:()Lio/github/detekt/tooling/api/spec/CompilerSpec;, io.github.detekt.tooling.dsl.CompilerSpecBuilder.getClasspath:()Ljava/lang/String;, io.github.detekt.tooling.dsl.CompilerSpecBuilder.getJdkHome:()Ljava/nio/file/Path;, io.github.detekt.tooling.dsl.CompilerSpecBuilder.getJvmTarget:()Ljava/lang/String;, io.github.detekt.tooling.dsl.CompilerSpecBuilder.getLanguageVersion:()Ljava/lang/String;, io.github.detekt.tooling.dsl.CompilerSpecBuilder.setClasspath:(Ljava/lang/String;)V, io.github.detekt.tooling.dsl.CompilerSpecBuilder.setJdkHome:(Ljava/nio/file/Path;)V, io.github.detekt.tooling.dsl.CompilerSpecBuilder.setJvmTarget:(Ljava/lang/String;)V, io.github.detekt.tooling.dsl.CompilerSpecBuilder.setLanguageVersion:(Ljava/lang/String;)V' using 'B (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:34.654 [INFO]  [Creating]      [60/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.<init>
+12:40:34.654 [INFO]  [Creating]      [61/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.build
+12:40:34.654 [INFO]  [Creating]      [62/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.getClasspath
+12:40:34.654 [INFO]  [Creating]      [63/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.getJdkHome
+12:40:34.654 [INFO]  [Creating]      [64/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.getJvmTarget
+12:40:34.654 [INFO]  [Creating]      [65/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.getLanguageVersion
+12:40:34.654 [INFO]  [Creating]      [66/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.setClasspath
+12:40:34.654 [INFO]  [Creating]      [67/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.setJdkHome
+12:40:34.654 [INFO]  [Creating]      [68/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.setJvmTarget
+12:40:34.654 [INFO]  [Creating]      [69/282] io.github.detekt.tooling.dsl.CompilerSpecBuilder.setLanguageVersion
+12:40:34.654 [INFO]  [Creating]      [69/282]   Tests created: 1
+12:40:34.656 [INFO]  [Creating] [20/41] io.github.detekt.tooling.dsl.CompilerSpecBuilder
+12:40:34.656 [INFO]  [Creating] [20/41]   Tests created: 1
+12:40:34.656 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.ConfigModel'
+================================================================================
+12:40:34.656 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:34.658 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:34.658 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:34.689 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.getConfigPaths:()Ljava/util/Collection;, io.github.detekt.tooling.dsl.ConfigModel.getKnownPatterns:()Ljava/util/Collection;, io.github.detekt.tooling.dsl.ConfigModel.getResources:()Ljava/util/Collection;, io.github.detekt.tooling.dsl.ConfigModel.getShouldValidateBeforeAnalysis:()Ljava/lang/Boolean;, io.github.detekt.tooling.dsl.ConfigModel.getUseDefaultConfig:()Z, io.github.detekt.tooling.dsl.ConfigModel.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:34.841 [INFO]  [Creating]      [70/282] io.github.detekt.tooling.dsl.ConfigModel.getConfigPaths
+12:40:34.841 [INFO]  [Creating]      [71/282] io.github.detekt.tooling.dsl.ConfigModel.getKnownPatterns
+12:40:34.841 [INFO]  [Creating]      [72/282] io.github.detekt.tooling.dsl.ConfigModel.getResources
+12:40:34.841 [INFO]  [Creating]      [73/282] io.github.detekt.tooling.dsl.ConfigModel.getShouldValidateBeforeAnalysis
+12:40:34.841 [INFO]  [Creating]      [74/282] io.github.detekt.tooling.dsl.ConfigModel.getUseDefaultConfig
+12:40:34.841 [INFO]  [Creating]      [75/282] io.github.detekt.tooling.dsl.ConfigModel.toString
+12:40:34.841 [INFO]  [Creating]      [75/282]   Tests created: 1
+12:40:34.842 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.dsl.ConfigModel.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:36.494 [INFO]  [Creating]      [76/282] io.github.detekt.tooling.dsl.ConfigModel.equals
+12:40:36.494 [INFO]  [Creating]      [77/282] io.github.detekt.tooling.dsl.ConfigModel.hashCode
+12:40:36.494 [INFO]  [Creating]      [77/282]   Tests created: 9
+12:40:36.495 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.<init>:(Ljava/lang/Boolean;Ljava/util/Collection;ZLjava/util/Collection;Ljava/util/Collection;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:38.337 [INFO]  [Creating]      [78/282] io.github.detekt.tooling.dsl.ConfigModel.<init>
+12:40:38.337 [INFO]  [Creating]      [78/282]   Tests created: 1
+12:40:38.338 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.component1:()Ljava/lang/Boolean;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:39.167 [INFO]  [Creating]      [79/282] io.github.detekt.tooling.dsl.ConfigModel.component1
+12:40:39.167 [INFO]  [Creating]      [79/282]   Tests created: 2
+12:40:39.168 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.component2:()Ljava/util/Collection;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:39.781 [INFO]  [Creating]      [80/282] io.github.detekt.tooling.dsl.ConfigModel.component2
+12:40:39.781 [INFO]  [Creating]      [80/282]   Tests created: 1
+12:40:39.782 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.component3:()Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:40.633 [INFO]  [Creating]      [81/282] io.github.detekt.tooling.dsl.ConfigModel.component3
+12:40:40.633 [INFO]  [Creating]      [81/282]   Tests created: 2
+12:40:40.634 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.component4:()Ljava/util/Collection;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:41.270 [INFO]  [Creating]      [82/282] io.github.detekt.tooling.dsl.ConfigModel.component4
+12:40:41.270 [INFO]  [Creating]      [82/282]   Tests created: 1
+12:40:41.270 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.component5:()Ljava/util/Collection;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:41.873 [INFO]  [Creating]      [83/282] io.github.detekt.tooling.dsl.ConfigModel.component5
+12:40:41.873 [INFO]  [Creating]      [83/282]   Tests created: 1
+12:40:41.874 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigModel.copy:(Ljava/lang/Boolean;Ljava/util/Collection;ZLjava/util/Collection;Ljava/util/Collection;)Lio/github/detekt/tooling/dsl/ConfigModel;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:42.940 [INFO]  [Creating]      [84/282] io.github.detekt.tooling.dsl.ConfigModel.copy
+12:40:42.940 [INFO]  [Creating]      [84/282]   Tests created: 1
+12:40:42.942 [INFO]  [Creating] [21/41] io.github.detekt.tooling.dsl.ConfigModel
+12:40:42.942 [INFO]  [Creating] [21/41]   Tests created: 19
+12:40:42.942 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.ConfigSpecBuilder'
+================================================================================
+12:40:42.942 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:42.942 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:42.942 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:42.970 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigSpecBuilder.build:()Lio/github/detekt/tooling/api/spec/ConfigSpec;, io.github.detekt.tooling.dsl.ConfigSpecBuilder.getConfigPaths:()Ljava/util/Collection;, io.github.detekt.tooling.dsl.ConfigSpecBuilder.getKnownPatterns:()Ljava/util/Collection;, io.github.detekt.tooling.dsl.ConfigSpecBuilder.getResources:()Ljava/util/Collection;, io.github.detekt.tooling.dsl.ConfigSpecBuilder.getShouldValidateBeforeAnalysis:()Ljava/lang/Boolean;, io.github.detekt.tooling.dsl.ConfigSpecBuilder.getUseDefaultConfig:()Z, io.github.detekt.tooling.dsl.ConfigSpecBuilder.setConfigPaths:(Ljava/util/Collection;)V, io.github.detekt.tooling.dsl.ConfigSpecBuilder.setKnownPatterns:(Ljava/util/Collection;)V, io.github.detekt.tooling.dsl.ConfigSpecBuilder.setResources:(Ljava/util/Collection;)V, io.github.detekt.tooling.dsl.ConfigSpecBuilder.setShouldValidateBeforeAnalysis:(Ljava/lang/Boolean;)V, io.github.detekt.tooling.dsl.ConfigSpecBuilder.setUseDefaultConfig:(Z)V' using 'B (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:43.063 [INFO]  [Creating]      [85/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.build
+12:40:43.063 [INFO]  [Creating]      [86/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.getConfigPaths
+12:40:43.063 [INFO]  [Creating]      [87/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.getKnownPatterns
+12:40:43.063 [INFO]  [Creating]      [88/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.getResources
+12:40:43.063 [INFO]  [Creating]      [89/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.getShouldValidateBeforeAnalysis
+12:40:43.063 [INFO]  [Creating]      [90/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.getUseDefaultConfig
+12:40:43.063 [INFO]  [Creating]      [91/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.setConfigPaths
+12:40:43.063 [INFO]  [Creating]      [92/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.setKnownPatterns
+12:40:43.063 [INFO]  [Creating]      [93/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.setResources
+12:40:43.063 [INFO]  [Creating]      [94/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.setShouldValidateBeforeAnalysis
+12:40:43.063 [INFO]  [Creating]      [95/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.setUseDefaultConfig
+12:40:43.063 [INFO]  [Creating]      [95/282]   Tests created: 1
+12:40:43.064 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ConfigSpecBuilder.<init>:()V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:43.158 [INFO]  [Creating]      [96/282] io.github.detekt.tooling.dsl.ConfigSpecBuilder.<init>
+12:40:43.158 [INFO]  [Creating]      [96/282]   Tests created: 1
+12:40:43.160 [INFO]  [Creating] [22/41] io.github.detekt.tooling.dsl.ConfigSpecBuilder
+12:40:43.160 [INFO]  [Creating] [22/41]   Tests created: 2
+12:40:43.160 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.ExecutionModel'
+================================================================================
+12:40:43.160 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:43.164 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:43.164 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:43.190 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionModel.<init>:(Ljava/util/concurrent/ExecutorService;ZZ)V, io.github.detekt.tooling.dsl.ExecutionModel.getExecutorService:()Ljava/util/concurrent/ExecutorService;, io.github.detekt.tooling.dsl.ExecutionModel.getParallelAnalysis:()Z, io.github.detekt.tooling.dsl.ExecutionModel.getParallelParsing:()Z, io.github.detekt.tooling.dsl.ExecutionModel.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:43.323 [INFO]  [Creating]      [97/282] io.github.detekt.tooling.dsl.ExecutionModel.<init>
+12:40:43.323 [INFO]  [Creating]      [98/282] io.github.detekt.tooling.dsl.ExecutionModel.getExecutorService
+12:40:43.323 [INFO]  [Creating]      [99/282] io.github.detekt.tooling.dsl.ExecutionModel.getParallelAnalysis
+12:40:43.323 [INFO]  [Creating]     [100/282] io.github.detekt.tooling.dsl.ExecutionModel.getParallelParsing
+12:40:43.323 [INFO]  [Creating]     [101/282] io.github.detekt.tooling.dsl.ExecutionModel.toString
+12:40:43.323 [INFO]  [Creating]     [101/282]   Tests created: 1
+12:40:43.325 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionModel.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.dsl.ExecutionModel.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:44.344 [INFO]  [Creating]     [102/282] io.github.detekt.tooling.dsl.ExecutionModel.equals
+12:40:44.344 [INFO]  [Creating]     [103/282] io.github.detekt.tooling.dsl.ExecutionModel.hashCode
+12:40:44.344 [INFO]  [Creating]     [103/282]   Tests created: 7
+12:40:44.345 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionModel.component1:()Ljava/util/concurrent/ExecutorService;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:44.873 [INFO]  [Creating]     [104/282] io.github.detekt.tooling.dsl.ExecutionModel.component1
+12:40:44.873 [INFO]  [Creating]     [104/282]   Tests created: 1
+12:40:44.875 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionModel.component2:()Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:45.573 [INFO]  [Creating]     [105/282] io.github.detekt.tooling.dsl.ExecutionModel.component2
+12:40:45.573 [INFO]  [Creating]     [105/282]   Tests created: 2
+12:40:45.574 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionModel.component3:()Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:46.245 [INFO]  [Creating]     [106/282] io.github.detekt.tooling.dsl.ExecutionModel.component3
+12:40:46.245 [INFO]  [Creating]     [106/282]   Tests created: 2
+12:40:46.246 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionModel.copy:(Ljava/util/concurrent/ExecutorService;ZZ)Lio/github/detekt/tooling/dsl/ExecutionModel;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:46.872 [INFO]  [Creating]     [107/282] io.github.detekt.tooling.dsl.ExecutionModel.copy
+12:40:46.872 [INFO]  [Creating]     [107/282]   Tests created: 1
+12:40:46.874 [INFO]  [Creating] [23/41] io.github.detekt.tooling.dsl.ExecutionModel
+12:40:46.874 [INFO]  [Creating] [23/41]   Tests created: 14
+12:40:46.874 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.ExecutionSpecBuilder'
+================================================================================
+12:40:46.874 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:46.874 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:46.874 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:46.897 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExecutionSpecBuilder.<init>:()V, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.build:()Lio/github/detekt/tooling/api/spec/ExecutionSpec;, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.getExecutorService:()Ljava/util/concurrent/ExecutorService;, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.getParallelAnalysis:()Z, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.getParallelParsing:()Z, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.setExecutorService:(Ljava/util/concurrent/ExecutorService;)V, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.setParallelAnalysis:(Z)V, io.github.detekt.tooling.dsl.ExecutionSpecBuilder.setParallelParsing:(Z)V' using 'B (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:46.972 [INFO]  [Creating]     [108/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.<init>
+12:40:46.972 [INFO]  [Creating]     [109/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.build
+12:40:46.972 [INFO]  [Creating]     [110/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.getExecutorService
+12:40:46.972 [INFO]  [Creating]     [111/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.getParallelAnalysis
+12:40:46.972 [INFO]  [Creating]     [112/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.getParallelParsing
+12:40:46.972 [INFO]  [Creating]     [113/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.setExecutorService
+12:40:46.972 [INFO]  [Creating]     [114/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.setParallelAnalysis
+12:40:46.972 [INFO]  [Creating]     [115/282] io.github.detekt.tooling.dsl.ExecutionSpecBuilder.setParallelParsing
+12:40:46.972 [INFO]  [Creating]     [115/282]   Tests created: 1
+12:40:46.974 [INFO]  [Creating] [24/41] io.github.detekt.tooling.dsl.ExecutionSpecBuilder
+12:40:46.974 [INFO]  [Creating] [24/41]   Tests created: 1
+12:40:46.974 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.ExtensionsModel'
+================================================================================
+12:40:46.974 [INFO]  [Creating] Filtering out non-testable methods...
+12:40:46.976 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:40:46.976 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:40:47.002 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.getDisableDefaultRuleSets:()Z, io.github.detekt.tooling.dsl.ExtensionsModel.getDisabledExtensions:()Ljava/util/Set;, io.github.detekt.tooling.dsl.ExtensionsModel.getPlugins:()Lio/github/detekt/tooling/api/spec/ExtensionsSpec$Plugins;, io.github.detekt.tooling.dsl.ExtensionsModel.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:47.093 [INFO]  [Creating]     [116/282] io.github.detekt.tooling.dsl.ExtensionsModel.getDisableDefaultRuleSets
+12:40:47.093 [INFO]  [Creating]     [117/282] io.github.detekt.tooling.dsl.ExtensionsModel.getDisabledExtensions
+12:40:47.093 [INFO]  [Creating]     [118/282] io.github.detekt.tooling.dsl.ExtensionsModel.getPlugins
+12:40:47.093 [INFO]  [Creating]     [119/282] io.github.detekt.tooling.dsl.ExtensionsModel.toString
+12:40:47.093 [INFO]  [Creating]     [119/282]   R081: Exception in arrange section
+12:40:47.093 [INFO]  [Creating]     [119/282]     Diffblue Cover was unable to construct an instance of the class under test using
+12:40:47.093 [INFO]  [Creating]     [119/282]     io.github.detekt.tooling.dsl.ExtensionsModel.<init>(boolean, Plugins, Set).
+12:40:47.093 [INFO]  [Creating]     [119/282]     The arrange section threw
+12:40:47.093 [INFO]  [Creating]     [119/282]     java.lang.IllegalArgumentException: Either paths or loader must be specified, not both.
+12:40:47.093 [INFO]  [Creating]     [119/282]         at io.github.detekt.tooling.internal.PluginsHolder.<init>(PluginsHolder.kt:13)
+12:40:47.093 [INFO]  [Creating]     [119/282]     More information about the exception is provided in the support log.
+12:40:47.093 [INFO]  [Creating]     [119/282]     See https://diff.blue/R081 for further troubleshooting of this issue.
+12:40:47.094 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.dsl.ExtensionsModel.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:40:49.487 [INFO]  [Creating]     [120/282] io.github.detekt.tooling.dsl.ExtensionsModel.equals
+12:40:49.487 [INFO]  [Creating]     [121/282] io.github.detekt.tooling.dsl.ExtensionsModel.hashCode
+12:40:49.487 [INFO]  [Creating]     [121/282]   R013: No inputs found that don't throw a trivial exception
+12:40:49.487 [INFO]  [Creating]     [121/282]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:40:49.487 [INFO]  [Creating]     [121/282]     java.lang.IllegalArgumentException: Either paths or loader must be specified, not both.
+12:40:49.487 [INFO]  [Creating]     [121/282]         at io.github.detekt.tooling.internal.PluginsHolder.<init>(PluginsHolder.kt:13)
+12:40:49.487 [INFO]  [Creating]     [121/282]     In order to prevent equals(Object)hashCode()
+12:40:49.487 [INFO]  [Creating]     [121/282]     from throwing IllegalArgumentException, add constructors or factory
+12:40:49.487 [INFO]  [Creating]     [121/282]     methods that make it easier to construct fully initialized objects used in
+12:40:49.487 [INFO]  [Creating]     [121/282]     equals(Object)hashCode().
+12:40:49.487 [INFO]  [Creating]     [121/282]     See https://diff.blue/R013 to resolve this issue.
+12:40:49.488 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.<init>:(ZLio/github/detekt/tooling/api/spec/ExtensionsSpec$Plugins;Ljava/util/Set;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:52.345 [INFO]  [Creating]     [122/282] io.github.detekt.tooling.dsl.ExtensionsModel.<init>
+12:40:52.345 [INFO]  [Creating]     [122/282]   Tests created: 1
+12:40:52.346 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.component1:()Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:54.500 [INFO]  [Creating]     [123/282] io.github.detekt.tooling.dsl.ExtensionsModel.component1
+12:40:54.501 [INFO]  [Creating]     [123/282]   Tests created: 2
+12:40:54.502 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.component2:()Lio/github/detekt/tooling/api/spec/ExtensionsSpec$Plugins;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:56.395 [INFO]  [Creating]     [124/282] io.github.detekt.tooling.dsl.ExtensionsModel.component2
+12:40:56.395 [INFO]  [Creating]     [124/282]   Tests created: 1
+12:40:56.396 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.component3:()Ljava/util/Set;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:40:58.402 [INFO]  [Creating]     [125/282] io.github.detekt.tooling.dsl.ExtensionsModel.component3
+12:40:58.402 [INFO]  [Creating]     [125/282]   Tests created: 1
+12:40:58.403 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsModel.copy:(ZLio/github/detekt/tooling/api/spec/ExtensionsSpec$Plugins;Ljava/util/Set;)Lio/github/detekt/tooling/dsl/ExtensionsModel;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:00.863 [INFO]  [Creating]     [126/282] io.github.detekt.tooling.dsl.ExtensionsModel.copy
+12:41:00.863 [INFO]  [Creating]     [126/282]   R013: No inputs found that don't throw a trivial exception
+12:41:00.863 [INFO]  [Creating]     [126/282]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:41:00.863 [INFO]  [Creating]     [126/282]     java.lang.IllegalArgumentException: Either paths or loader must be specified, not both.
+12:41:00.863 [INFO]  [Creating]     [126/282]         at io.github.detekt.tooling.internal.PluginsHolder.<init>(PluginsHolder.kt:13)
+12:41:00.863 [INFO]  [Creating]     [126/282]     In order to prevent copy(boolean, Plugins, Set)
+12:41:00.863 [INFO]  [Creating]     [126/282]     from throwing IllegalArgumentException, add constructors or factory
+12:41:00.863 [INFO]  [Creating]     [126/282]     methods that make it easier to construct fully initialized objects used in
+12:41:00.863 [INFO]  [Creating]     [126/282]     copy(boolean, Plugins, Set).
+12:41:00.863 [INFO]  [Creating]     [126/282]     See https://diff.blue/R013 to resolve this issue.
+12:41:00.865 [INFO]  [Creating] [25/41] io.github.detekt.tooling.dsl.ExtensionsModel
+12:41:00.865 [INFO]  [Creating] [25/41]   Tests created: 5
+12:41:00.865 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.ExtensionsSpecBuilder'
+================================================================================
+12:41:00.865 [INFO]  [Creating] Filtering out non-testable methods...
+12:41:00.865 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:41:00.865 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:41:00.893 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.build:()Lio/github/detekt/tooling/api/spec/ExtensionsSpec;, io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.getDisableDefaultRuleSets:()Z, io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.getDisabledExtensions:()Ljava/util/Set;, io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.getPlugins:()Lio/github/detekt/tooling/api/spec/ExtensionsSpec$Plugins;, io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.setDisableDefaultRuleSets:(Z)V, io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.setDisabledExtensions:(Ljava/util/Set;)V, io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.setPlugins:(Lio/github/detekt/tooling/api/spec/ExtensionsSpec$Plugins;)V' using 'B (!sp, !fnm, df, !ris)'
+================================================================================
+12:41:00.975 [INFO]  [Creating]     [127/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.build
+12:41:00.975 [INFO]  [Creating]     [128/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.getDisableDefaultRuleSets
+12:41:00.975 [INFO]  [Creating]     [129/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.getDisabledExtensions
+12:41:00.975 [INFO]  [Creating]     [130/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.getPlugins
+12:41:00.975 [INFO]  [Creating]     [131/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.setDisableDefaultRuleSets
+12:41:00.975 [INFO]  [Creating]     [132/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.setDisabledExtensions
+12:41:00.975 [INFO]  [Creating]     [133/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.setPlugins
+12:41:00.975 [INFO]  [Creating]     [133/282]   Tests created: 1
+12:41:00.976 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.<init>:()V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:01.071 [INFO]  [Creating]     [134/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.<init>
+12:41:01.071 [INFO]  [Creating]     [134/282]   Tests created: 1
+12:41:01.072 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.disableExtension:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:09.900 [INFO]  [Creating]     [135/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.disableExtension
+12:41:09.900 [INFO]  [Creating]     [135/282]   Tests created: 1
+12:41:09.901 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.fromClassloader:(Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:17.921 [INFO]  [Creating]     [136/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.fromClassloader
+12:41:17.921 [INFO]  [Creating]     [136/282]   R013: No inputs found that don't throw a trivial exception
+12:41:17.921 [INFO]  [Creating]     [136/282]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:41:17.921 [INFO]  [Creating]     [136/282]     kotlin.reflect.jvm.internal.KotlinReflectionInternalError: Property 'Name' (JVM signature: Signature) not resolved in class java.lang.ClassLoader
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KDeclarationContainerImpl.findPropertyDescriptor(KDeclarationContainerImpl.kt:86)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$_descriptor$1.invoke(KPropertyImpl.kt:126)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$_descriptor$1.invoke(KPropertyImpl.kt:125)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.ReflectProperties$LazySoftVal.invoke(ReflectProperties.java:93)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImpl.getDescriptor(KPropertyImpl.kt:129)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImplKt.computeCallerForAccessor(KPropertyImpl.kt:252)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImplKt.access$computeCallerForAccessor(KPropertyImpl.kt:1)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$Getter$caller$2.invoke(KPropertyImpl.kt:180)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$Getter$caller$2.invoke(KPropertyImpl.kt:179)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.SafePublicationLazyImpl.getValue(LazyJVM.kt:107)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$Getter.getCaller(KPropertyImpl.kt:179)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KCallableImpl.call(KCallableImpl.kt:107)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KProperty0Impl.get(KProperty0Impl.kt:35)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at kotlin.reflect.jvm.internal.KProperty0Impl.invoke(KProperty0Impl.kt:41)
+12:41:17.921 [INFO]  [Creating]     [136/282]         at io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.fromClassloader(ExtensionsSpecBuilder.kt:38)
+12:41:17.921 [INFO]  [Creating]     [136/282]     In order to prevent fromClassloader(Function0)
+12:41:17.921 [INFO]  [Creating]     [136/282]     from throwing KotlinReflectionInternalError, add constructors or factory
+12:41:17.921 [INFO]  [Creating]     [136/282]     methods that make it easier to construct fully initialized objects used in
+12:41:17.921 [INFO]  [Creating]     [136/282]     fromClassloader(Function0).
+12:41:17.921 [INFO]  [Creating]     [136/282]     See https://diff.blue/R013 to resolve this issue.
+12:41:17.922 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.fromPaths:(Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:24.944 [INFO]  [Creating]     [137/282] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.fromPaths
+12:41:24.945 [INFO]  [Creating]     [137/282]   R013: No inputs found that don't throw a trivial exception
+12:41:24.945 [INFO]  [Creating]     [137/282]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:41:24.945 [INFO]  [Creating]     [137/282]     kotlin.reflect.jvm.internal.KotlinReflectionInternalError: Property 'paths' (JVM signature: paths) not resolved in class io.github.detekt.tooling.api.spec.ExtensionsSpec$Plugins
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KDeclarationContainerImpl.findPropertyDescriptor(KDeclarationContainerImpl.kt:86)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$_descriptor$1.invoke(KPropertyImpl.kt:126)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$_descriptor$1.invoke(KPropertyImpl.kt:125)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.ReflectProperties$LazySoftVal.invoke(ReflectProperties.java:93)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImpl.getDescriptor(KPropertyImpl.kt:129)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImplKt.computeCallerForAccessor(KPropertyImpl.kt:252)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImplKt.access$computeCallerForAccessor(KPropertyImpl.kt:1)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$Getter$caller$2.invoke(KPropertyImpl.kt:180)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$Getter$caller$2.invoke(KPropertyImpl.kt:179)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.SafePublicationLazyImpl.getValue(LazyJVM.kt:107)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KPropertyImpl$Getter.getCaller(KPropertyImpl.kt:179)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KCallableImpl.call(KCallableImpl.kt:107)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KProperty0Impl.get(KProperty0Impl.kt:35)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at kotlin.reflect.jvm.internal.KProperty0Impl.invoke(KProperty0Impl.kt:41)
+12:41:24.945 [INFO]  [Creating]     [137/282]         at io.github.detekt.tooling.dsl.ExtensionsSpecBuilder.fromPaths(ExtensionsSpecBuilder.kt:33)
+12:41:24.945 [INFO]  [Creating]     [137/282]     In order to prevent fromPaths(Function0)
+12:41:24.945 [INFO]  [Creating]     [137/282]     from throwing KotlinReflectionInternalError, add constructors or factory
+12:41:24.945 [INFO]  [Creating]     [137/282]     methods that make it easier to construct fully initialized objects used in
+12:41:24.945 [INFO]  [Creating]     [137/282]     fromPaths(Function0).
+12:41:24.945 [INFO]  [Creating]     [137/282]     See https://diff.blue/R013 to resolve this issue.
+12:41:24.946 [INFO]  [Creating] [26/41] io.github.detekt.tooling.dsl.ExtensionsSpecBuilder
+12:41:24.947 [INFO]  [Creating] [26/41]   Tests created: 3
+12:41:24.947 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.LoggingModel'
+================================================================================
+12:41:24.947 [INFO]  [Creating] Filtering out non-testable methods...
+12:41:24.950 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:41:24.950 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:41:25.002 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.getDebug:()Z, io.github.detekt.tooling.dsl.LoggingModel.getErrorChannel:()Ljava/lang/Appendable;, io.github.detekt.tooling.dsl.LoggingModel.getOutputChannel:()Ljava/lang/Appendable;, io.github.detekt.tooling.dsl.LoggingModel.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:41:25.177 [INFO]  [Creating]     [138/282] io.github.detekt.tooling.dsl.LoggingModel.getDebug
+12:41:25.177 [INFO]  [Creating]     [139/282] io.github.detekt.tooling.dsl.LoggingModel.getErrorChannel
+12:41:25.177 [INFO]  [Creating]     [140/282] io.github.detekt.tooling.dsl.LoggingModel.getOutputChannel
+12:41:25.177 [INFO]  [Creating]     [141/282] io.github.detekt.tooling.dsl.LoggingModel.toString
+12:41:25.177 [INFO]  [Creating]     [141/282]   Tests created: 1
+12:41:25.178 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.equals:(Ljava/lang/Object;)Z, io.github.detekt.tooling.dsl.LoggingModel.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:41:26.760 [INFO]  [Creating]     [142/282] io.github.detekt.tooling.dsl.LoggingModel.equals
+12:41:26.760 [INFO]  [Creating]     [143/282] io.github.detekt.tooling.dsl.LoggingModel.hashCode
+12:41:26.760 [INFO]  [Creating]     [143/282]   Tests created: 5
+12:41:26.761 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.<init>:(ZLjava/lang/Appendable;Ljava/lang/Appendable;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:27.459 [INFO]  [Creating]     [144/282] io.github.detekt.tooling.dsl.LoggingModel.<init>
+12:41:27.459 [INFO]  [Creating]     [144/282]   Tests created: 1
+12:41:27.460 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.component1:()Z' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:28.272 [INFO]  [Creating]     [145/282] io.github.detekt.tooling.dsl.LoggingModel.component1
+12:41:28.272 [INFO]  [Creating]     [145/282]   Tests created: 2
+12:41:28.273 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.component2:()Ljava/lang/Appendable;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:29.034 [INFO]  [Creating]     [146/282] io.github.detekt.tooling.dsl.LoggingModel.component2
+12:41:29.034 [INFO]  [Creating]     [146/282]   Tests created: 1
+12:41:29.035 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.component3:()Ljava/lang/Appendable;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:29.785 [INFO]  [Creating]     [147/282] io.github.detekt.tooling.dsl.LoggingModel.component3
+12:41:29.785 [INFO]  [Creating]     [147/282]   Tests created: 1
+12:41:29.786 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingModel.copy:(ZLjava/lang/Appendable;Ljava/lang/Appendable;)Lio/github/detekt/tooling/dsl/LoggingModel;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:41:30.768 [INFO]  [Creating]     [148/282] io.github.detekt.tooling.dsl.LoggingModel.copy
+12:41:30.768 [INFO]  [Creating]     [148/282]   Tests created: 1
+12:41:30.770 [INFO]  [Creating] [27/41] io.github.detekt.tooling.dsl.LoggingModel
+12:41:30.770 [INFO]  [Creating] [27/41]   Tests created: 12
+12:41:30.770 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.tooling.dsl.LoggingSpecBuilder'
+================================================================================
+12:41:30.770 [INFO]  [Creating] Filtering out non-testable methods...
+12:41:30.770 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:41:30.770 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:41:30.794 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingSpecBuilder.getDebug:()Z, io.github.detekt.tooling.dsl.LoggingSpecBuilder.getErrorChannel:()Ljava/lang/Appendable;, io.github.detekt.tooling.dsl.LoggingSpecBuilder.getOutputChannel:()Ljava/lang/Appendable;, io.github.detekt.tooling.dsl.LoggingSpecBuilder.setDebug:(Z)V, io.github.detekt.tooling.dsl.LoggingSpecBuilder.setErrorChannel:(Ljava/lang/Appendable;)V, io.github.detekt.tooling.dsl.LoggingSpecBuilder.setOutputChannel:(Ljava/lang/Appendable;)V' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:41:30.883 [INFO]  [Creating]     [149/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.getDebug
+12:41:30.883 [INFO]  [Creating]     [150/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.getErrorChannel
+12:41:30.883 [INFO]  [Creating]     [151/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.getOutputChannel
+12:41:30.883 [INFO]  [Creating]     [152/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.setDebug
+12:41:30.883 [INFO]  [Creating]     [153/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.setErrorChannel
+12:41:30.883 [INFO]  [Creating]     [154/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.setOutputChannel
+12:41:30.883 [INFO]  [Creating]     [154/282]   Tests created: 1
+12:41:30.884 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.tooling.dsl.LoggingSpecBuilder.build:()Lio/github/detekt/tooling/api/spec/LoggingSpec;' using 'B (!sp, !fnm, df, !ris)'
+================================================================================
+12:41:30.905 [INFO]  [Creating]     [155/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.<init>
+12:41:30.905 [INFO]  [Creating]     [155/282]   Diffblue AI was unable to find a test
+12:41:30.905 [INFO]  [Creating]     [156/282] io.github.detekt.tooling.dsl.LoggingSpecBuilder.build
+12:41:30.905 [INFO]  [Creating]     [156/282]   Diffblue AI was unable to find a test
+12:41:30.906 [INFO]  [Creating] [28/41] io.github.detekt.tooling.dsl.LoggingSpecBuilder
+12:41:30.906 [INFO]  [Creating] [28/41]   Tests created: 1
+12:41:30.910 [INFO]  [Reporting] 
+12:41:30.910 [INFO]  [Reporting] Summary:
+12:41:30.910 [INFO]  [Reporting] --------
+12:41:30.910 [INFO]  [Reporting] Total:                                             282 methods
+12:41:30.910 [INFO]  [Reporting] 110 tests created for:                             132 methods
+12:41:30.910 [INFO]  [Reporting] 
+12:41:30.910 [INFO]  [Reporting] No tests created for:                               24 methods
+12:41:30.910 [INFO]  [Reporting]     7 R083: Can't find a suitable constructor
+12:41:30.910 [INFO]  [Reporting]     6 R013: No inputs found that don't throw a trivial exception
+12:41:30.910 [INFO]  [Reporting]     4 R011: Sandboxing policy violation
+12:41:30.910 [INFO]  [Reporting]     4 R081: Exception in arrange section
+12:41:30.976 [ERROR] [Reporting] R005: Unable to load class
+Class: com.diffblue.cover.commons.io.ControlledPrintStream
+Please check that the class is available on your test runtime classpath.
+See https://diff.blue/R005 to resolve this issue.
+12:41:30.977 [INFO]  [Reporting] Log file: /Users/mnedzelskii/gits/detekt/detekt-tooling/.diffblue/log/user-20230706T123853.log
+12:41:30.977 [INFO]  [Reporting] Finished in 2m 37s
