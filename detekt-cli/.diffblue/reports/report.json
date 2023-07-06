@@ -1,0 +1,2968 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T12:16:26.130034+01:00",
+    "command" : "dcover create --working-directory detekt-cli io.github io.gitlab",
+    "totalTime" : 396.248,
+    "environmentDetectionTime" : 1.146,
+    "indexingTime" : 0.234,
+    "entryPointsTime" : 1.128,
+    "generationTime" : 198.728,
+    "timeToFirstTest" : 23.779,
+    "timeToLastTest" : 395.255,
+    "indexQueryTime" : 13.686,
+    "verificationTime" : 185.206,
+    "validationTime" : 0.556
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "R002" : "Missing observers",
+    "R004" : "No meaningful assertions found",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R034" : "Diffblue Cover can't complete test",
+    "R083" : "Can't find a suitable constructor",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T002" : "Trivial setter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T006" : "Main method",
+    "T010" : "Abstract or interface method",
+    "T012" : "Synthetic method",
+    "T020" : "Other trivial method",
+    "V000" : "Validated successfully",
+    "W002" : "Test compiled, but did not pass"
+  },
+  "summary" : {
+    "classesCount" : 47,
+    "methodsCount" : 206,
+    "completeTestCount" : 36,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 52,
+      "T001" : 28,
+      "T002" : 24,
+      "T003" : 14,
+      "T004" : 44,
+      "T005" : 6,
+      "T006" : 1,
+      "T010" : 3,
+      "T012" : 33,
+      "T020" : 1
+    },
+    "perMethodOutcome" : {
+      "F009" : 1,
+      "R000" : 75,
+      "R002" : 8,
+      "R004" : 2,
+      "R011" : 10,
+      "R013" : 11,
+      "R034" : 1,
+      "R083" : 3,
+      "T003" : 14,
+      "T004" : 44,
+      "T006" : 1,
+      "T010" : 3,
+      "T012" : 33
+    },
+    "perTestOutcome" : {
+      "R000" : 36
+    },
+    "perTestValidation" : {
+      "V000" : 36
+    },
+    "warnings" : {
+      "W002" : 3
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.cli.ClasspathResourceConverter" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R002" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs" : {
+      "methodsCount" : 53,
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 24,
+        "T002" : 24,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 51,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 4
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$Companion" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$inputPaths$2" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$reportPaths$2" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliRunner" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 4,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R002" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 4
+      },
+      "warnings" : {
+        "W002" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T010" : 2
+      },
+      "perMethodOutcome" : {
+        "T010" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$DefaultImpls" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener" : {
+      "methodsCount" : 16,
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 13,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "R000" : 3,
+        "R004" : 1,
+        "R011" : 7,
+        "R034" : 1,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ExistingPathConverter" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R002" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.HandledArgumentViolation" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.HelpRequest" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.JCommanderKt" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "T003" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R002" : 1,
+        "T003" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.Main" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T006" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "T006" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleClasspathResourceConverter" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R002" : 1,
+        "R013" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleExistingPathConverter" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R013" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.PathConverter" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R004" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 11,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 6,
+        "T001" : 2,
+        "T012" : 2,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 9,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 11
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath$Companion" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 1,
+        "T003" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$3" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$4" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$5" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$6" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8$1$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$9" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 4,
+        "T005" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R002" : 1,
+        "R011" : 1,
+        "T003" : 4,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$Companion" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$indentation$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Executable" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T010" : 1
+      },
+      "perMethodOutcome" : {
+        "T010" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Runner" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4
+      },
+      "perMethodOutcome" : {
+        "R013" : 4
+      },
+      "warnings" : {
+        "W002" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.VersionPrinter" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R013" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.cli.ClasspathResourceConverter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ClasspathResourceConverter.convert:(Ljava/lang/String;)Ljava/net/URL;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        200
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$Companion.invoke:(Lkotlin/jvm/functions/Function1;)Lio/gitlab/arturbosch/detekt/cli/CliArgs;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        205,
+        205
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$inputPaths$2.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$inputPaths$2.invoke:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        192
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$reportPaths$2.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs$reportPaths$2.invoke:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        196
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        8,
+        177,
+        192,
+        196,
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.access$getReports$p:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getAllRules:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        114
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getAutoCorrect:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        130
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getBasePath:()Ljava/nio/file/Path;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        95
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getBaseline:()Ljava/nio/file/Path;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        70
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getBuildUponDefaultConfig:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        108
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getClasspath:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        162
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getConfig:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getConfigResource:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getCreateBaseline:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getDebug:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        136
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getDisableDefaultRuleSets:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        101
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getExcludes:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getGenerateConfig:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getHelp:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        143
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getIncludes:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getInput:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getInputPaths:()Ljava/util/List;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        192,
+        192
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getJdkHome:()Ljava/nio/file/Path;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        184
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getJvmTarget:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        177
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getLanguageVersion:()Lorg/jetbrains/kotlin/config/LanguageVersion;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        170
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getMaxIssues:()Ljava/lang/Integer;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        121
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getParallel:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        62
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getPlugins:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getReportPaths:()Ljava/util/List;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        196,
+        196
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getRunRule:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        150
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.getShowVersion:()Z" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        190
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setAllRules:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        114
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setAutoCorrect:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        130
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setBasePath:(Ljava/nio/file/Path;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        95
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setBaseline:(Ljava/nio/file/Path;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        70
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setBuildUponDefaultConfig:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        108
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setClasspath:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        162
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setConfig:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setConfigResource:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setCreateBaseline:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setDebug:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        136
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setDisableDefaultRuleSets:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        101
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setExcludes:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setGenerateConfig:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setHelp:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        143
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setIncludes:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setInput:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setJdkHome:(Ljava/nio/file/Path;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        184
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setJvmTarget:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        177
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setLanguageVersion:(Lorg/jetbrains/kotlin/config/LanguageVersion;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        170
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setMaxIssues:(Ljava/lang/Integer;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        121
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setParallel:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        62
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setPlugins:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setRunRule:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        150
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliArgs.setShowVersion:(Z)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        190
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliRunner.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliRunner.run:([Ljava/lang/String;)Lio/github/detekt/tooling/api/AnalysisResult;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "warnings" : {
+        "W002" : 1
+      },
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.CliRunner.run:([Ljava/lang/String;Ljava/lang/Appendable;Ljava/lang/Appendable;)Lio/github/detekt/tooling/api/AnalysisResult;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "warnings" : {
+        "W002" : 1
+      },
+      "lineNumbers" : [
+        17,
+        36,
+        17,
+        17,
+        18,
+        36,
+        18,
+        18,
+        17,
+        20,
+        21,
+        22,
+        23,
+        20,
+        26,
+        27,
+        36,
+        27,
+        27,
+        28,
+        36,
+        28,
+        28,
+        29,
+        36,
+        29,
+        29,
+        31,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$DefaultImpls.convert:(Lio/gitlab/arturbosch/detekt/cli/DetektInputPathConverter;Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        29,
+        30,
+        31,
+        32,
+        33,
+        62,
+        33,
+        33,
+        33,
+        33,
+        29,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$1.invoke:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        30,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$2.<init>:(Lio/gitlab/arturbosch/detekt/cli/DetektInputPathConverter;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$convert$2.invoke:(Ljava/lang/String;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter.convert:(Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter.getConverter:()Lcom/beust/jcommander/IStringConverter;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        11,
+        13,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.getId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.getOutPrinter:()Ljava/lang/Appendable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        13,
+        1,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.getPriority:()I" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.init:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R004",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.init:(Lio/gitlab/arturbosch/detekt/api/SetupContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        17,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onFinish:(Ljava/util/List;Lio/gitlab/arturbosch/detekt/api/Detektion;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        25,
+        26,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onProcess:(Lorg/jetbrains/kotlin/psi/KtFile;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onProcess:(Lorg/jetbrains/kotlin/psi/KtFile;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        21,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onProcessComplete:(Lorg/jetbrains/kotlin/psi/KtFile;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onProcessComplete:(Lorg/jetbrains/kotlin/psi/KtFile;Ljava/util/Map;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onStart:(Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.onStart:(Ljava/util/List;Lorg/jetbrains/kotlin/resolve/BindingContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.DetektProgressListener.setOutPrinter:(Ljava/lang/Appendable;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        13,
+        1,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ExistingPathConverter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ExistingPathConverter.convert:(Ljava/lang/String;)Ljava/nio/file/Path;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.HandledArgumentViolation.<init>:(Ljava/lang/String;Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.HandledArgumentViolation.getUsageText:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.HelpRequest.<init>:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.HelpRequest.getUsageText:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.JCommanderKt.parseArguments:([Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/cli/CliArgs;" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        9,
+        11,
+        12,
+        14,
+        16,
+        17,
+        19,
+        22,
+        23,
+        26,
+        56,
+        26,
+        26,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.JCommanderKt.usageAsString:(Lcom/beust/jcommander/JCommander;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        30,
+        31,
+        32
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.JCommanderKt.validate:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Lcom/beust/jcommander/JCommander;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        36,
+        37,
+        39,
+        40,
+        43,
+        44,
+        44,
+        45,
+        46,
+        46,
+        47,
+        51,
+        51,
+        52,
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2$1.invoke:(Lorg/jetbrains/kotlin/config/LanguageVersion;)Ljava/lang/CharSequence;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter$convert$validValues$2.invoke:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        45
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter.convert$lambda$0:(Lkotlin/Lazy;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        47,
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter.convert:(Ljava/lang/String;)Lorg/jetbrains/kotlin/config/LanguageVersion;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        45
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.Main.buildRunner:([Ljava/lang/String;Ljava/io/PrintStream;Ljava/io/PrintStream;)Lio/gitlab/arturbosch/detekt/cli/runners/Executable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        55,
+        56,
+        57,
+        56,
+        57,
+        56,
+        57,
+        56,
+        57,
+        56,
+        59,
+        55,
+        61,
+        62,
+        63,
+        64,
+        65,
+        62
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.Main.main:([Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T006",
+      "perMethodOutcome" : "T006",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31,
+        32,
+        34,
+        37,
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleClasspathResourceConverter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        37,
+        38,
+        37
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleClasspathResourceConverter.convert:(Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        37
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleClasspathResourceConverter.getConverter:()Lio/gitlab/arturbosch/detekt/cli/ClasspathResourceConverter;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        37
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleExistingPathConverter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        41,
+        42,
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleExistingPathConverter.convert:(Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.MultipleExistingPathConverter.getConverter:()Lio/gitlab/arturbosch/detekt/cli/ExistingPathConverter;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.PathConverter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.PathConverter.convert:(Ljava/lang/String;)Ljava/nio/file/Path;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R004",
+      "lineNumbers" : [
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath$Companion.from:(Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/cli/ReportPath;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        16,
+        24,
+        25,
+        25,
+        32,
+        25,
+        25,
+        26,
+        26,
+        32,
+        26,
+        26,
+        27,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.<init>:(Ljava/lang/String;Ljava/nio/file/Path;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.component1:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.component2:()Ljava/nio/file/Path;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.copy$default:(Lio/gitlab/arturbosch/detekt/cli/ReportPath;Ljava/lang/String;Ljava/nio/file/Path;ILjava/lang/Object;)Lio/gitlab/arturbosch/detekt/cli/ReportPath;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.copy:(Ljava/lang/String;Ljava/nio/file/Path;)Lio/gitlab/arturbosch/detekt/cli/ReportPath;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.getKind:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.getPath:()Ljava/nio/file/Path;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.hashCode:()I" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.ReportPath.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Ljava/lang/Appendable;Ljava/lang/Appendable;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$1.invoke:(Lio/github/detekt/tooling/dsl/LoggingSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$2.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$2.invoke:(Lio/github/detekt/tooling/dsl/ProjectSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$3.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$3.invoke:(Lio/github/detekt/tooling/dsl/RulesSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        1,
+        29,
+        30,
+        26,
+        32,
+        33,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        23
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$4.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$4.invoke:(Lio/github/detekt/tooling/dsl/BaselineSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        37,
+        38,
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$4.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        36
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$5.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$5.invoke:(Lio/github/detekt/tooling/dsl/ConfigSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        42,
+        43,
+        44,
+        46,
+        87,
+        46,
+        46,
+        46,
+        46,
+        47,
+        87,
+        47,
+        47,
+        47,
+        47,
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$5.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$6.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$6.invoke:(Lio/github/detekt/tooling/dsl/ExecutionSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        51,
+        52,
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$6.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7$1.invoke:()Ljava/util/Collection;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        57
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7.invoke:(Lio/github/detekt/tooling/dsl/ExtensionsSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        56,
+        57,
+        58
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$7.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        55
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8$1$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/ReportPath;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8$1$1.invoke:()Lkotlin/Pair;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        62
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8.invoke:(Lio/github/detekt/tooling/dsl/ReportsSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        61,
+        87,
+        62,
+        63,
+        87,
+        88,
+        64
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$8.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        60
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$9.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$9.invoke:(Lio/github/detekt/tooling/dsl/CompilerSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        67,
+        68,
+        69,
+        69,
+        70,
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1$9.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Ljava/lang/Appendable;Ljava/lang/Appendable;Lio/gitlab/arturbosch/detekt/cli/CliArgs;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1.invoke:(Lio/github/detekt/tooling/dsl/ProcessingSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        10,
+        16,
+        23,
+        36,
+        41,
+        50,
+        55,
+        60,
+        66,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt$createSpec$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        9
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt.access$asPatterns:(Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        1
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt.access$toRunPolicy:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)Lio/github/detekt/tooling/api/spec/RulesSpec$RunPolicy;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        1
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt.asPatterns:(Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        76,
+        76,
+        77,
+        76,
+        77,
+        78,
+        77,
+        78,
+        76,
+        79,
+        79
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt.createSpec:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Ljava/lang/Appendable;Ljava/lang/Appendable;)Lio/github/detekt/tooling/api/spec/ProcessingSpec;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        8,
+        9
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.SpecKt.toRunPolicy:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;)Lio/github/detekt/tooling/api/spec/RulesSpec$RunPolicy;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        82,
+        83,
+        87,
+        83,
+        83,
+        84
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/runners/ConfigExporter;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1$1.invoke:()Ljava/util/Collection;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/runners/ConfigExporter;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1.invoke:(Lio/github/detekt/tooling/dsl/ExtensionsSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        19,
+        20,
+        21
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1.<init>:(Lio/gitlab/arturbosch/detekt/cli/runners/ConfigExporter;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1.invoke:(Lio/github/detekt/tooling/dsl/ProcessingSpecBuilder;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        18,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter$execute$spec$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Ljava/lang/Appendable;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        10,
+        11,
+        12,
+        10
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter.access$getArguments$p:(Lio/gitlab/arturbosch/detekt/cli/runners/ConfigExporter;)Lio/gitlab/arturbosch/detekt/cli/CliArgs;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        10
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter.execute:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        16,
+        16,
+        17,
+        23,
+        24,
+        24,
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        56
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$Companion.dump:(Lorg/jetbrains/kotlin/psi/KtFile;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        57,
+        58,
+        59,
+        60,
+        57,
+        57,
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$indentation$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$indentation$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$indentation$1.invoke:(I)Ljava/lang/CharSequence;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$indentation$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R002",
+      "lineNumbers" : [
+        11,
+        13,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.access$getSb$p:(Lio/gitlab/arturbosch/detekt/cli/runners/ElementPrinter;)Ljava/lang/StringBuilder;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.getDump:(Lorg/jetbrains/kotlin/psi/KtElement;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.getIndentation:()Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.getLine:(Lorg/jetbrains/kotlin/psi/KtElement;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        20,
+        21,
+        19,
+        22
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.isContainer:(Lorg/jetbrains/kotlin/psi/KtElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        52,
+        53,
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter.visitKtElement:(Lorg/jetbrains/kotlin/psi/KtElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        39,
+        41,
+        44,
+        45,
+        46,
+        47,
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Executable.execute:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T010",
+      "perMethodOutcome" : "T010"
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Runner.<init>:(Lio/github/detekt/tooling/api/spec/ProcessingSpec;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Runner.<init>:(Lio/gitlab/arturbosch/detekt/cli/CliArgs;Ljava/lang/Appendable;Ljava/lang/Appendable;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Runner.call:()Lio/github/detekt/tooling/api/AnalysisResult;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "warnings" : {
+        "W002" : 1
+      },
+      "lineNumbers" : [
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.Runner.execute:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        23,
+        24,
+        25,
+        26,
+        37,
+        26,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.VersionPrinter.<init>:(Ljava/lang/Appendable;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        5
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.cli.runners.VersionPrinter.execute:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        8,
+        9
+      ]
+    }
+  }
+}
