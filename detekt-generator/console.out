@@ -1,0 +1,485 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 221 callable methods in 48 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 1% ___________________________
+INFO                                                              
+INFO   [1/48] io.gitlab.arturbosch.detekt.generator.DetektPrinter
+INFO  _____________________________ 1% ___________________________
+INFO                                                              
+INFO   [1/48]   Tests created: 1
+INFO  _____________________________ 1% ___________________________
+INFO  #____________________________ 1% ___________________________
+INFO  #____________________________ 2% ___________________________
+INFO  #____________________________ 2% ___________________________
+INFO                                                              
+INFO   [2/48] io.gitlab.arturbosch.detekt.generator.Generator
+INFO  #____________________________ 2% ___________________________
+INFO                                                              
+INFO   [2/48]   Tests created: 2
+INFO  #____________________________ 2% ___________________________
+INFO  ##___________________________ 4% ___________________________
+INFO  ###__________________________ 5% ___________________________
+INFO  ###__________________________ 6% ___________________________
+INFO                                                              
+INFO   [3/48] io.gitlab.arturbosch.detekt.generator.GeneratorArgs
+INFO  ###__________________________ 6% ___________________________
+INFO                                                              
+INFO   [3/48]   Tests created: 5
+INFO  ###__________________________ 6% ___________________________
+INFO  ####_________________________ 7% ___________________________
+INFO                                                              
+INFO   [4/48] io.gitlab.arturbosch.detekt.generator.Main
+INFO  ####_________________________ 7% ___________________________
+INFO                                                              
+INFO   [4/48]   Tests created: 0
+INFO  ####_________________________ 7% ___________________________
+INFO  #####________________________ 8% ___________________________
+INFO  #####________________________ 9% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO                                                              
+INFO   [5/48] io.gitlab.arturbosch.detekt.generator.collection.Active
+INFO  ######______________________ 10% ___________________________
+INFO                                                              
+INFO   [5/48]   Tests created: 2
+INFO  ######______________________ 10% ___________________________
+INFO  ######______________________ 11% ___________________________
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [6/48] io.gitlab.arturbosch.detekt.generator.collection.AnnotationsKt
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [6/48]   Tests created: 2
+INFO  #######_____________________ 12% ___________________________
+INFO  ########____________________ 13% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO  #########___________________ 15% ___________________________
+INFO  #########___________________ 16% ___________________________
+INFO                                                              
+INFO   [7/48] io.gitlab.arturbosch.detekt.generator.collection.BooleanDefault
+INFO  #########___________________ 16% ___________________________
+INFO                                                              
+INFO   [7/48]   Tests created: 10
+INFO  #########___________________ 16% ___________________________
+INFO  ###########_________________ 19% ___________________________
+INFO  ###########_________________ 19% ___________________________
+INFO  ############________________ 20% ___________________________
+INFO  ############________________ 21% ___________________________
+INFO  #############_______________ 22% ___________________________
+INFO  #############_______________ 23% ___________________________
+INFO  ##############______________ 23% ___________________________
+INFO                                                              
+INFO   [8/48] io.gitlab.arturbosch.detekt.generator.collection.Configuration
+INFO  ##############______________ 23% ___________________________
+INFO                                                              
+INFO   [8/48]   Tests created: 19
+INFO  ##############______________ 23% ___________________________
+INFO  ##############______________ 24% ___________________________
+INFO  ###############_____________ 25% ___________________________
+INFO                                                              
+INFO   [9/48] io.gitlab.arturbosch.detekt.generator.collection.ConfigurationCollector
+INFO  ###############_____________ 25% ___________________________
+INFO                                                              
+INFO   [9/48]   Tests created: 1
+INFO  ###############_____________ 25% ___________________________
+INFO  ###############_____________ 26% ___________________________
+INFO  ################____________ 27% ___________________________
+INFO                                                              
+INFO  [10/48] io.gitlab.arturbosch.detekt.generator.collection.DefaultValue$Companion
+INFO  ################____________ 27% ___________________________
+INFO                                                              
+INFO  [10/48]   Tests created: 0
+INFO  ################____________ 27% ___________________________
+INFO  ################____________ 28% ___________________________
+INFO                                                              
+INFO  [11/48] io.gitlab.arturbosch.detekt.generator.collection.DefaultValuesKt
+INFO  ################____________ 28% ___________________________
+INFO                                                              
+INFO  [11/48]   Tests created: 1
+INFO  ################____________ 28% ___________________________
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO  [12/48] io.gitlab.arturbosch.detekt.generator.collection.DetektCollector
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO  [12/48]   Tests created: 2
+INFO  #################___________ 29% ___________________________
+INFO  ##################__________ 31% ___________________________
+INFO                                                              
+INFO  [13/48] io.gitlab.arturbosch.detekt.generator.collection.DocumentationCollector
+INFO  ##################__________ 31% ___________________________
+INFO                                                              
+INFO  [13/48]   Tests created: 1
+INFO  ##################__________ 31% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO  [14/48] io.gitlab.arturbosch.detekt.generator.collection.Inactive
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO  [14/48]   Tests created: 0
+INFO  ###################_________ 32% ___________________________
+INFO  ###################_________ 33% ___________________________
+INFO  ####################________ 34% ___________________________
+INFO  #####################_______ 35% ___________________________
+INFO                                                              
+INFO  [15/48] io.gitlab.arturbosch.detekt.generator.collection.IntegerDefault
+INFO  #####################_______ 35% ___________________________
+INFO                                                              
+INFO  [15/48]   Tests created: 10
+INFO  #####################_______ 35% ___________________________
+INFO  #####################_______ 36% ___________________________
+INFO  ######################______ 37% ___________________________
+INFO                                                              
+INFO  [16/48] io.gitlab.arturbosch.detekt.generator.collection.KDocTagsKt
+INFO  ######################______ 37% ___________________________
+INFO                                                              
+INFO  [16/48]   Tests created: 0
+INFO  ######################______ 37% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO  ###########################_ 46% ___________________________
+INFO  ############################ 47% ___________________________
+INFO  ############################ 47% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 49% ___________________________
+INFO  ############################ 50% ___________________________
+INFO  ############################ 51% ___________________________
+INFO  ############################ 52% ___________________________
+INFO  ############################ 52% ___________________________
+INFO                                                              
+INFO  [17/48] io.gitlab.arturbosch.detekt.generator.collection.Rule
+INFO  ############################ 52% ___________________________
+INFO                                                              
+INFO  [17/48]   Tests created: 0
+INFO  ############################ 52% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 54% ___________________________
+INFO                                                              
+INFO  [18/48] io.gitlab.arturbosch.detekt.generator.collection.RuleCollector
+INFO  ############################ 54% ___________________________
+INFO                                                              
+INFO  [18/48]   Tests created: 2
+INFO  ############################ 54% ___________________________
+INFO  ############################ 55% ___________________________
+INFO  ############################ 56% ___________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 58% ##_________________________
+INFO                                                              
+INFO  [19/48] io.gitlab.arturbosch.detekt.generator.collection.RuleSetPage
+INFO  ############################ 58% ##_________________________
+INFO                                                              
+INFO  [19/48]   Tests created: 0
+INFO  ############################ 58% ##_________________________
+INFO  ############################ 61% ###________________________
+INFO  ############################ 61% ####_______________________
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 63% #####______________________
+INFO  ############################ 63% #####______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 65% ######_____________________
+INFO                                                              
+INFO  [20/48] io.gitlab.arturbosch.detekt.generator.collection.RuleSetProvider
+INFO  ############################ 65% ######_____________________
+INFO                                                              
+INFO  [20/48]   Tests created: 0
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 66% ######_____________________
+INFO                                                              
+INFO  [21/48] io.gitlab.arturbosch.detekt.generator.collection.RuleSetProviderCollector
+INFO  ############################ 66% ######_____________________
+INFO                                                              
+INFO  [21/48]   Tests created: 2
+INFO  ############################ 66% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 68% #######____________________
+INFO  ############################ 69% ########___________________
+INFO  ############################ 70% #########__________________
+INFO                                                              
+INFO  [22/48] io.gitlab.arturbosch.detekt.generator.collection.RuleSetProviderVisitor
+INFO  ############################ 70% #########__________________
+INFO                                                              
+INFO  [22/48]   Tests created: 2
+INFO  ############################ 70% #########__________________
+INFO  ############################ 71% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 73% ##########_________________
+INFO                                                              
+INFO  [23/48] io.gitlab.arturbosch.detekt.generator.collection.RuleVisitor
+INFO  ############################ 73% ##########_________________
+INFO                                                              
+INFO  [23/48]   Tests created: 1
+INFO  ############################ 73% ##########_________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 75% ############_______________
+INFO  ############################ 76% ############_______________
+INFO  ############################ 76% #############______________
+INFO                                                              
+INFO  [24/48] io.gitlab.arturbosch.detekt.generator.collection.StringDefault
+INFO  ############################ 76% #############______________
+INFO                                                              
+INFO  [24/48]   Tests created: 10
+INFO  ############################ 76% #############______________
+INFO  ############################ 77% #############______________
+INFO  ############################ 78% #############______________
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 80% ###############____________
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [25/48] io.gitlab.arturbosch.detekt.generator.collection.StringListDefault
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [25/48]   Tests created: 15
+INFO  ############################ 80% ###############____________
+INFO  ############################ 81% ################___________
+INFO  ############################ 82% ################___________
+INFO  ############################ 83% ################___________
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [26/48] io.gitlab.arturbosch.detekt.generator.collection.ValuesWithReasonDefault
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [26/48]   Tests created: 14
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [27/48] io.gitlab.arturbosch.detekt.generator.collection.exception.InvalidAliasesDeclaration
+INFO  ############################ 84% #################__________
+INFO                                                              
+INFO  [27/48]   Tests created: 1
+INFO  ############################ 84% #################__________
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [28/48] io.gitlab.arturbosch.detekt.generator.collection.exception.InvalidCodeExampleDocumentationException
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [28/48]   Tests created: 1
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [29/48] io.gitlab.arturbosch.detekt.generator.collection.exception.InvalidDocumentationException
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [29/48]   Tests created: 1
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [30/48] io.gitlab.arturbosch.detekt.generator.collection.exception.InvalidIssueDeclaration
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [30/48]   Tests created: 1
+INFO  ############################ 85% ##################_________
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [31/48] io.gitlab.arturbosch.detekt.generator.out.AbstractWriter
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [31/48]   Tests created: 0
+INFO  ############################ 86% ##################_________
+INFO  ############################ 87% ###################________
+INFO                                                              
+INFO  [32/48] io.gitlab.arturbosch.detekt.generator.out.MarkdownWriter
+INFO  ############################ 87% ###################________
+INFO                                                              
+INFO  [32/48]   Tests created: 1
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ###################________
+INFO                                                              
+INFO  [33/48] io.gitlab.arturbosch.detekt.generator.out.PropertiesWriter
+INFO  ############################ 88% ###################________
+INFO                                                              
+INFO  [33/48]   Tests created: 1
+INFO  ############################ 88% ###################________
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [34/48] io.gitlab.arturbosch.detekt.generator.out.YamlWriter
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [34/48]   Tests created: 1
+INFO  ############################ 89% ####################_______
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [35/48] io.gitlab.arturbosch.detekt.generator.printer.CliOptionsPrinter
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [35/48]   Tests created: 0
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [36/48] io.gitlab.arturbosch.detekt.generator.printer.DeprecatedPrinter
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [36/48]   Tests created: 0
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [37/48] io.gitlab.arturbosch.detekt.generator.printer.DeprecatedPrinterKt
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [37/48]   Tests created: 1
+INFO  ############################ 90% #####################______
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [38/48] io.gitlab.arturbosch.detekt.generator.printer.RuleConfigurationPrinter
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [38/48]   Tests created: 0
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [39/48] io.gitlab.arturbosch.detekt.generator.printer.RulePrinter
+INFO  ############################ 91% #####################______
+INFO                                                              
+INFO  [39/48]   Tests created: 0
+INFO  ############################ 91% #####################______
+INFO  ############################ 92% ######################_____
+INFO                                                              
+INFO  [40/48] io.gitlab.arturbosch.detekt.generator.printer.RuleSetPagePrinter
+INFO  ############################ 92% ######################_____
+INFO                                                              
+INFO  [40/48]   Tests created: 0
+INFO  ############################ 92% ######################_____
+INFO  ############################ 93% ######################_____
+INFO                                                              
+INFO  [41/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.ConfigPrinter
+INFO  ############################ 93% ######################_____
+INFO                                                              
+INFO  [41/48]   Tests created: 0
+INFO  ############################ 93% ######################_____
+INFO                                                              
+INFO  [42/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.ExclusionKt
+INFO  ############################ 93% ######################_____
+INFO                                                              
+INFO  [42/48]   Tests created: 0
+INFO  ############################ 93% ######################_____
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [43/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.Exclusions
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [43/48]   Tests created: 0
+INFO  ############################ 94% #######################____
+INFO  ############################ 95% ########################___
+INFO                                                              
+INFO  [44/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.Exclusions$Companion
+INFO  ############################ 95% ########################___
+INFO                                                              
+INFO  [44/48]   Tests created: 0
+INFO  ############################ 95% ########################___
+INFO                                                              
+INFO  [45/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.KotlinScriptAndTestExclusions
+INFO  ############################ 95% ########################___
+INFO                                                              
+INFO  [45/48]   Tests created: 0
+INFO  ############################ 95% ########################___
+INFO  ############################ 96% #########################__
+INFO                                                              
+INFO  [46/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.KotlinScriptExclusions
+INFO  ############################ 96% #########################__
+INFO                                                              
+INFO  [46/48]   Tests created: 0
+INFO  ############################ 96% #########################__
+INFO  ############################ 97% #########################__
+INFO  ############################ 98% #########################__
+INFO  ############################ 98% ##########################_
+INFO                                                              
+INFO  [47/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.RuleSetConfigPrinterKt
+INFO  ############################ 98% ##########################_
+INFO                                                              
+INFO  [47/48]   Tests created: 0
+INFO  ############################ 98% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [48/48] io.gitlab.arturbosch.detekt.generator.printer.defaultconfig.TestExclusions
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [48/48]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                             221 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  110 tests created for:                              92 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Not unit-testable:                                   3 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      2 T009: No implementation for abstract class
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 T006: Main method
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                              126 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     46 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     32 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     25 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     21 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R002: Missing observers
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 110 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-generator/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-generator/.diffblue/log/user-20230706T124131.log
+INFO  Finished in 2m 59s

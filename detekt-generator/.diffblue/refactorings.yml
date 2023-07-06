@@ -1,0 +1,6 @@
+name: com.diffblue.cover.refactoring.Recipe
+recipeList:
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.generator.printer.CliOptionsPrinter,
+    fieldName: jCommander}
+- org.openrewrite.java.format.AutoFormat: {}
+type: specs.openrewrite.org/v1beta/recipe
