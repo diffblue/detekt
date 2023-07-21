@@ -1,0 +1,229 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 62 callable methods in 14 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 1% ___________________________
+INFO  #____________________________ 3% ___________________________
+INFO  ##___________________________ 4% ___________________________
+INFO  ###__________________________ 6% ___________________________
+INFO  ####_________________________ 8% ___________________________
+INFO  #####________________________ 9% ___________________________
+INFO                                                              
+INFO   [1/14] io.gitlab.arturbosch.detekt.sample.extensions.SampleConfigValidator
+INFO  #####________________________ 9% ___________________________
+INFO                                                              
+INFO   [1/14]   Tests created: 5
+INFO  #####________________________ 9% ___________________________
+INFO  #######_____________________ 12% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO  #########___________________ 16% ___________________________
+INFO                                                              
+INFO   [2/14] io.gitlab.arturbosch.detekt.sample.extensions.SampleMessage
+INFO  #########___________________ 16% ___________________________
+INFO                                                              
+INFO   [2/14]   Tests created: 4
+INFO  #########___________________ 16% ___________________________
+INFO  ###########_________________ 19% ___________________________
+INFO  ############________________ 20% ___________________________
+INFO                                                              
+INFO   [3/14] io.gitlab.arturbosch.detekt.sample.extensions.SampleProvider
+INFO  ############________________ 20% ___________________________
+INFO                                                              
+INFO   [3/14]   Tests created: 1
+INFO  ############________________ 20% ___________________________
+INFO  #########################___ 41% ___________________________
+INFO                                                              
+INFO   [4/14] io.gitlab.arturbosch.detekt.sample.extensions.processors.NumberOfLoopsProcessor
+INFO  #########################___ 41% ___________________________
+INFO                                                              
+INFO   [4/14]   Tests created: 0
+INFO  #########################___ 41% ___________________________
+INFO  ##########################__ 43% ___________________________
+INFO                                                              
+INFO   [5/14] io.gitlab.arturbosch.detekt.sample.extensions.processors.NumberOfLoopsProcessor$Companion
+INFO  ##########################__ 43% ___________________________
+INFO                                                              
+INFO   [5/14]   Tests created: 0
+INFO  ##########################__ 43% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO   [6/14] io.gitlab.arturbosch.detekt.sample.extensions.processors.NumberOfLoopsProcessor$LoopVisitor
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO   [6/14]   Tests created: 1
+INFO  ############################ 50% ___________________________
+INFO  ############################ 51% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 54% ___________________________
+INFO  ############################ 56% ___________________________
+INFO  ############################ 58% #__________________________
+INFO  ############################ 59% ##_________________________
+INFO  ############################ 61% ###________________________
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 66% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 69% ########___________________
+INFO  ############################ 70% #########__________________
+INFO                                                              
+INFO   [7/14] io.gitlab.arturbosch.detekt.sample.extensions.processors.QualifiedNameProcessor
+INFO  ############################ 70% #########__________________
+INFO                                                              
+INFO   [7/14]   Tests created: 3
+INFO  ############################ 70% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 75% ############_______________
+INFO                                                              
+INFO   [8/14] io.gitlab.arturbosch.detekt.sample.extensions.processors.QualifiedNameProcessor$ClassNameVisitor
+INFO  ############################ 75% ############_______________
+INFO                                                              
+INFO   [8/14]   Tests created: 2
+INFO  ############################ 75% ############_______________
+INFO  ############################ 77% #############______________
+INFO                                                              
+INFO   [9/14] io.gitlab.arturbosch.detekt.sample.extensions.processors.QualifiedNameProcessorKt
+INFO  ############################ 77% #############______________
+INFO                                                              
+INFO   [9/14]   Tests created: 0
+INFO  ############################ 77% #############______________
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [10/14] io.gitlab.arturbosch.detekt.sample.extensions.reports.QualifiedNamesConsoleReport
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [10/14]   Tests created: 1
+INFO  ############################ 80% ###############____________
+INFO  ############################ 83% #################__________
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [11/14] io.gitlab.arturbosch.detekt.sample.extensions.reports.QualifiedNamesOutputReport
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [11/14]   Tests created: 1
+INFO  ############################ 85% ##################_________
+INFO  ############################ 87% ###################________
+INFO                                                              
+INFO  [12/14] io.gitlab.arturbosch.detekt.sample.extensions.reports.ReportsKt
+INFO  ############################ 87% ###################________
+INFO                                                              
+INFO  [12/14]   Tests created: 0
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ####################_______
+INFO  ############################ 90% #####################______
+INFO  ############################ 91% ######################_____
+INFO  ############################ 93% #######################____
+INFO                                                              
+INFO  [13/14] io.gitlab.arturbosch.detekt.sample.extensions.rules.TooManyFunctions
+INFO  ############################ 93% #######################____
+INFO                                                              
+INFO  [13/14]   Tests created: 0
+INFO  ############################ 93% #######################____
+INFO  ############################ 95% ########################___
+INFO  ############################ 96% #########################__
+INFO  ############################ 98% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [14/14] io.gitlab.arturbosch.detekt.sample.extensions.rules.TooManyFunctionsTwo
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [14/14]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              62 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  18 tests created for:                               21 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               41 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     23 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      7 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      4 R034: Diffblue Cover can't complete test
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      2 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes..
+INFO  The following files were modified during generation of tests and have been detected to cause problems.
+INFO  These files have been restored to the state before we added tests to them.
+INFO  /Users/mnedzelskii/gits/detekt/detekt-sample-extensions/src/test/java/io/gitlab/arturbosch/detekt/sample/extensions/SampleConfigValidatorDiffblueTest.java
+INFO    
+INFO    See the log for more details including the output of the validation command.
+INFO    Please ensure that the validation command "gradle test" is successful
+INFO    before running dcover again.
+INFO    You can specify a custom command with the "--validation-command" option,
+INFO    or run with "--skip-test-validation" option to skip validation.
+INFO    More detailed information about these options is available via "--help".
+INFO  Number of tests discarded during validation
+INFO    1 for io.gitlab.arturbosch.detekt.sample.extensions.SampleConfigValidator.<init>
+INFO    1 for io.gitlab.arturbosch.detekt.sample.extensions.SampleConfigValidator.getId
+INFO    1 for io.gitlab.arturbosch.detekt.sample.extensions.SampleConfigValidator.getPriority
+INFO    2 for io.gitlab.arturbosch.detekt.sample.extensions.SampleConfigValidator.validate
+INFO  To skip discarding these tests please re-run DCover with --skip-test-validation
+INFO  Test validation was able to validate 13 out of 18 complete tests, the remainder were discarded.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-sample-extensions/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-sample-extensions/.diffblue/log/user-20230706T132906.log
+INFO  Finished in 1m 7s

@@ -1,0 +1,1888 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:30:15.420163+01:00",
+    "command" : "dcover create --working-directory detekt-test io.github io.gitlab",
+    "totalTime" : 71.906,
+    "environmentDetectionTime" : 0.845,
+    "indexingTime" : 0.204,
+    "entryPointsTime" : 0.827,
+    "generationTime" : 58.514,
+    "timeToFirstTest" : 42.033,
+    "timeToLastTest" : 71.182,
+    "indexQueryTime" : 18.988,
+    "verificationTime" : 2.066,
+    "validationTime" : 0.526
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "R005" : "Unable to load class",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R083" : "Can't find a suitable constructor",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 34,
+    "methodsCount" : 141,
+    "completeTestCount" : 10,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 40,
+      "T001" : 1,
+      "T003" : 4,
+      "T004" : 44,
+      "T005" : 2,
+      "T012" : 50
+    },
+    "perMethodOutcome" : {
+      "F009" : 1,
+      "R000" : 8,
+      "R005" : 25,
+      "R011" : 1,
+      "R013" : 7,
+      "R083" : 1,
+      "T003" : 4,
+      "T004" : 44,
+      "T012" : 50
+    },
+    "perTestOutcome" : {
+      "R000" : 10
+    },
+    "perTestValidation" : {
+      "V000" : 10
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.test.FindingAssert" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R005" : 4
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert" : {
+      "methodsCount" : 12,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 11,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R005" : 11,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$3" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$3" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$3" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$3" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssertionsKt" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3
+      },
+      "perMethodOutcome" : {
+        "R005" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.ResourcesKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R013" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 6,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 5,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleSetExtensionsKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig" : {
+      "methodsCount" : 12,
+      "completeTestCount" : 7,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 7,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 6,
+        "R013" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 7
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$Companion" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$getActiveValue$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$valueOrDefault$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfigKt" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R005" : 5
+      }
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssertKt" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2
+      },
+      "perMethodOutcome" : {
+        "R005" : 2
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.test.FindingAssert.<init>:(Lio/gitlab/arturbosch/detekt/api/Finding;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        118
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingAssert.getActual:()Lio/gitlab/arturbosch/detekt/api/Finding;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        118
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingAssert.hasMessage:(Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/test/FindingAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        128,
+        129,
+        129,
+        130,
+        133,
+        133,
+        133,
+        134,
+        136,
+        128,
+        136
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingAssert.hasSourceLocation:(II)Lio/gitlab/arturbosch/detekt/test/FindingAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        120,
+        121,
+        122,
+        123,
+        124,
+        126,
+        120,
+        126
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$1.invoke:(Lio/gitlab/arturbosch/detekt/api/Finding;)Lio/gitlab/arturbosch/detekt/api/SourceLocation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$2.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$3.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$3.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$3.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$actualSources$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$1.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$2.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasEndSourceLocations$1$expectedSources$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$1.invoke:(Lio/gitlab/arturbosch/detekt/api/Finding;)Lio/gitlab/arturbosch/detekt/api/SourceLocation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$2.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$3.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$3.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$3.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$actualSources$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$1.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$2.invoke:(Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasStartSourceLocations$1$expectedSources$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$1.invoke:(Lio/gitlab/arturbosch/detekt/api/Finding;)Lio/gitlab/arturbosch/detekt/api/TextLocation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        75
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        75
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$2.invoke:(Lio/gitlab/arturbosch/detekt/api/TextLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$3.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$3.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$3.invoke:(Lio/gitlab/arturbosch/detekt/api/TextLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$actualSources$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        79
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$1.invoke:(Lkotlin/Pair;)Lio/gitlab/arturbosch/detekt/api/TextLocation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        79
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$2.invoke:(Lio/gitlab/arturbosch/detekt/api/TextLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$3.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$3.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$3.invoke:(Lio/gitlab/arturbosch/detekt/api/TextLocation;)Ljava/lang/Comparable;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert$hasTextLocations$1$expectedSources$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.<init>:(Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        20,
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasEndSourceLocation:(II)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        69,
+        70,
+        71,
+        69,
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasEndSourceLocations:([Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        47,
+        48,
+        49,
+        50,
+        48,
+        52,
+        53,
+        52,
+        55,
+        56,
+        57,
+        56,
+        60,
+        47,
+        60
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasSourceLocation:(II)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        63
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasSourceLocations:([Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasStartSourceLocation:(II)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        65,
+        66,
+        67,
+        65,
+        67
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasStartSourceLocations:([Lio/gitlab/arturbosch/detekt/api/SourceLocation;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        32,
+        33,
+        34,
+        35,
+        33,
+        37,
+        38,
+        37,
+        40,
+        41,
+        42,
+        41,
+        45,
+        32,
+        45
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasTextLocations:([Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        90,
+        91,
+        92,
+        92,
+        93,
+        95,
+        98,
+        139,
+        98,
+        98,
+        98,
+        99,
+        98,
+        98,
+        102,
+        140,
+        141,
+        142,
+        103,
+        104,
+        105,
+        107,
+        108,
+        111,
+        142,
+        141,
+        143,
+        140,
+        112,
+        144,
+        145,
+        112,
+        102,
+        114
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.hasTextLocations:([Lkotlin/Pair;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        73,
+        74,
+        75,
+        76,
+        74,
+        78,
+        79,
+        80,
+        78,
+        82,
+        83,
+        84,
+        83,
+        87,
+        73,
+        87
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.newAbstractIterableAssert:(Ljava/lang/Iterable;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.toAssert:(Lio/gitlab/arturbosch/detekt/api/Finding;Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/test/FindingAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssert.toAssert:(Ljava/lang/Object;Ljava/lang/String;)Lorg/assertj/core/api/AbstractAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssertionsKt.assert:(Ljava/util/List;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssertionsKt.assertThat:(Lio/gitlab/arturbosch/detekt/api/Finding;)Lio/gitlab/arturbosch/detekt/test/FindingAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        15
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.FindingsAssertionsKt.assertThat:(Ljava/util/List;)Lio/gitlab/arturbosch/detekt/test/FindingsAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$1.<init>:(Ljava/lang/Object;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/search/GlobalSearchScope;)Lorg/jetbrains/kotlin/cli/jvm/compiler/JvmPackagePartProvider;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$2.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt$getContextForPaths$2.invoke:(Lorg/jetbrains/kotlin/storage/StorageManager;Ljava/util/Collection;)Lorg/jetbrains/kotlin/resolve/lazy/declarations/FileBasedDeclarationProviderFactory;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt.getContextForPaths:(Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;Ljava/util/List;)Lorg/jetbrains/kotlin/resolve/BindingContext;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        11,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ResourcesKt.yamlConfig:(Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/api/Config;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        11,
+        11,
+        16,
+        11,
+        11,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ResourcesKt.yamlConfigFromContent:(Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/api/Config;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        14,
+        16,
+        14,
+        14,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        18,
+        18
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.compileAndLint:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        21,
+        22,
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.compileAndLintWithContext:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        58,
+        59,
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.findingsAfterVisit$default:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/psi/KtFile;Lorg/jetbrains/kotlin/resolve/BindingContext;Lio/gitlab/arturbosch/detekt/api/internal/CompilerResources;ILjava/lang/Object;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        66,
+        68,
+        66,
+        69,
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.findingsAfterVisit:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/psi/KtFile;Lorg/jetbrains/kotlin/resolve/BindingContext;Lio/gitlab/arturbosch/detekt/api/internal/CompilerResources;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        71,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.lint:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.lint:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Ljava/nio/file/Path;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.lint:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/psi/KtFile;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        64
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleExtensionsKt.lintWithContext:(Lio/gitlab/arturbosch/detekt/api/BaseRule;Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        42,
+        43,
+        75,
+        76,
+        77,
+        78,
+        44,
+        78,
+        77,
+        79,
+        75,
+        43,
+        46,
+        47,
+        49,
+        50,
+        51
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleSetExtensionsKt.loadRuleSet$default:(Lio/gitlab/arturbosch/detekt/api/Config;ILjava/lang/Object;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        10,
+        11,
+        12,
+        11,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.RuleSetExtensionsKt.loadRuleSet:(Lio/gitlab/arturbosch/detekt/api/Config;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        11,
+        12,
+        11,
+        13
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$Companion.invoke:([Lkotlin/Pair;)Lio/gitlab/arturbosch/detekt/test/TestConfig;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        63
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$getActiveValue$1.<init>:(Ljava/lang/Object;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$getActiveValue$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$getActiveValue$1.invoke:(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$1.invoke:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        54,
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        55
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$parseList$2.invoke:(Ljava/lang/String;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        55,
+        55
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$valueOrDefault$1.<init>:(Ljava/lang/Object;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$valueOrDefault$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig$valueOrDefault$1.invoke:(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.<init>:(Ljava/util/Map;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        8,
+        12,
+        11
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.<init>:(Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        11,
+        12,
+        11,
+        65
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.access$tryParseBasedOnDefaultRespectingCollections:(Lio/gitlab/arturbosch/detekt/test/TestConfig;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.getActiveValue:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        28,
+        29,
+        30,
+        32,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.getParentPath:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.parseList:(Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        51,
+        52,
+        52,
+        53,
+        54,
+        55,
+        56,
+        53,
+        58
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.subConfig:(Ljava/lang/String;)Lio/gitlab/arturbosch/detekt/test/TestConfig;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        8
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.tryParseBasedOnDefaultRespectingCollections:(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.valueOrDefault:(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 2
+      },
+      "lineNumbers" : [
+        21,
+        22,
+        24,
+        25
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfig.valueOrNull:(Ljava/lang/String;)Ljava/lang/Object;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        37,
+        38,
+        40,
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.TestConfigKt.toConfig:(Lio/gitlab/arturbosch/detekt/api/ValueWithReason;)Ljava/util/Map;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        68
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert.<init>:(Lio/gitlab/arturbosch/detekt/api/ThresholdedCodeSmell;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        15,
+        16,
+        15,
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert.hasThreshold:(I)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        34,
+        36,
+        37,
+        38,
+        40
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert.hasValue:(I)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        23,
+        25,
+        26,
+        27,
+        29
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert.withThreshold:(I)Lio/gitlab/arturbosch/detekt/test/ThresholdedCodeSmellAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        31,
+        43,
+        31,
+        31,
+        31
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert.withValue:(I)Lio/gitlab/arturbosch/detekt/test/ThresholdedCodeSmellAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        20,
+        43,
+        20,
+        20,
+        20
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssertKt.assertThat:(Lio/gitlab/arturbosch/detekt/api/ThresholdedCodeSmell;)Lio/gitlab/arturbosch/detekt/test/ThresholdedCodeSmellAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        6
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssertKt.isThresholded:(Lio/gitlab/arturbosch/detekt/test/FindingAssert;)Lio/gitlab/arturbosch/detekt/test/ThresholdedCodeSmellAssert;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R005",
+      "lineNumbers" : [
+        9,
+        10,
+        43,
+        10,
+        10,
+        11
+      ]
+    }
+  }
+}

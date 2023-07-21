@@ -1,0 +1,136 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 21 callable methods in 7 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  ##___________________________ 4% ___________________________
+INFO                                                              
+INFO  [1/7] io.github.detekt.report.xml.Xml10EscapeSymbolsInitializer
+INFO  ##___________________________ 4% ___________________________
+INFO                                                              
+INFO  [1/7]   Tests created: 0
+INFO  ##___________________________ 4% ___________________________
+INFO  #####________________________ 9% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO                                                              
+INFO  [2/7] io.github.detekt.report.xml.Xml10EscapeSymbolsInitializer$XmlCodepointValidator
+INFO  ########____________________ 14% ___________________________
+INFO                                                              
+INFO  [2/7]   Tests created: 7
+INFO  ########____________________ 14% ___________________________
+INFO  #########################___ 42% ___________________________
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO  [3/7] io.github.detekt.report.xml.Xml10EscapeSymbolsInitializer$XmlEscapeSymbols
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO  [3/7]   Tests created: 0
+INFO  ############################ 47% ___________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 61% ####_______________________
+INFO                                                              
+INFO  [4/7] io.github.detekt.report.xml.Xml10EscapeSymbolsInitializer$XmlEscapeSymbols$Reference
+INFO  ############################ 61% ####_______________________
+INFO                                                              
+INFO  [4/7]   Tests created: 2
+INFO  ############################ 61% ####_______________________
+INFO  ############################ 66% #######____________________
+INFO  ############################ 71% #########__________________
+INFO  ############################ 76% ############_______________
+INFO                                                              
+INFO  [5/7] io.github.detekt.report.xml.Xml10EscapeSymbolsInitializer$XmlEscapeSymbols$References
+INFO  ############################ 76% ############_______________
+INFO                                                              
+INFO  [5/7]   Tests created: 3
+INFO  ############################ 76% ############_______________
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [6/7] io.github.detekt.report.xml.XmlEscape
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [6/7]   Tests created: 0
+INFO  ############################ 80% ###############____________
+INFO  ############################ 95% ########################___
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [7/7] io.github.detekt.report.xml.XmlOutputReport
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [7/7]   Tests created: 1
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              21 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  13 tests created for:                               10 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               11 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      6 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      2 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R002: Missing observers
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 13 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-report-xml/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-report-xml/.diffblue/log/user-20230706T131124.log
+INFO  Finished in 52s

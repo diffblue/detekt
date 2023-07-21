@@ -1,0 +1,658 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:07:16.116016+01:00",
+    "command" : "dcover create --working-directory detekt-parser io.github io.gitlab",
+    "totalTime" : 53.029,
+    "environmentDetectionTime" : 0.702,
+    "indexingTime" : 0.203,
+    "entryPointsTime" : 0.686,
+    "generationTime" : 41.329,
+    "timeToFirstTest" : 51.024,
+    "timeToLastTest" : 52.401,
+    "indexQueryTime" : 12.451,
+    "verificationTime" : 1.221,
+    "validationTime" : 0.455
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R034" : "Diffblue Cover can't complete test",
+    "R081" : "Exception in arrange section",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully",
+    "W001" : "Test did not compile"
+  },
+  "summary" : {
+    "classesCount" : 8,
+    "methodsCount" : 34,
+    "completeTestCount" : 2,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 12,
+      "T001" : 2,
+      "T003" : 1,
+      "T004" : 8,
+      "T012" : 11
+    },
+    "perMethodOutcome" : {
+      "F009" : 4,
+      "R000" : 2,
+      "R011" : 3,
+      "R013" : 1,
+      "R034" : 2,
+      "R081" : 2,
+      "T003" : 1,
+      "T004" : 8,
+      "T012" : 11
+    },
+    "perTestOutcome" : {
+      "R000" : 2
+    },
+    "perTestValidation" : {
+      "V000" : 2
+    },
+    "warnings" : {
+      "W001" : 1
+    }
+  },
+  "classes" : {
+    "io.github.detekt.parser.DetektPomModel" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T003" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 3,
+        "T003" : 1
+      }
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "R000" : 1,
+        "R011" : 2,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "warnings" : {
+        "W001" : 1
+      }
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$javaFiles$1$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$3" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.github.detekt.parser.KtCompiler" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 2,
+        "R081" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.parser.KtCompilerKt" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    }
+  },
+  "methods" : {
+    "io.github.detekt.parser.DetektPomModel.<init>:(Lorg/jetbrains/kotlin/com/intellij/openapi/project/Project;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        20,
+        22,
+        23,
+        24,
+        26,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35,
+        36,
+        33,
+        39,
+        28,
+        41,
+        20
+      ]
+    },
+    "io.github.detekt.parser.DetektPomModel.getModelAspect:(Ljava/lang/Class;)Lorg/jetbrains/kotlin/com/intellij/pom/PomModelAspect;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        54,
+        55,
+        56,
+        55,
+        58,
+        60
+      ]
+    },
+    "io.github.detekt.parser.DetektPomModel.lambda$1$lambda$0:(Lorg/jetbrains/kotlin/com/intellij/openapi/extensions/ExtensionsArea;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "io.github.detekt.parser.DetektPomModel.runTransaction:(Lorg/jetbrains/kotlin/com/intellij/pom/PomTransaction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        44,
+        46,
+        47,
+        46,
+        46,
+        50,
+        51
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$javaFiles$1$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$javaFiles$1$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$javaFiles$1$1.invoke:(Ljava/io/File;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        92
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$javaFiles$1$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        92
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$1.invoke:(Ljava/io/File;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        97
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        97
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$2.invoke:(Ljava/io/File;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        98
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        98
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$3.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$3.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$3.invoke:(Ljava/io/File;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        99
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt$createCompilerConfiguration$kotlinFiles$1$3.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        99
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt.createCompilerConfiguration:(Ljava/util/List;Ljava/util/List;Lorg/jetbrains/kotlin/config/LanguageVersion;Lorg/jetbrains/kotlin/config/JvmTarget;Ljava/nio/file/Path;)Lorg/jetbrains/kotlin/config/CompilerConfiguration;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        90,
+        146,
+        147,
+        148,
+        91,
+        92,
+        93,
+        148,
+        149,
+        151,
+        146,
+        90,
+        95,
+        152,
+        153,
+        154,
+        96,
+        97,
+        98,
+        99,
+        100,
+        154,
+        155,
+        157,
+        152,
+        95,
+        103,
+        158,
+        159,
+        160,
+        103,
+        160,
+        161,
+        158,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        106,
+        105,
+        105,
+        112,
+        113,
+        114,
+        116,
+        117,
+        118,
+        119,
+        121,
+        162,
+        121,
+        121,
+        121,
+        122,
+        123,
+        112,
+        112
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt.createKotlinCoreEnvironment$default:(Lorg/jetbrains/kotlin/config/CompilerConfiguration;Lorg/jetbrains/kotlin/com/intellij/openapi/Disposable;ILjava/lang/Object;)Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        38,
+        39,
+        38,
+        40,
+        38
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt.createKotlinCoreEnvironment$default:(Lorg/jetbrains/kotlin/config/CompilerConfiguration;Lorg/jetbrains/kotlin/com/intellij/openapi/Disposable;Ljava/io/PrintStream;ILjava/lang/Object;)Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        49,
+        50,
+        49,
+        51,
+        49
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt.createKotlinCoreEnvironment:(Lorg/jetbrains/kotlin/config/CompilerConfiguration;Lorg/jetbrains/kotlin/com/intellij/openapi/Disposable;)Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        42
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt.createKotlinCoreEnvironment:(Lorg/jetbrains/kotlin/config/CompilerConfiguration;Lorg/jetbrains/kotlin/com/intellij/openapi/Disposable;Ljava/io/PrintStream;)Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        55,
+        56,
+        57,
+        58,
+        56,
+        60,
+        62,
+        63,
+        64,
+        65,
+        62,
+        68,
+        70,
+        71,
+        70,
+        70,
+        74,
+        76
+      ]
+    },
+    "io.github.detekt.parser.KotlinEnvironmentUtilsKt.getKotlinLanguageVersion:(Ljava/lang/Iterable;)Lorg/jetbrains/kotlin/config/LanguageVersion;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "warnings" : {
+        "W001" : 1
+      },
+      "lineNumbers" : [
+        130,
+        163,
+        164,
+        165,
+        130,
+        165,
+        166,
+        163,
+        130,
+        131,
+        132,
+        134,
+        167,
+        168,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        162,
+        141,
+        141,
+        141,
+        135,
+        142,
+        142,
+        134,
+        134
+      ]
+    },
+    "io.github.detekt.parser.KtCompiler.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.github.detekt.parser.KtCompiler.<init>:(Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        15,
+        16,
+        19,
+        15
+      ]
+    },
+    "io.github.detekt.parser.KtCompiler.<init>:(Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        15,
+        16,
+        15,
+        47
+      ]
+    },
+    "io.github.detekt.parser.KtCompiler.compile:(Ljava/nio/file/Path;Ljava/nio/file/Path;)Lorg/jetbrains/kotlin/psi/KtFile;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        22,
+        22,
+        57,
+        22,
+        22,
+        23,
+        24
+      ]
+    },
+    "io.github.detekt.parser.KtCompiler.createKtFile:(Ljava/lang/String;Ljava/nio/file/Path;Ljava/nio/file/Path;)Lorg/jetbrains/kotlin/psi/KtFile;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        28,
+        28,
+        57,
+        28,
+        28,
+        30,
+        30,
+        31,
+        33,
+        34,
+        35,
+        33,
+        38,
+        39,
+        40,
+        40,
+        41,
+        42,
+        42,
+        43,
+        44,
+        41,
+        41,
+        45,
+        38,
+        38
+      ]
+    },
+    "io.github.detekt.parser.KtCompiler.getEnvironment:()Lorg/jetbrains/kotlin/cli/jvm/compiler/KotlinCoreEnvironment;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.parser.KtCompiler.getPsiFileFactory:()Lorg/jetbrains/kotlin/psi/KtPsiFactory;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.parser.KtCompilerKt.determineLineSeparator:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        50,
+        51,
+        52,
+        54
+      ]
+    }
+  }
+}

@@ -1,0 +1,768 @@
+12:38:02.624 [INFO]  [Preparing] Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+12:38:02.624 [INFO]  [Preparing] 
+12:38:02.624 [INFO]  [Preparing] Running: dcover create --working-directory detekt-utils io.github io.gitlab
+12:38:02.769 [INFO]  [Checking] Detecting environment:
+12:38:02.769 [INFO]  [Checking] ----------------------
+12:38:02.816 [INFO]  [Checking] Detected Java version 11.0.18
+12:38:05.589 [INFO]  [Checking] Detected build system: Gradle 8.2
+12:38:05.590 [INFO]  [Checking] Operating System: Mac OS X aarch64 13.4.1
+12:38:05.590 [INFO]  [Checking] Default charset: UTF-8
+12:38:05.590 [INFO]  [Checking] Default locale: en_GB
+12:38:05.590 [INFO]  [Checking] Default time zone: Europe/London
+12:38:05.592 [INFO]  [Checking] Selected build system: Gradle
+12:38:05.593 [INFO]  [Checking] Selected classpath from build system Gradle
+12:38:05.594 [INFO]  [Checking] Expanded classpath: 
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/classes/kotlin/test
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/classes/kotlin/main (code under test)
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/resources/test
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/classes/java/main
+/Users/mnedzelskii/gits/detekt/detekt-utils/build/resources/main
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.22/b25c86d47d6b962b9cf0f8c3f320c8a10eea3dd1/kotlin-stdlib-jdk8-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.24.2/ebbf338e33f893139459ce5df023115971c2786f/assertj-core-3.24.2.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.3/355322b03bf39306a183162cd06626c206f0286b/junit-jupiter-engine-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.9.3/9e2a4bf6016a1975f408a73523392875cff7c26f/junit-jupiter-params-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.3/815818ad6ffcc8d320d8fbdf3d748c753cf83201/junit-jupiter-api-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.9.3/485650bfe2a2f39b606a6ca013285afda2eaee79/junit-platform-launcher-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.3/8616734a190f8d307376aeb7353dba0a2c037a09/junit-platform-engine-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.3/36b2e26a90c41603be7f0094bee80e3f8a2cd4d4/junit-platform-commons-1.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.9.3/72e840501e1550e9799c9a5cc9483d7d6b29e0ba/junit-jupiter-5.9.3.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.22/4dabb8248310d833bb6a8b516024a91fd3d275c/kotlin-stdlib-jdk7-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.22/636bf8b320e7627482771bbac9ed7246773c02bd/kotlin-stdlib-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.22/1a8e3601703ae14bb58757ea6b2d8e8e5935a586/kotlin-stdlib-common-1.8.22.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.12.21/1a257bbdb9288f2558d3767cc2cc22b499d5091c/byte-buddy-1.12.21.jar
+/Users/mnedzelskii/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar
+12:38:05.636 [INFO]  [Checking] Detected test framework: JUnit Jupiter 5.9.3
+12:38:05.641 [INFO]  [Checking] Detected JUnit Jupiter Engine version 5.9.3
+12:38:05.646 [INFO]  [Checking] Detected JUnit Jupiter Params version 5.9.3
+12:38:05.692 [INFO]  [Checking] Selected test output directory: /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java
+12:38:05.694 [INFO]  [Checking] Selected test framework: JUnit Jupiter
+12:38:05.729 [INFO]  [Checking] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-utils : gradle test -i  DummyJupiterDiffblueTest
+12:38:07.667 [INFO]  [Checking] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-utils : gradle test -i  DummyJUnitJupiterLauncherDiffblueTest
+12:38:09.425 [INFO]  [Checking] Detected JVM architecture: 64-Bit
+12:38:09.428 [INFO]  [Checking] Indexing...
+12:38:10.799 [INFO]  [Checking] Selected Java language compliance level: 1.8
+12:38:10.800 [INFO]  [Checking] Selected test validation: enabled
+12:38:10.802 [INFO]  [Checking] Prefixes for filtering classes/methods:
+12:38:10.802 [INFO]  [Checking] - io.github
+12:38:10.803 [INFO]  [Checking] - io.gitlab
+12:38:10.803 [INFO]  [Checking] Gathering methods to test...
+12:38:11.329 [WARN]  [Checking] E052: Missing dependency
+Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+Required dependencies were not found.
+Please add the following dependencies to your project:
+  testImplementation("org.mockito:mockito-core:4.11.0")
+12:38:11.339 [INFO]  [Reporting] 
+12:38:11.339 [INFO]  [Reporting] Environment summary:
+12:38:11.339 [INFO]  [Reporting] --------------------
+12:38:11.341 [INFO]  [Reporting] Java version                  11.0.18                       SUCCESS        
+12:38:11.341 [INFO]  [Reporting] Build system                  Gradle                        SUCCESS        
+12:38:11.341 [WARN]  [Reporting] Mocking Framework                                           WARNING        
+12:38:11.341 [INFO]  [Reporting] Testing framework             JUnit Jupiter 5               SUCCESS        
+12:38:11.341 [INFO]  [Reporting] Launcher                      JUnit Jupiter                 SUCCESS        
+12:38:11.341 [INFO]  [Reporting] Test validation               Enabled                       SUCCESS        
+12:38:11.341 [INFO]  [Reporting] 
+12:38:11.341 [WARN]  [Reporting] Environment check status: WARNING
+12:38:11.365 [INFO]  [Creating] Found 62 callable methods in 8 classes
+12:38:11.366 [INFO]  [Creating] 
+12:38:11.366 [INFO]  [Creating] Creating tests:
+12:38:11.366 [INFO]  [Creating] ---------------
+12:38:11.379 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.Markdown'
+================================================================================
+12:38:11.380 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:11.392 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:11.393 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:11.406 [INFO]  [Creating] Starting monitoring server.
+12:38:11.525 [INFO]  [Creating] Monitoring server listening on localhost/127.0.0.1:61919
+12:38:11.526 [INFO]  [Creating] Starting analyzer server process...
+12:38:11.526 [INFO]  [Creating] Server command-line: /Users/mnedzelskii/.sdkman/candidates/java/11.0.18-amzn/bin/java -XX:+IgnoreUnrecognizedVMOptions -Djdk.attach.allowAttachSelf=true -ea -javaagent:/Users/mnedzelskii/gits/cover/cover-cli/target/launcher-2023.07.02-SNAPSHOT-shared-jar.jar -Dlogback.configurationFile=/var/folders/84/svd_5_t17l36s2xgx_7spshr0000gp/T/diffblue/config/logback-remote-service.xml -Dcom.diffblue.springIsolationJar=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-isolation-layer-2023.07.02-SNAPSHOT.jar -Dcover.jar.path=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-service-analyzer-2023.07.02-SNAPSHOT-jar-with-dependencies.jar -Dcom.diffblue.assertionSuggestionJar=/Users/mnedzelskii/gits/cover/cover-cli/target/cover-service-analyzer-2023.07.02-SNAPSHOT-jar-with-dependencies.jar -Dcover.main.class=com.diffblue.cover.service.analyzer.Main -jar /Users/mnedzelskii/gits/cover/cover-cli/target/launcher-2023.07.02-SNAPSHOT-shared-jar.jar --service-lifespan 120 --monitoring-service-port 61919 --index-service-port 61919
+12:38:11.543 [INFO]  [Creating] Server started. Waiting up to 300 seconds for a connection to be established...
+12:38:11.898 [INFO]  [Creating] Starting new remote monitor client
+12:38:12.170 [INFO]  [Creating] Attempting to start remote server.
+12:38:12.669 [INFO]  [Creating] Server started, listening on localhost/127.0.0.1:61922
+12:38:13.556 [INFO]  [Creating] Expect analyzer service to be listening on port 61922.
+12:38:14.108 [INFO]  [Creating] Started analyzer service and client retrieved.
+12:38:15.829 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.Markdown.getContent:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:18.855 [INFO]  [Creating]      [1/62] io.github.detekt.utils.Markdown.getContent
+12:38:18.855 [INFO]  [Creating]      [1/62]   Tests created: 1
+12:38:18.857 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.Markdown.setContent:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:20.336 [INFO]  [Creating]      [2/62] io.github.detekt.utils.Markdown.setContent
+12:38:20.336 [INFO]  [Creating]      [2/62]   Tests created: 1
+12:38:20.337 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.Markdown.append:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:22.781 [INFO]  [Creating]      [3/62] io.github.detekt.utils.Markdown.append
+12:38:22.781 [INFO]  [Creating]      [3/62]   Tests created: 3
+12:38:22.784 [INFO]  [Creating] [1/8] io.github.detekt.utils.Markdown
+12:38:22.784 [INFO]  [Creating] [1/8]   Tests created: 5
+12:38:22.784 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.MarkdownContent'
+================================================================================
+12:38:22.784 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:22.785 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:22.785 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:22.828 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownContent.getContent:()Ljava/lang/String;, io.github.detekt.utils.MarkdownContent.setContent:(Ljava/lang/String;)V, io.github.detekt.utils.MarkdownContent.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:38:23.064 [INFO]  [Creating]      [4/62] io.github.detekt.utils.MarkdownContent.getContent
+12:38:23.064 [INFO]  [Creating]      [5/62] io.github.detekt.utils.MarkdownContent.setContent
+12:38:23.064 [INFO]  [Creating]      [6/62] io.github.detekt.utils.MarkdownContent.toString
+12:38:23.064 [INFO]  [Creating]      [6/62]   Tests created: 1
+12:38:23.065 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownContent.equals:(Ljava/lang/Object;)Z, io.github.detekt.utils.MarkdownContent.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:38:24.447 [INFO]  [Creating]      [7/62] io.github.detekt.utils.MarkdownContent.equals
+12:38:24.447 [INFO]  [Creating]      [8/62] io.github.detekt.utils.MarkdownContent.hashCode
+12:38:24.447 [INFO]  [Creating]      [8/62]   Tests created: 5
+12:38:24.448 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownContent.<init>:()V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:24.580 [INFO]  [Creating]      [9/62] io.github.detekt.utils.MarkdownContent.<init>
+12:38:24.580 [INFO]  [Creating]      [9/62]   Tests created: 1
+12:38:24.581 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownContent.<init>:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:24.893 [INFO]  [Creating]     [10/62] io.github.detekt.utils.MarkdownContent.<init>
+12:38:24.893 [INFO]  [Creating]     [10/62]   Tests created: 1
+12:38:24.894 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownContent.component1:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:25.303 [INFO]  [Creating]     [11/62] io.github.detekt.utils.MarkdownContent.component1
+12:38:25.303 [INFO]  [Creating]     [11/62]   Tests created: 1
+12:38:25.304 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownContent.copy:(Ljava/lang/String;)Lio/github/detekt/utils/MarkdownContent;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:26.310 [INFO]  [Creating]     [12/62] io.github.detekt.utils.MarkdownContent.copy
+12:38:26.310 [INFO]  [Creating]     [12/62]   Tests created: 1
+12:38:26.313 [INFO]  [Creating] [2/8] io.github.detekt.utils.MarkdownContent
+12:38:26.313 [INFO]  [Creating] [2/8]   Tests created: 10
+12:38:26.313 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.MarkdownKt'
+================================================================================
+12:38:26.313 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:26.316 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:26.316 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:26.375 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.bold:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:27.313 [INFO]  [Creating]     [13/62] io.github.detekt.utils.MarkdownKt.bold
+12:38:27.313 [INFO]  [Creating]     [13/62]   R013: No inputs found that don't throw a trivial exception
+12:38:27.313 [INFO]  [Creating]     [13/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:27.313 [INFO]  [Creating]     [13/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.bold, parameter <this>
+12:38:27.313 [INFO]  [Creating]     [13/62]         at io.github.detekt.utils.MarkdownKt.bold(Markdown.kt)
+12:38:27.313 [INFO]  [Creating]     [13/62]     In order to prevent bold(MarkdownContent, Function0)
+12:38:27.313 [INFO]  [Creating]     [13/62]     from throwing NullPointerException, add constructors or factory
+12:38:27.313 [INFO]  [Creating]     [13/62]     methods that make it easier to construct fully initialized objects used in
+12:38:27.313 [INFO]  [Creating]     [13/62]     bold(MarkdownContent, Function0).
+12:38:27.313 [INFO]  [Creating]     [13/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:27.314 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.code:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:27.758 [INFO]  [Creating]     [14/62] io.github.detekt.utils.MarkdownKt.code
+12:38:27.758 [INFO]  [Creating]     [14/62]   R013: No inputs found that don't throw a trivial exception
+12:38:27.758 [INFO]  [Creating]     [14/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:27.758 [INFO]  [Creating]     [14/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.code, parameter <this>
+12:38:27.758 [INFO]  [Creating]     [14/62]         at io.github.detekt.utils.MarkdownKt.code(Markdown.kt)
+12:38:27.758 [INFO]  [Creating]     [14/62]     In order to prevent code(MarkdownContent, Function0)
+12:38:27.758 [INFO]  [Creating]     [14/62]     from throwing NullPointerException, add constructors or factory
+12:38:27.758 [INFO]  [Creating]     [14/62]     methods that make it easier to construct fully initialized objects used in
+12:38:27.758 [INFO]  [Creating]     [14/62]     code(MarkdownContent, Function0).
+12:38:27.758 [INFO]  [Creating]     [14/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:27.759 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.codeBlock:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:28.410 [INFO]  [Creating]     [15/62] io.github.detekt.utils.MarkdownKt.codeBlock
+12:38:28.410 [INFO]  [Creating]     [15/62]   R013: No inputs found that don't throw a trivial exception
+12:38:28.410 [INFO]  [Creating]     [15/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:28.410 [INFO]  [Creating]     [15/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.codeBlock, parameter syntax
+12:38:28.410 [INFO]  [Creating]     [15/62]         at io.github.detekt.utils.MarkdownKt.codeBlock(Markdown.kt)
+12:38:28.410 [INFO]  [Creating]     [15/62]     In order to prevent codeBlock(MarkdownContent, String, Function0)
+12:38:28.410 [INFO]  [Creating]     [15/62]     from throwing NullPointerException, add constructors or factory
+12:38:28.410 [INFO]  [Creating]     [15/62]     methods that make it easier to construct fully initialized objects used in
+12:38:28.410 [INFO]  [Creating]     [15/62]     codeBlock(MarkdownContent, String, Function0).
+12:38:28.410 [INFO]  [Creating]     [15/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:28.411 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.crossOut:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:28.810 [INFO]  [Creating]     [16/62] io.github.detekt.utils.MarkdownKt.crossOut
+12:38:28.810 [INFO]  [Creating]     [16/62]   R013: No inputs found that don't throw a trivial exception
+12:38:28.810 [INFO]  [Creating]     [16/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:28.810 [INFO]  [Creating]     [16/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.crossOut, parameter <this>
+12:38:28.810 [INFO]  [Creating]     [16/62]         at io.github.detekt.utils.MarkdownKt.crossOut(Markdown.kt)
+12:38:28.810 [INFO]  [Creating]     [16/62]     In order to prevent crossOut(MarkdownContent, Function0)
+12:38:28.810 [INFO]  [Creating]     [16/62]     from throwing NullPointerException, add constructors or factory
+12:38:28.810 [INFO]  [Creating]     [16/62]     methods that make it easier to construct fully initialized objects used in
+12:38:28.810 [INFO]  [Creating]     [16/62]     crossOut(MarkdownContent, Function0).
+12:38:28.810 [INFO]  [Creating]     [16/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:28.811 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.description:(Lio/github/detekt/utils/MarkdownList;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:29.190 [INFO]  [Creating]     [17/62] io.github.detekt.utils.MarkdownKt.description
+12:38:29.190 [INFO]  [Creating]     [17/62]   R013: No inputs found that don't throw a trivial exception
+12:38:29.190 [INFO]  [Creating]     [17/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:29.190 [INFO]  [Creating]     [17/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.description, parameter <this>
+12:38:29.190 [INFO]  [Creating]     [17/62]         at io.github.detekt.utils.MarkdownKt.description(Markdown.kt)
+12:38:29.190 [INFO]  [Creating]     [17/62]     In order to prevent description(MarkdownList, Function0)
+12:38:29.190 [INFO]  [Creating]     [17/62]     from throwing NullPointerException, add constructors or factory
+12:38:29.190 [INFO]  [Creating]     [17/62]     methods that make it easier to construct fully initialized objects used in
+12:38:29.190 [INFO]  [Creating]     [17/62]     description(MarkdownList, Function0).
+12:38:29.190 [INFO]  [Creating]     [17/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:29.191 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.emptyLine:(Lio/github/detekt/utils/MarkdownContent;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:29.556 [INFO]  [Creating]     [18/62] io.github.detekt.utils.MarkdownKt.emptyLine
+12:38:29.556 [INFO]  [Creating]     [18/62]   Tests created: 1
+12:38:29.557 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.h1:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:29.914 [INFO]  [Creating]     [19/62] io.github.detekt.utils.MarkdownKt.h1
+12:38:29.914 [INFO]  [Creating]     [19/62]   R013: No inputs found that don't throw a trivial exception
+12:38:29.914 [INFO]  [Creating]     [19/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:29.914 [INFO]  [Creating]     [19/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.h1, parameter <this>
+12:38:29.914 [INFO]  [Creating]     [19/62]         at io.github.detekt.utils.MarkdownKt.h1(Markdown.kt)
+12:38:29.914 [INFO]  [Creating]     [19/62]     In order to prevent h1(MarkdownContent, Function0)
+12:38:29.914 [INFO]  [Creating]     [19/62]     from throwing NullPointerException, add constructors or factory
+12:38:29.914 [INFO]  [Creating]     [19/62]     methods that make it easier to construct fully initialized objects used in
+12:38:29.914 [INFO]  [Creating]     [19/62]     h1(MarkdownContent, Function0).
+12:38:29.914 [INFO]  [Creating]     [19/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:29.915 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.h2:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:30.273 [INFO]  [Creating]     [20/62] io.github.detekt.utils.MarkdownKt.h2
+12:38:30.273 [INFO]  [Creating]     [20/62]   R013: No inputs found that don't throw a trivial exception
+12:38:30.273 [INFO]  [Creating]     [20/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:30.273 [INFO]  [Creating]     [20/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.h2, parameter <this>
+12:38:30.273 [INFO]  [Creating]     [20/62]         at io.github.detekt.utils.MarkdownKt.h2(Markdown.kt)
+12:38:30.273 [INFO]  [Creating]     [20/62]     In order to prevent h2(MarkdownContent, Function0)
+12:38:30.273 [INFO]  [Creating]     [20/62]     from throwing NullPointerException, add constructors or factory
+12:38:30.273 [INFO]  [Creating]     [20/62]     methods that make it easier to construct fully initialized objects used in
+12:38:30.273 [INFO]  [Creating]     [20/62]     h2(MarkdownContent, Function0).
+12:38:30.273 [INFO]  [Creating]     [20/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:30.274 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.h3:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:30.640 [INFO]  [Creating]     [21/62] io.github.detekt.utils.MarkdownKt.h3
+12:38:30.641 [INFO]  [Creating]     [21/62]   R013: No inputs found that don't throw a trivial exception
+12:38:30.641 [INFO]  [Creating]     [21/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:30.641 [INFO]  [Creating]     [21/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.h3, parameter <this>
+12:38:30.641 [INFO]  [Creating]     [21/62]         at io.github.detekt.utils.MarkdownKt.h3(Markdown.kt)
+12:38:30.641 [INFO]  [Creating]     [21/62]     In order to prevent h3(MarkdownContent, Function0)
+12:38:30.641 [INFO]  [Creating]     [21/62]     from throwing NullPointerException, add constructors or factory
+12:38:30.641 [INFO]  [Creating]     [21/62]     methods that make it easier to construct fully initialized objects used in
+12:38:30.641 [INFO]  [Creating]     [21/62]     h3(MarkdownContent, Function0).
+12:38:30.641 [INFO]  [Creating]     [21/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:30.642 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.h4:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:30.984 [INFO]  [Creating]     [22/62] io.github.detekt.utils.MarkdownKt.h4
+12:38:30.984 [INFO]  [Creating]     [22/62]   R013: No inputs found that don't throw a trivial exception
+12:38:30.984 [INFO]  [Creating]     [22/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:30.984 [INFO]  [Creating]     [22/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.h4, parameter <this>
+12:38:30.984 [INFO]  [Creating]     [22/62]         at io.github.detekt.utils.MarkdownKt.h4(Markdown.kt)
+12:38:30.984 [INFO]  [Creating]     [22/62]     In order to prevent h4(MarkdownContent, Function0)
+12:38:30.984 [INFO]  [Creating]     [22/62]     from throwing NullPointerException, add constructors or factory
+12:38:30.984 [INFO]  [Creating]     [22/62]     methods that make it easier to construct fully initialized objects used in
+12:38:30.984 [INFO]  [Creating]     [22/62]     h4(MarkdownContent, Function0).
+12:38:30.984 [INFO]  [Creating]     [22/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:30.985 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.item:(Lio/github/detekt/utils/MarkdownList;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:31.312 [INFO]  [Creating]     [23/62] io.github.detekt.utils.MarkdownKt.item
+12:38:31.312 [INFO]  [Creating]     [23/62]   R013: No inputs found that don't throw a trivial exception
+12:38:31.312 [INFO]  [Creating]     [23/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:31.312 [INFO]  [Creating]     [23/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.item, parameter <this>
+12:38:31.312 [INFO]  [Creating]     [23/62]         at io.github.detekt.utils.MarkdownKt.item(Markdown.kt)
+12:38:31.312 [INFO]  [Creating]     [23/62]     In order to prevent item(MarkdownList, Function0)
+12:38:31.312 [INFO]  [Creating]     [23/62]     from throwing NullPointerException, add constructors or factory
+12:38:31.312 [INFO]  [Creating]     [23/62]     methods that make it easier to construct fully initialized objects used in
+12:38:31.312 [INFO]  [Creating]     [23/62]     item(MarkdownList, Function0).
+12:38:31.312 [INFO]  [Creating]     [23/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:31.313 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.list:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function1;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:31.700 [INFO]  [Creating]     [24/62] io.github.detekt.utils.MarkdownKt.list
+12:38:31.700 [INFO]  [Creating]     [24/62]   R013: No inputs found that don't throw a trivial exception
+12:38:31.700 [INFO]  [Creating]     [24/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:31.700 [INFO]  [Creating]     [24/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.list, parameter <this>
+12:38:31.700 [INFO]  [Creating]     [24/62]         at io.github.detekt.utils.MarkdownKt.list(Markdown.kt)
+12:38:31.700 [INFO]  [Creating]     [24/62]     In order to prevent list(MarkdownContent, Function1)
+12:38:31.700 [INFO]  [Creating]     [24/62]     from throwing NullPointerException, add constructors or factory
+12:38:31.700 [INFO]  [Creating]     [24/62]     methods that make it easier to construct fully initialized objects used in
+12:38:31.700 [INFO]  [Creating]     [24/62]     list(MarkdownContent, Function1).
+12:38:31.700 [INFO]  [Creating]     [24/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:31.701 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.markdown:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:32.037 [INFO]  [Creating]     [25/62] io.github.detekt.utils.MarkdownKt.markdown
+12:38:32.037 [INFO]  [Creating]     [25/62]   R013: No inputs found that don't throw a trivial exception
+12:38:32.037 [INFO]  [Creating]     [25/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:32.037 [INFO]  [Creating]     [25/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.markdown, parameter <this>
+12:38:32.037 [INFO]  [Creating]     [25/62]         at io.github.detekt.utils.MarkdownKt.markdown(Markdown.kt)
+12:38:32.037 [INFO]  [Creating]     [25/62]     In order to prevent markdown(MarkdownContent, Function0)
+12:38:32.037 [INFO]  [Creating]     [25/62]     from throwing NullPointerException, add constructors or factory
+12:38:32.037 [INFO]  [Creating]     [25/62]     methods that make it easier to construct fully initialized objects used in
+12:38:32.037 [INFO]  [Creating]     [25/62]     markdown(MarkdownContent, Function0).
+12:38:32.037 [INFO]  [Creating]     [25/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:32.038 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.markdown:(Lkotlin/jvm/functions/Function1;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:32.058 [INFO]  [Creating]     [26/62] io.github.detekt.utils.MarkdownKt.markdown
+12:38:32.058 [INFO]  [Creating]     [26/62]   R013: No inputs found that don't throw a trivial exception
+12:38:32.058 [INFO]  [Creating]     [26/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:32.058 [INFO]  [Creating]     [26/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.markdown, parameter content
+12:38:32.058 [INFO]  [Creating]     [26/62]         at io.github.detekt.utils.MarkdownKt.markdown(Markdown.kt)
+12:38:32.058 [INFO]  [Creating]     [26/62]     In order to prevent markdown(Function1)
+12:38:32.058 [INFO]  [Creating]     [26/62]     from throwing NullPointerException, add constructors or factory
+12:38:32.058 [INFO]  [Creating]     [26/62]     methods that make it easier to construct fully initialized objects used in
+12:38:32.058 [INFO]  [Creating]     [26/62]     markdown(Function1).
+12:38:32.058 [INFO]  [Creating]     [26/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:32.059 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.orderedList:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:32.865 [INFO]  [Creating]     [27/62] io.github.detekt.utils.MarkdownKt.orderedList
+12:38:32.865 [INFO]  [Creating]     [27/62]   R013: No inputs found that don't throw a trivial exception
+12:38:32.865 [INFO]  [Creating]     [27/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:32.865 [INFO]  [Creating]     [27/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.orderedList, parameter <this>
+12:38:32.865 [INFO]  [Creating]     [27/62]         at io.github.detekt.utils.MarkdownKt.orderedList(Markdown.kt)
+12:38:32.865 [INFO]  [Creating]     [27/62]     In order to prevent orderedList(MarkdownContent, Function0)
+12:38:32.865 [INFO]  [Creating]     [27/62]     from throwing NullPointerException, add constructors or factory
+12:38:32.865 [INFO]  [Creating]     [27/62]     methods that make it easier to construct fully initialized objects used in
+12:38:32.865 [INFO]  [Creating]     [27/62]     orderedList(MarkdownContent, Function0).
+12:38:32.865 [INFO]  [Creating]     [27/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:32.866 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownKt.paragraph:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:33.197 [INFO]  [Creating]     [28/62] io.github.detekt.utils.MarkdownKt.paragraph
+12:38:33.197 [INFO]  [Creating]     [28/62]   R013: No inputs found that don't throw a trivial exception
+12:38:33.197 [INFO]  [Creating]     [28/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:33.197 [INFO]  [Creating]     [28/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.MarkdownKt.paragraph, parameter <this>
+12:38:33.197 [INFO]  [Creating]     [28/62]         at io.github.detekt.utils.MarkdownKt.paragraph(Markdown.kt)
+12:38:33.197 [INFO]  [Creating]     [28/62]     In order to prevent paragraph(MarkdownContent, Function0)
+12:38:33.197 [INFO]  [Creating]     [28/62]     from throwing NullPointerException, add constructors or factory
+12:38:33.197 [INFO]  [Creating]     [28/62]     methods that make it easier to construct fully initialized objects used in
+12:38:33.197 [INFO]  [Creating]     [28/62]     paragraph(MarkdownContent, Function0).
+12:38:33.197 [INFO]  [Creating]     [28/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:33.199 [INFO]  [Creating] [3/8] io.github.detekt.utils.MarkdownKt
+12:38:33.199 [INFO]  [Creating] [3/8]   Tests created: 1
+12:38:33.199 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.MarkdownList'
+================================================================================
+12:38:33.199 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:33.199 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:33.199 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:33.225 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownList.getContent:()Ljava/lang/String;, io.github.detekt.utils.MarkdownList.setContent:(Ljava/lang/String;)V, io.github.detekt.utils.MarkdownList.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:38:33.308 [INFO]  [Creating]     [29/62] io.github.detekt.utils.MarkdownList.getContent
+12:38:33.308 [INFO]  [Creating]     [30/62] io.github.detekt.utils.MarkdownList.setContent
+12:38:33.308 [INFO]  [Creating]     [31/62] io.github.detekt.utils.MarkdownList.toString
+12:38:33.308 [INFO]  [Creating]     [31/62]   Tests created: 1
+12:38:33.309 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownList.equals:(Ljava/lang/Object;)Z, io.github.detekt.utils.MarkdownList.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:38:34.194 [INFO]  [Creating]     [32/62] io.github.detekt.utils.MarkdownList.equals
+12:38:34.194 [INFO]  [Creating]     [33/62] io.github.detekt.utils.MarkdownList.hashCode
+12:38:34.194 [INFO]  [Creating]     [33/62]   Tests created: 5
+12:38:34.195 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownList.<init>:()V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:34.297 [INFO]  [Creating]     [34/62] io.github.detekt.utils.MarkdownList.<init>
+12:38:34.297 [INFO]  [Creating]     [34/62]   Tests created: 1
+12:38:34.298 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownList.<init>:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:34.527 [INFO]  [Creating]     [35/62] io.github.detekt.utils.MarkdownList.<init>
+12:38:34.527 [INFO]  [Creating]     [35/62]   Tests created: 1
+12:38:34.528 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownList.component1:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:34.833 [INFO]  [Creating]     [36/62] io.github.detekt.utils.MarkdownList.component1
+12:38:34.833 [INFO]  [Creating]     [36/62]   Tests created: 1
+12:38:34.833 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.MarkdownList.copy:(Ljava/lang/String;)Lio/github/detekt/utils/MarkdownList;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:35.666 [INFO]  [Creating]     [37/62] io.github.detekt.utils.MarkdownList.copy
+12:38:35.666 [INFO]  [Creating]     [37/62]   Tests created: 1
+12:38:35.668 [INFO]  [Creating] [4/8] io.github.detekt.utils.MarkdownList
+12:38:35.668 [INFO]  [Creating] [4/8]   Tests created: 10
+12:38:35.668 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.ResourcesKt'
+================================================================================
+12:38:35.668 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:35.668 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:35.668 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:35.692 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.ResourcesKt.getSafeResourceAsStream:(Ljava/lang/Class;Ljava/lang/String;)Ljava/io/InputStream;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:36.969 [INFO]  [Creating]     [38/62] io.github.detekt.utils.ResourcesKt.getSafeResourceAsStream
+12:38:36.969 [INFO]  [Creating]     [38/62]   Tests created: 1
+12:38:36.970 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.ResourcesKt.getSafeResourceAsStream:(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/io/InputStream;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:39.442 [INFO]  [Creating]     [39/62] io.github.detekt.utils.ResourcesKt.getSafeResourceAsStream
+12:38:39.442 [INFO]  [Creating]     [39/62]   Tests created: 1
+12:38:39.443 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.ResourcesKt.openSafeStream:(Ljava/net/URL;)Ljava/io/InputStream;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:39.588 [INFO]  [Creating]     [40/62] io.github.detekt.utils.ResourcesKt.openSafeStream
+12:38:39.588 [INFO]  [Creating]     [40/62]   R013: No inputs found that don't throw a trivial exception
+12:38:39.588 [INFO]  [Creating]     [40/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:39.588 [INFO]  [Creating]     [40/62]     java.io.FileNotFoundException: /var/folders/84/svd_5_t17l36s2xgx_7spshr0000gp/T/<this> (No such file or directory)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at java.io.FileInputStream.open0(Native Method)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at java.io.FileInputStream.open(FileInputStream.java:219)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at java.io.FileInputStream.<init>(FileInputStream.java:157)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at java.io.FileInputStream.<init>(FileInputStream.java:112)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+12:38:39.588 [INFO]  [Creating]     [40/62]         at io.github.detekt.utils.ResourcesKt.openSafeStream(Resources.kt:16)
+12:38:39.588 [INFO]  [Creating]     [40/62]     In order to prevent openSafeStream(URL)
+12:38:39.588 [INFO]  [Creating]     [40/62]     from throwing FileNotFoundException, add constructors or factory
+12:38:39.588 [INFO]  [Creating]     [40/62]     methods that make it easier to construct fully initialized objects used in
+12:38:39.588 [INFO]  [Creating]     [40/62]     openSafeStream(URL).
+12:38:39.588 [INFO]  [Creating]     [40/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:39.590 [INFO]  [Creating] [5/8] io.github.detekt.utils.ResourcesKt
+12:38:39.590 [INFO]  [Creating] [5/8]   Tests created: 2
+12:38:39.590 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.YML'
+================================================================================
+12:38:39.590 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:40.024 [INFO]  [Creating]     [41/62] io.github.detekt.utils.YML.getIndent
+12:38:40.025 [INFO]  [Creating]     [41/62]   T003: Private method
+12:38:40.025 [INFO]  [Creating]     [41/62]     The method is declared private or in a private inner class. It cannot be
+12:38:40.025 [INFO]  [Creating]     [41/62]     called from another class in the same package. Diffblue Cover will attempt
+12:38:40.025 [INFO]  [Creating]     [41/62]     to test it indirectly through other callable methods.
+12:38:40.025 [INFO]  [Creating]     [41/62]     If you want to test this method directly make it package-private.
+12:38:40.025 [INFO]  [Creating]     [41/62]     See https://diff.blue/T003 for information on testing private methods.
+12:38:40.025 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:40.025 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:40.053 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YML.getContent:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:40.416 [INFO]  [Creating]     [42/62] io.github.detekt.utils.YML.getContent
+12:38:40.416 [INFO]  [Creating]     [42/62]   Tests created: 1
+12:38:40.417 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YML.setContent:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:41.211 [INFO]  [Creating]     [43/62] io.github.detekt.utils.YML.setContent
+12:38:41.211 [INFO]  [Creating]     [43/62]   Tests created: 1
+12:38:41.212 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YML.append:(Ljava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:42.648 [INFO]  [Creating]     [44/62] io.github.detekt.utils.YML.append
+12:38:42.648 [INFO]  [Creating]     [44/62]   Tests created: 3
+12:38:42.649 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YML.emptyLine:()V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:42.882 [INFO]  [Creating]     [45/62] io.github.detekt.utils.YML.emptyLine
+12:38:42.882 [INFO]  [Creating]     [45/62]   Tests created: 1
+12:38:42.883 [INFO]  [Creating] [6/8] io.github.detekt.utils.YML
+12:38:42.884 [INFO]  [Creating] [6/8]   Tests created: 6
+12:38:42.884 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.YamlKt'
+================================================================================
+12:38:42.884 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:42.887 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:42.887 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:42.910 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlKt.keyValue:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:43.448 [INFO]  [Creating]     [46/62] io.github.detekt.utils.YamlKt.keyValue
+12:38:43.448 [INFO]  [Creating]     [46/62]   R013: No inputs found that don't throw a trivial exception
+12:38:43.448 [INFO]  [Creating]     [46/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:43.448 [INFO]  [Creating]     [46/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.YamlKt.keyValue, parameter comment
+12:38:43.448 [INFO]  [Creating]     [46/62]         at io.github.detekt.utils.YamlKt.keyValue(Yaml.kt)
+12:38:43.448 [INFO]  [Creating]     [46/62]     In order to prevent keyValue(YamlNode, String, Function0)
+12:38:43.448 [INFO]  [Creating]     [46/62]     from throwing NullPointerException, add constructors or factory
+12:38:43.448 [INFO]  [Creating]     [46/62]     methods that make it easier to construct fully initialized objects used in
+12:38:43.448 [INFO]  [Creating]     [46/62]     keyValue(YamlNode, String, Function0).
+12:38:43.448 [INFO]  [Creating]     [46/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:43.448 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlKt.list:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Ljava/util/List;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:46.497 [INFO]  [Creating]     [47/62] io.github.detekt.utils.YamlKt.list
+12:38:46.497 [INFO]  [Creating]     [47/62]   Tests created: 6
+12:38:46.500 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlKt.listOfMaps:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Ljava/util/List;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:48.981 [INFO]  [Creating]     [48/62] io.github.detekt.utils.YamlKt.listOfMaps
+12:38:48.981 [INFO]  [Creating]     [48/62]   Tests created: 10
+12:38:48.982 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlKt.node:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:49.387 [INFO]  [Creating]     [49/62] io.github.detekt.utils.YamlKt.node
+12:38:49.387 [INFO]  [Creating]     [49/62]   R013: No inputs found that don't throw a trivial exception
+12:38:49.387 [INFO]  [Creating]     [49/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:49.387 [INFO]  [Creating]     [49/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.YamlKt.node, parameter name
+12:38:49.387 [INFO]  [Creating]     [49/62]         at io.github.detekt.utils.YamlKt.node(Yaml.kt)
+12:38:49.387 [INFO]  [Creating]     [49/62]     In order to prevent node(YamlNode, String, Function1)
+12:38:49.387 [INFO]  [Creating]     [49/62]     from throwing NullPointerException, add constructors or factory
+12:38:49.387 [INFO]  [Creating]     [49/62]     methods that make it easier to construct fully initialized objects used in
+12:38:49.387 [INFO]  [Creating]     [49/62]     node(YamlNode, String, Function1).
+12:38:49.387 [INFO]  [Creating]     [49/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:49.388 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlKt.yaml:(Lio/github/detekt/utils/YamlNode;Lkotlin/jvm/functions/Function0;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:49.629 [INFO]  [Creating]     [50/62] io.github.detekt.utils.YamlKt.yaml
+12:38:49.629 [INFO]  [Creating]     [50/62]   R013: No inputs found that don't throw a trivial exception
+12:38:49.629 [INFO]  [Creating]     [50/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:49.629 [INFO]  [Creating]     [50/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.YamlKt.yaml, parameter <this>
+12:38:49.629 [INFO]  [Creating]     [50/62]         at io.github.detekt.utils.YamlKt.yaml(Yaml.kt)
+12:38:49.629 [INFO]  [Creating]     [50/62]     In order to prevent yaml(YamlNode, Function0)
+12:38:49.629 [INFO]  [Creating]     [50/62]     from throwing NullPointerException, add constructors or factory
+12:38:49.629 [INFO]  [Creating]     [50/62]     methods that make it easier to construct fully initialized objects used in
+12:38:49.629 [INFO]  [Creating]     [50/62]     yaml(YamlNode, Function0).
+12:38:49.629 [INFO]  [Creating]     [50/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:49.630 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlKt.yaml:(Lkotlin/jvm/functions/Function1;)Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:49.648 [INFO]  [Creating]     [51/62] io.github.detekt.utils.YamlKt.yaml
+12:38:49.649 [INFO]  [Creating]     [51/62]   R013: No inputs found that don't throw a trivial exception
+12:38:49.649 [INFO]  [Creating]     [51/62]     Diffblue Cover tried to run the arrange/act section, but the test threw
+12:38:49.649 [INFO]  [Creating]     [51/62]     java.lang.NullPointerException: Parameter specified as non-null is null: method io.github.detekt.utils.YamlKt.yaml, parameter content
+12:38:49.649 [INFO]  [Creating]     [51/62]         at io.github.detekt.utils.YamlKt.yaml(Yaml.kt)
+12:38:49.649 [INFO]  [Creating]     [51/62]     In order to prevent yaml(Function1)
+12:38:49.649 [INFO]  [Creating]     [51/62]     from throwing NullPointerException, add constructors or factory
+12:38:49.649 [INFO]  [Creating]     [51/62]     methods that make it easier to construct fully initialized objects used in
+12:38:49.649 [INFO]  [Creating]     [51/62]     yaml(Function1).
+12:38:49.649 [INFO]  [Creating]     [51/62]     See https://diff.blue/R013 to resolve this issue.
+12:38:49.650 [INFO]  [Creating] [7/8] io.github.detekt.utils.YamlKt
+12:38:49.650 [INFO]  [Creating] [7/8]   Tests created: 16
+12:38:49.650 [INFO]  [Creating] 
+================================================================================
+= Starting analysis for class 'io.github.detekt.utils.YamlNode'
+================================================================================
+12:38:49.650 [INFO]  [Creating] Filtering out non-testable methods...
+12:38:49.650 [INFO]  [Creating] Filtering of methods complete. Creating analysis request
+12:38:49.650 [INFO]  [Creating] Attempting to get service client, retry 1.
+12:38:49.675 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.getContent:()Ljava/lang/String;, io.github.detekt.utils.YamlNode.getIndent:()I, io.github.detekt.utils.YamlNode.setContent:(Ljava/lang/String;)V, io.github.detekt.utils.YamlNode.toString:()Ljava/lang/String;' using 'TrM (!sp, !fnm, df, !ris)'
+================================================================================
+12:38:49.753 [INFO]  [Creating]     [52/62] io.github.detekt.utils.YamlNode.getContent
+12:38:49.753 [INFO]  [Creating]     [53/62] io.github.detekt.utils.YamlNode.getIndent
+12:38:49.753 [INFO]  [Creating]     [54/62] io.github.detekt.utils.YamlNode.setContent
+12:38:49.754 [INFO]  [Creating]     [55/62] io.github.detekt.utils.YamlNode.toString
+12:38:49.754 [INFO]  [Creating]     [55/62]   Tests created: 1
+12:38:49.754 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.equals:(Ljava/lang/Object;)Z, io.github.detekt.utils.YamlNode.hashCode:()I' using 'EqH (!sp, !fnm, df, !ris)'
+================================================================================
+12:38:50.640 [INFO]  [Creating]     [56/62] io.github.detekt.utils.YamlNode.equals
+12:38:50.640 [INFO]  [Creating]     [57/62] io.github.detekt.utils.YamlNode.hashCode
+12:38:50.640 [INFO]  [Creating]     [57/62]   Tests created: 6
+12:38:50.641 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.<init>:()V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:50.735 [INFO]  [Creating]     [58/62] io.github.detekt.utils.YamlNode.<init>
+12:38:50.735 [INFO]  [Creating]     [58/62]   Tests created: 1
+12:38:50.736 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.<init>:(ILjava/lang/String;)V' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:50.871 [INFO]  [Creating]     [59/62] io.github.detekt.utils.YamlNode.<init>
+12:38:50.871 [INFO]  [Creating]     [59/62]   Tests created: 1
+12:38:50.872 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.component1:()I' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:51.121 [INFO]  [Creating]     [60/62] io.github.detekt.utils.YamlNode.component1
+12:38:51.121 [INFO]  [Creating]     [60/62]   Tests created: 1
+12:38:51.122 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.component2:()Ljava/lang/String;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:51.326 [INFO]  [Creating]     [61/62] io.github.detekt.utils.YamlNode.component2
+12:38:51.326 [INFO]  [Creating]     [61/62]   Tests created: 1
+12:38:51.327 [INFO]  [Creating] 
+================================================================================
+= Creating tests for 'io.github.detekt.utils.YamlNode.copy:(ILjava/lang/String;)Lio/github/detekt/utils/YamlNode;' using 'SiM (!sp, fnm, df, !ris)'
+================================================================================
+12:38:51.914 [INFO]  [Creating]     [62/62] io.github.detekt.utils.YamlNode.copy
+12:38:51.914 [INFO]  [Creating]     [62/62]   Tests created: 1
+12:38:51.916 [INFO]  [Creating] [8/8] io.github.detekt.utils.YamlNode
+12:38:51.916 [INFO]  [Creating] [8/8]   Tests created: 12
+12:38:51.921 [INFO]  [Reporting] 
+12:38:51.921 [INFO]  [Reporting] Summary:
+12:38:51.921 [INFO]  [Reporting] --------
+12:38:51.921 [INFO]  [Reporting] Total:                                              62 methods
+12:38:51.921 [INFO]  [Reporting] 62 tests created for:                               41 methods
+12:38:51.921 [INFO]  [Reporting] 
+12:38:51.921 [INFO]  [Reporting] No tests created for:                               20 methods
+12:38:51.921 [INFO]  [Reporting]    20 R013: No inputs found that don't throw a trivial exception
+12:38:51.956 [INFO]  [Validating] 
+12:38:51.956 [INFO]  [Validating] Running validation command.
+12:38:51.958 [INFO]  [Validating] Running: Using JAVA_HOME: /Users/mnedzelskii/.sdkman/candidates/java/current : in /Users/mnedzelskii/gits/detekt/detekt-utils : gradle test -i  
+12:38:52.386 [INFO]  [Validating] Standard output of build tool (Gradle)
+12:38:52.386 [INFO]  [Validating] > The client will now receive all logging from the daemon (pid: 15147). The daemon log file: /Users/mnedzelskii/.gradle/daemon/8.2/daemon-15147.out.log
+12:38:52.386 [INFO]  [Validating] > Starting 79th build in daemon [uptime: 2 hrs 34 mins 16.397 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 8 GiB]
+12:38:52.386 [INFO]  [Validating] > Closing daemon's stdin at end of input.
+12:38:52.386 [INFO]  [Validating] > The daemon will no longer process any standard input.
+12:38:52.386 [INFO]  [Validating] > Using 10 worker leases.
+12:38:52.386 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt, /Users/mnedzelskii/gits/detekt/detekt-gradle-plugin, /Users/mnedzelskii/gits/detekt/build-logic] as hierarchies to watch
+12:38:52.386 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt/build-logic, /Users/mnedzelskii/gits/detekt, /Users/mnedzelskii/gits/detekt/detekt-gradle-plugin] as hierarchies to watch
+12:38:52.386 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt/detekt-gradle-plugin, /Users/mnedzelskii/gits/detekt/build-logic, /Users/mnedzelskii/gits/detekt] as hierarchies to watch
+12:38:52.386 [INFO]  [Validating] > Reusing configuration cache.
+12:38:52.386 [INFO]  [Validating] > Now considering [/Users/mnedzelskii/gits/detekt, /Users/mnedzelskii/gits/detekt/detekt-gradle-plugin, /Users/mnedzelskii/gits/detekt/build-logic] as hierarchies to watch
+12:38:52.386 [INFO]  [Validating] > Watching the file system is configured to be enabled if available
+12:38:52.386 [INFO]  [Validating] > File system watching is active
+12:38:52.386 [INFO]  [Validating] > Using local directory build cache for the root build (location = /Users/mnedzelskii/.gradle/caches/build-cache-1, removeUnusedEntriesAfter = 7 days).
+12:38:52.386 [INFO]  [Validating] > Using remote HTTP build cache for the root build (pull-only, allowInsecureProtocol = false, allowUntrustedServer = false, authenticated = false, url = https://ge.detekt.dev/cache/, useExpectContinue = false).
+12:38:52.386 [INFO]  [Validating] > Tasks to be executed: [task ':detekt-utils:compileKotlin', task ':detekt-utils:compileJava', task ':detekt-utils:processResources', task ':detekt-utils:classes', task ':detekt-utils:compileTestKotlin', task ':detekt-utils:compileTestJava', task ':detekt-utils:processTestResources', task ':detekt-utils:testClasses', task ':detekt-utils:test']
+12:38:52.386 [INFO]  [Validating] > Tasks that were excluded: []
+12:38:52.386 [INFO]  [Validating] > Resolve mutations for :detekt-utils:compileKotlin (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > Resolve mutations for :detekt-utils:processResources (Thread[Execution worker Thread 2,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > Resolve mutations for :detekt-utils:processTestResources (Thread[Execution worker Thread 3,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > :detekt-utils:processResources (Thread[Execution worker Thread 2,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > :detekt-utils:processTestResources (Thread[Execution worker Thread 3,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > :detekt-utils:compileKotlin (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > 
+12:38:52.386 [INFO]  [Validating] > > Task :detekt-utils:processResources NO-SOURCE
+12:38:52.386 [INFO]  [Validating] > Skipping task ':detekt-utils:processResources' as it has no source files and no previous output files.
+12:38:52.386 [INFO]  [Validating] > 
+12:38:52.386 [INFO]  [Validating] > > Task :detekt-utils:processTestResources NO-SOURCE
+12:38:52.386 [INFO]  [Validating] > Skipping task ':detekt-utils:processTestResources' as it has no source files and no previous output files.
+12:38:52.386 [INFO]  [Validating] > 
+12:38:52.386 [INFO]  [Validating] > > Task :detekt-utils:compileKotlin UP-TO-DATE
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Build cache key for task ':detekt-utils:compileKotlin' is 4bc3c8215f701e9ef21d31281b92246d
+12:38:52.386 [INFO]  [Validating] > Skipping task ':detekt-utils:compileKotlin' as it is up-to-date.
+12:38:52.386 [INFO]  [Validating] > Resolve mutations for :detekt-utils:compileJava (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > :detekt-utils:compileJava (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > 
+12:38:52.386 [INFO]  [Validating] > > Task :detekt-utils:compileJava NO-SOURCE
+12:38:52.386 [INFO]  [Validating] > Skipping task ':detekt-utils:compileJava' as it has no source files and no previous output files.
+12:38:52.386 [INFO]  [Validating] > Resolve mutations for :detekt-utils:classes (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > :detekt-utils:classes (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > 
+12:38:52.386 [INFO]  [Validating] > > Task :detekt-utils:classes UP-TO-DATE
+12:38:52.386 [INFO]  [Validating] > Skipping task ':detekt-utils:classes' as it has no actions.
+12:38:52.386 [INFO]  [Validating] > Resolve mutations for :detekt-utils:compileTestKotlin (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > :detekt-utils:compileTestKotlin (Thread[Execution worker,5,main]) started.
+12:38:52.386 [INFO]  [Validating] > 
+12:38:52.386 [INFO]  [Validating] > > Task :detekt-utils:compileTestKotlin FROM-CACHE
+12:38:52.386 [INFO]  [Validating] > Transforming main with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk8-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming assertj-core-3.24.2.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming junit-jupiter-params-5.9.3.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming junit-jupiter-api-5.9.3.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming junit-platform-commons-1.9.3.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming junit-jupiter-5.9.3.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-jdk7-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.386 [INFO]  [Validating] > Transforming kotlin-stdlib-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.387 [INFO]  [Validating] > Transforming kotlin-stdlib-common-1.8.22.jar with ClasspathEntrySnapshotTransform
+12:38:52.387 [INFO]  [Validating] > Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+12:38:52.387 [INFO]  [Validating] > Transforming byte-buddy-1.12.21.jar with ClasspathEntrySnapshotTransform
+12:38:52.387 [INFO]  [Validating] > Transforming opentest4j-1.2.0.jar with ClasspathEntrySnapshotTransform
+12:38:52.387 [INFO]  [Validating] > Transforming apiguardian-api-1.1.2.jar with ClasspathEntrySnapshotTransform
+12:38:52.387 [INFO]  [Validating] > Build cache key for task ':detekt-utils:compileTestKotlin' is ef0609f32c7a4ca7617021ee8df2f8eb
+12:38:52.387 [INFO]  [Validating] > Task ':detekt-utils:compileTestKotlin' is not up-to-date because:
+12:38:52.387 [INFO]  [Validating] >   Input property 'javaSources' file /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java/DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+12:38:52.387 [INFO]  [Validating] >   Input property 'javaSources' file /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java/io/github/detekt/utils/MarkdownContentDiffblueTest.java has been added.
+12:38:52.387 [INFO]  [Validating] >   Input property 'javaSources' file /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java/io/github/detekt/utils/MarkdownDiffblueTest.java has been added.
+12:38:52.387 [INFO]  [Validating] > Loaded cache entry for task ':detekt-utils:compileTestKotlin' with cache key ef0609f32c7a4ca7617021ee8df2f8eb
+12:38:52.387 [INFO]  [Validating] > Resolve mutations for :detekt-utils:compileTestJava (Thread[Execution worker,5,main]) started.
+12:38:52.387 [INFO]  [Validating] > :detekt-utils:compileTestJava (Thread[Execution worker,5,main]) started.
+12:38:52.387 [INFO]  [Validating] > 
+12:38:52.387 [INFO]  [Validating] > > Task :detekt-utils:compileTestJava FROM-CACHE
+12:38:52.387 [INFO]  [Validating] > Build cache key for task ':detekt-utils:compileTestJava' is c2fe7fa673e1cc74f70c3c195839a976
+12:38:52.387 [INFO]  [Validating] > Task ':detekt-utils:compileTestJava' is not up-to-date because:
+12:38:52.387 [INFO]  [Validating] >   Input property 'stableSources' file /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java/DummyJUnitJupiterLauncherDiffblueTest.java has been removed.
+12:38:52.387 [INFO]  [Validating] >   Input property 'stableSources' file /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java/io/github/detekt/utils/MarkdownContentDiffblueTest.java has been added.
+12:38:52.387 [INFO]  [Validating] >   Input property 'stableSources' file /Users/mnedzelskii/gits/detekt/detekt-utils/src/test/java/io/github/detekt/utils/MarkdownDiffblueTest.java has been added.
+12:38:52.387 [INFO]  [Validating] > Loaded cache entry for task ':detekt-utils:compileTestJava' with cache key c2fe7fa673e1cc74f70c3c195839a976
+12:38:52.387 [INFO]  [Validating] > Resolve mutations for :detekt-utils:testClasses (Thread[Execution worker,5,main]) started.
+12:38:52.387 [INFO]  [Validating] > :detekt-utils:testClasses (Thread[Execution worker,5,main]) started.
+12:38:52.387 [INFO]  [Validating] > 
+12:38:52.387 [INFO]  [Validating] > > Task :detekt-utils:testClasses UP-TO-DATE
+12:38:52.387 [INFO]  [Validating] > Skipping task ':detekt-utils:testClasses' as it has no actions.
+12:38:52.387 [INFO]  [Validating] > Resolve mutations for :detekt-utils:test (Thread[Execution worker Thread 3,5,main]) started.
+12:38:52.387 [INFO]  [Validating] > :detekt-utils:test (Thread[Execution worker Thread 3,5,main]) started.
+12:38:52.387 [INFO]  [Validating] > 
+12:38:52.387 [INFO]  [Validating] > > Task :detekt-utils:test FROM-CACHE
+12:38:52.387 [INFO]  [Validating] > Build cache key for task ':detekt-utils:test' is ad1395ec95122285eb94a0cf623a297e
+12:38:52.387 [INFO]  [Validating] > Task ':detekt-utils:test' is not up-to-date because:
+12:38:52.387 [INFO]  [Validating] >   Value of input property 'filter.failOnNoMatchingTests' has changed for task ':detekt-utils:test'
+12:38:52.387 [INFO]  [Validating] >   Value of input property 'filter.includePatterns' has changed for task ':detekt-utils:test'
+12:38:52.387 [INFO]  [Validating] > Loaded cache entry for task ':detekt-utils:test' with cache key ad1395ec95122285eb94a0cf623a297e
+12:38:52.387 [INFO]  [Validating] > 
+12:38:52.387 [INFO]  [Validating] > BUILD SUCCESSFUL in 304ms
+12:38:52.387 [INFO]  [Validating] > 4 actionable tasks: 3 from cache, 1 up-to-date
+12:38:52.387 [INFO]  [Validating] > Watched directory hierarchies: [/Users/mnedzelskii/gits/detekt]
+12:38:52.387 [INFO]  [Validating] > Configuration cache entry reused.
+12:38:52.387 [INFO]  [Validating] Standard error of build tool (Gradle)
+12:38:52.387 [INFO]  [Validating] > 
+12:38:52.402 [INFO]  [Validating] All 62 created tests were successfully validated.
+12:38:52.465 [INFO]  [Reporting] Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-utils/.diffblue/reports/report.json
+12:38:52.512 [INFO]  [Reporting] 
+12:38:52.512 [WARN]  [Reporting] Cover completed with warnings
+  The following warnings should be addressed to ensure that
+  the highest quantity and quality of tests can be created:
+-----------------------------------------------------------
+12:38:11.329 [WARN]  [Checking] E052: Missing dependency
+Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+Required dependencies were not found.
+Please add the following dependencies to your project:
+  testImplementation("org.mockito:mockito-core:4.11.0")
+12:38:52.512 [INFO]  [Reporting] Log file: /Users/mnedzelskii/gits/detekt/detekt-utils/.diffblue/log/user-20230706T123802.log
+12:38:52.512 [INFO]  [Reporting] Finished in 49s

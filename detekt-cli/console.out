@@ -1,0 +1,290 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 112 callable methods in 23 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  _____________________________ 0% ___________________________
+INFO  #____________________________ 1% ___________________________
+INFO                                                              
+INFO   [1/23] io.gitlab.arturbosch.detekt.cli.ClasspathResourceConverter
+INFO  #____________________________ 1% ___________________________
+INFO                                                              
+INFO   [1/23]   Tests created: 1
+INFO  #____________________________ 1% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO  ###########################_ 46% ___________________________
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO   [2/23] io.gitlab.arturbosch.detekt.cli.CliArgs
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO   [2/23]   Tests created: 4
+INFO  ############################ 47% ___________________________
+INFO  ############################ 48% ___________________________
+INFO                                                              
+INFO   [3/23] io.gitlab.arturbosch.detekt.cli.CliArgs$Companion
+INFO  ############################ 48% ___________________________
+INFO                                                              
+INFO   [3/23]   Tests created: 0
+INFO  ############################ 48% ___________________________
+INFO  ############################ 49% ___________________________
+INFO  ############################ 50% ___________________________
+INFO  ############################ 50% ___________________________
+INFO  ############################ 50% ___________________________
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO   [4/23] io.gitlab.arturbosch.detekt.cli.CliRunner
+INFO  ############################ 50% ___________________________
+INFO                                                              
+INFO   [4/23]   Tests created: 4
+INFO  ############################ 50% ___________________________
+INFO  ############################ 51% ___________________________
+INFO                                                              
+INFO   [5/23] io.gitlab.arturbosch.detekt.cli.DetektInputPathConverter$DefaultImpls
+INFO  ############################ 51% ___________________________
+INFO                                                              
+INFO   [5/23]   Tests created: 0
+INFO  ############################ 51% ___________________________
+INFO  ############################ 52% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 54% ___________________________
+INFO  ############################ 55% ___________________________
+INFO  ############################ 56% ___________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 58% #__________________________
+INFO  ############################ 59% ##_________________________
+INFO  ############################ 60% ###________________________
+INFO  ############################ 61% ###________________________
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 63% #####______________________
+INFO                                                              
+INFO   [6/23] io.gitlab.arturbosch.detekt.cli.DetektProgressListener
+INFO  ############################ 63% #####______________________
+INFO                                                              
+INFO   [6/23]   Tests created: 3
+INFO  ############################ 63% #####______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 65% ######_____________________
+INFO                                                              
+INFO   [7/23] io.gitlab.arturbosch.detekt.cli.ExistingPathConverter
+INFO  ############################ 65% ######_____________________
+INFO                                                              
+INFO   [7/23]   Tests created: 2
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 66% ######_____________________
+INFO                                                              
+INFO   [8/23] io.gitlab.arturbosch.detekt.cli.HandledArgumentViolation
+INFO  ############################ 66% ######_____________________
+INFO                                                              
+INFO   [8/23]   Tests created: 2
+INFO  ############################ 66% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 68% ########___________________
+INFO                                                              
+INFO   [9/23] io.gitlab.arturbosch.detekt.cli.HelpRequest
+INFO  ############################ 68% ########___________________
+INFO                                                              
+INFO   [9/23]   Tests created: 2
+INFO  ############################ 68% ########___________________
+INFO  ############################ 69% ########___________________
+INFO                                                              
+INFO  [10/23] io.gitlab.arturbosch.detekt.cli.JCommanderKt
+INFO  ############################ 69% ########___________________
+INFO                                                              
+INFO  [10/23]   Tests created: 3
+INFO  ############################ 69% ########___________________
+INFO  ############################ 70% #########__________________
+INFO  ############################ 71% #########__________________
+INFO                                                              
+INFO  [11/23] io.gitlab.arturbosch.detekt.cli.LanguageVersionConverter
+INFO  ############################ 71% #########__________________
+INFO                                                              
+INFO  [11/23]   Tests created: 2
+INFO  ############################ 71% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 73% ##########_________________
+INFO                                                              
+INFO  [12/23] io.gitlab.arturbosch.detekt.cli.Main
+INFO  ############################ 73% ##########_________________
+INFO                                                              
+INFO  [12/23]   Tests created: 0
+INFO  ############################ 73% ##########_________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 75% ############_______________
+INFO  ############################ 75% ############_______________
+INFO                                                              
+INFO  [13/23] io.gitlab.arturbosch.detekt.cli.MultipleClasspathResourceConverter
+INFO  ############################ 75% ############_______________
+INFO                                                              
+INFO  [13/23]   Tests created: 1
+INFO  ############################ 75% ############_______________
+INFO  ############################ 76% #############______________
+INFO  ############################ 77% #############______________
+INFO  ############################ 78% ##############_____________
+INFO                                                              
+INFO  [14/23] io.gitlab.arturbosch.detekt.cli.MultipleExistingPathConverter
+INFO  ############################ 78% ##############_____________
+INFO                                                              
+INFO  [14/23]   Tests created: 0
+INFO  ############################ 78% ##############_____________
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [15/23] io.gitlab.arturbosch.detekt.cli.PathConverter
+INFO  ############################ 80% ###############____________
+INFO                                                              
+INFO  [15/23]   Tests created: 0
+INFO  ############################ 80% ###############____________
+INFO  ############################ 83% ################___________
+INFO  ############################ 84% #################__________
+INFO  ############################ 85% ##################_________
+INFO  ############################ 86% ##################_________
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ####################_______
+INFO                                                              
+INFO  [16/23] io.gitlab.arturbosch.detekt.cli.ReportPath
+INFO  ############################ 88% ####################_______
+INFO                                                              
+INFO  [16/23]   Tests created: 11
+INFO  ############################ 88% ####################_______
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [17/23] io.gitlab.arturbosch.detekt.cli.ReportPath$Companion
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [17/23]   Tests created: 0
+INFO  ############################ 89% ####################_______
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [18/23] io.gitlab.arturbosch.detekt.cli.SpecKt
+INFO  ############################ 90% #####################______
+INFO                                                              
+INFO  [18/23]   Tests created: 0
+INFO  ############################ 90% #####################______
+INFO  ############################ 91% #####################______
+INFO  ############################ 91% ######################_____
+INFO                                                              
+INFO  [19/23] io.gitlab.arturbosch.detekt.cli.runners.ConfigExporter
+INFO  ############################ 91% ######################_____
+INFO                                                              
+INFO  [19/23]   Tests created: 0
+INFO  ############################ 91% ######################_____
+INFO  ############################ 92% ######################_____
+INFO  ############################ 93% #######################____
+INFO                                                              
+INFO  [20/23] io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter
+INFO  ############################ 93% #######################____
+INFO                                                              
+INFO  [20/23]   Tests created: 0
+INFO  ############################ 93% #######################____
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [21/23] io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter$Companion
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [21/23]   Tests created: 0
+INFO  ############################ 94% #######################____
+INFO  ############################ 95% ########################___
+INFO  ############################ 96% ########################___
+INFO  ############################ 97% #########################__
+INFO  ############################ 98% #########################__
+INFO                                                              
+INFO  [22/23] io.gitlab.arturbosch.detekt.cli.runners.Runner
+INFO  ############################ 98% #########################__
+INFO                                                              
+INFO  [22/23]   Tests created: 0
+INFO  ############################ 98% #########################__
+INFO  ############################ 99% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [23/23] io.gitlab.arturbosch.detekt.cli.runners.VersionPrinter
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [23/23]   Tests created: 1
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                             112 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  36 tests created for:                               75 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Not unit-testable:                                   1 method
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 T006: Main method
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               36 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     11 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     10 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      8 R002: Missing observers
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      3 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R034: Diffblue Cover can't complete test
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 36 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-cli/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-cli/.diffblue/log/user-20230706T121625.log
+INFO  Finished in 6m 36s

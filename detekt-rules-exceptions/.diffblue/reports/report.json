@@ -1,0 +1,3208 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:23:43.873074+01:00",
+    "command" : "dcover create --working-directory detekt-rules-exceptions io.github io.gitlab",
+    "totalTime" : 66.916,
+    "environmentDetectionTime" : 0.932,
+    "indexingTime" : 0.216,
+    "entryPointsTime" : 0.915,
+    "generationTime" : 53.257,
+    "timeToFirstTest" : 51.501,
+    "timeToLastTest" : 66.151,
+    "indexQueryTime" : 11.591000000000001,
+    "verificationTime" : 1.479,
+    "validationTime" : 0.551
+  },
+  "codes" : {
+    "R000" : "Success",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R034" : "Diffblue Cover can't complete test",
+    "R081" : "Exception in arrange section",
+    "R083" : "Can't find a suitable constructor",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 46,
+    "methodsCount" : 214,
+    "completeTestCount" : 2,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 46,
+      "T001" : 15,
+      "T003" : 29,
+      "T004" : 58,
+      "T005" : 1,
+      "T012" : 65
+    },
+    "perMethodOutcome" : {
+      "R000" : 3,
+      "R011" : 12,
+      "R013" : 11,
+      "R034" : 20,
+      "R081" : 14,
+      "R083" : 2,
+      "T003" : 29,
+      "T004" : 58,
+      "T012" : 65
+    },
+    "perTestOutcome" : {
+      "R000" : 2
+    },
+    "perTestValidation" : {
+      "V000" : 2
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 3,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 3,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$2" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionsProvider" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R034" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$$inlined$forEachDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$$inlined$forEachDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally" : {
+      "methodsCount" : 13,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 4,
+        "T012" : 5
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 4,
+        "T012" : 5
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$2" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException" : {
+      "methodsCount" : 20,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 1,
+        "T003" : 8,
+        "T012" : 7
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R011" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 8,
+        "T012" : 7
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$Companion" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$allowedExceptionNameRegex$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$$inlined$findDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$reference$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$ignoredExceptionTypes$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$$inlined$anyDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$$inlined$anyDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$3" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$$inlined$forEachDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$1" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$2" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$$inlined$findDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$throwExpression$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T003" : 3,
+        "T012" : 4
+      },
+      "perMethodOutcome" : {
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 3,
+        "T012" : 4
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$Companion" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R083" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$allowedExceptionNameRegex$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$exceptionNames$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown$exceptionNames$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        241
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        241
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation$hasThrowExpression$$inlined$anyDescendantOfType$default$2.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        34,
+        36,
+        37,
+        38,
+        39,
+        40,
+        36,
+        44,
+        46,
+        47,
+        46,
+        48,
+        46,
+        49,
+        46,
+        45,
+        44,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        34,
+        69
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        36
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.getMethodNames$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.getMethodNames:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        44,
+        1,
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.hasThrowExpression:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        68,
+        74,
+        75,
+        76,
+        83,
+        84,
+        85,
+        76,
+        75,
+        68
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.isPotentialMethod:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        65,
+        71,
+        72,
+        65,
+        72,
+        73,
+        65
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionRaisedInUnexpectedLocation.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        56,
+        55,
+        63
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionsProvider.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        11,
+        14,
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionsProvider.getRuleSetId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ExceptionsProvider.instance:(Lio/gitlab/arturbosch/detekt/api/Config;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        16,
+        17,
+        19,
+        20,
+        19,
+        21,
+        19,
+        22,
+        19,
+        23,
+        19,
+        24,
+        19,
+        25,
+        19,
+        26,
+        19,
+        27,
+        19,
+        28,
+        19,
+        29,
+        19,
+        30,
+        19,
+        31,
+        19,
+        32,
+        19,
+        18,
+        16,
+        34
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$$inlined$forEachDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$$inlined$forEachDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/exceptions/InstanceOfCheckForException;Lorg/jetbrains/kotlin/psi/KtParameter;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException$visitCatchSection$1.invoke:(Lorg/jetbrains/kotlin/psi/KtExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        62,
+        63,
+        65
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        49,
+        51,
+        52,
+        53,
+        54,
+        56,
+        51,
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        49,
+        84
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.access$isCheckForSubTypeOf:(Lio/gitlab/arturbosch/detekt/rules/exceptions/InstanceOfCheckForException;Lorg/jetbrains/kotlin/psi/KtExpression;Lorg/jetbrains/kotlin/psi/KtParameter;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        51
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.isCheckForSubTypeOf:(Lorg/jetbrains/kotlin/psi/KtExpression;Lorg/jetbrains/kotlin/psi/KtParameter;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        69,
+        70,
+        71,
+        72,
+        69,
+        73,
+        69,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.InstanceOfCheckForException.visitCatchSection:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        60,
+        61,
+        86,
+        93,
+        94,
+        87,
+        61,
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        30,
+        32,
+        33,
+        34,
+        35,
+        39,
+        32,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        30,
+        57
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        32
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        50,
+        51,
+        52,
+        53,
+        56
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.NotImplementedDeclaration.visitThrowExpression:(Lorg/jetbrains/kotlin/psi/KtThrowExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        43,
+        44,
+        45,
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        43,
+        44,
+        45,
+        46,
+        47,
+        53,
+        44,
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        43,
+        77
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable.isSubtypeOfThrowable:(Lorg/jetbrains/kotlin/psi/KtObjectDeclaration;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        72,
+        71,
+        72,
+        71,
+        72,
+        73,
+        72,
+        73,
+        72,
+        74,
+        75,
+        79,
+        80,
+        75,
+        80,
+        81,
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ObjectExtendsThrowable.visitObjectDeclaration:(Lorg/jetbrains/kotlin/psi/KtObjectDeclaration;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        60,
+        59,
+        68
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$$inlined$forEachDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$$inlined$forEachDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$1.<init>:(Lorg/jetbrains/kotlin/psi/KtCatchClause;Lio/gitlab/arturbosch/detekt/rules/exceptions/PrintStackTrace;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        69
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace$visitCatchSection$1.invoke:(Lorg/jetbrains/kotlin/psi/KtNameReferenceExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        70,
+        71,
+        73
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        49,
+        51,
+        52,
+        53,
+        54,
+        56,
+        51,
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        49,
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.access$hasPrintStacktraceCallExpression:(Lio/gitlab/arturbosch/detekt/rules/exceptions/PrintStackTrace;Lorg/jetbrains/kotlin/psi/KtNameReferenceExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        51
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.hasPrintStacktraceCallExpression:(Lorg/jetbrains/kotlin/psi/KtNameReferenceExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        77,
+        78
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        60,
+        61,
+        62,
+        64,
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.PrintStackTrace.visitCatchSection:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        69,
+        82,
+        89,
+        90,
+        83,
+        69,
+        74
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        65,
+        63
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        63,
+        92
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        65
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException.violatingThrowExpressionFrom:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)Lorg/jetbrains/kotlin/psi/KtThrowExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        85,
+        86,
+        87,
+        88,
+        90
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.RethrowCaughtException.visitTryExpression:(Lorg/jetbrains/kotlin/psi/KtTryExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        73,
+        94,
+        73,
+        74,
+        95,
+        96,
+        97,
+        74,
+        97,
+        96,
+        98,
+        95,
+        75,
+        99,
+        100,
+        101,
+        102,
+        103,
+        75,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        107,
+        107,
+        113,
+        76,
+        114,
+        77,
+        78,
+        79,
+        77,
+        77,
+        80,
+        114,
+        115,
+        81,
+        82
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$2.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$$inlined$collectDescendantsOfType$2.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ReturnFromFinally;Lorg/jetbrains/kotlin/psi/KtFinallySection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally$visitTryExpression$1.invoke:(Lorg/jetbrains/kotlin/psi/KtReturnExpression;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        77,
+        78,
+        77
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        55
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        45,
+        47,
+        48,
+        49,
+        50,
+        51,
+        47,
+        55,
+        45
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        45,
+        107
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.access$canFilterLabeledExpression:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ReturnFromFinally;Lorg/jetbrains/kotlin/psi/KtReturnExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.access$isReturnFromTargetFunction:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ReturnFromFinally;Lorg/jetbrains/kotlin/psi/KtBlockExpression;Lorg/jetbrains/kotlin/psi/KtReturnExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.canFilterLabeledExpression:(Lorg/jetbrains/kotlin/psi/KtReturnExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        99
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.getIgnoreLabeled$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.getIgnoreLabeled:()Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        55,
+        1,
+        55
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.isReturnFromTargetFunction:(Lorg/jetbrains/kotlin/psi/KtBlockExpression;Lorg/jetbrains/kotlin/psi/KtReturnExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        87,
+        88,
+        87,
+        90,
+        91,
+        92,
+        90,
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.typeEqualsTo:(Lorg/jetbrains/kotlin/psi/KtFinallySection;Lorg/jetbrains/kotlin/types/KotlinType;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        102,
+        103,
+        105
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ReturnFromFinally.visitTryExpression:(Lorg/jetbrains/kotlin/psi/KtTryExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        58,
+        60,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        66,
+        65,
+        75,
+        76,
+        109,
+        115,
+        122,
+        123,
+        124,
+        125,
+        115,
+        109,
+        80,
+        126,
+        80,
+        126,
+        127,
+        81
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        169
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$Companion.getEXCEPTIONS_IGNORED_BY_DEFAULT$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$Companion.getEXCEPTIONS_IGNORED_BY_DEFAULT:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        171
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$allowedExceptionNameRegex$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$allowedExceptionNameRegex$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$allowedExceptionNameRegex$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        87
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$allowedExceptionNameRegex$2.invoke:(Ljava/lang/String;)Lkotlin/text/Regex;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        87,
+        87
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$$inlined$findDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$$inlined$findDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$reference$1.<init>:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$reference$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        151
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$findReferenceInVariable$find$reference$1.invoke:(Lorg/jetbrains/kotlin/psi/KtProperty;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        151
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$ignoredExceptionTypes$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$ignoredExceptionTypes$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$ignoredExceptionTypes$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        82
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$ignoredExceptionTypes$2.invoke:(Ljava/util/List;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        83,
+        180,
+        181,
+        182,
+        83,
+        182,
+        183,
+        180,
+        83
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$$inlined$anyDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$$inlined$anyDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/exceptions/SwallowedException;Ljava/lang/String;Lorg/jetbrains/kotlin/psi/KtExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        116
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionSwallowed$1.invoke:(Lorg/jetbrains/kotlin/psi/KtThrowExpression;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        117,
+        118,
+        118,
+        180,
+        181,
+        118,
+        181,
+        182,
+        118
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$$inlined$anyDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$$inlined$anyDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/exceptions/SwallowedException;Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        108
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$isExceptionUnused$1.invoke:(Lorg/jetbrains/kotlin/psi/KtNameReferenceExpression;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        109
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        277
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$2.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$3.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException$parameterReferences$$inlined$collectDescendantsOfType$default$3.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        82,
+        87,
+        171,
+        172,
+        173,
+        172,
+        174,
+        172,
+        175,
+        172,
+        171
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        72,
+        74,
+        75,
+        76,
+        77,
+        78,
+        74,
+        82,
+        87,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        72,
+        178
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.access$getEXCEPTIONS_IGNORED_BY_DEFAULT$cp:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.access$getIgnoredExceptionTypes:(Lio/gitlab/arturbosch/detekt/rules/exceptions/SwallowedException;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.access$parameterReferences:(Lio/gitlab/arturbosch/detekt/rules/exceptions/SwallowedException;Lorg/jetbrains/kotlin/psi/KtThrowExpression;Ljava/lang/String;Lorg/jetbrains/kotlin/psi/KtExpression;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.findReferenceInVariable$find:(Lorg/jetbrains/kotlin/psi/KtExpression;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/kotlin/psi/KtBlockExpression;)Lorg/jetbrains/kotlin/psi/KtExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        152,
+        150,
+        151,
+        237,
+        244,
+        245,
+        246,
+        237,
+        151,
+        152,
+        151,
+        152,
+        153,
+        154,
+        155,
+        247,
+        155,
+        155,
+        157,
+        247,
+        157,
+        157,
+        154,
+        152,
+        152,
+        150,
+        160,
+        161,
+        162,
+        163,
+        248,
+        163,
+        247,
+        163,
+        163,
+        163,
+        160
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.findReferenceInVariable:(Lorg/jetbrains/kotlin/psi/KtExpression;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/kotlin/psi/KtExpression;)Lorg/jetbrains/kotlin/psi/KtExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        148,
+        236,
+        148,
+        166
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.getAllowedExceptionNameRegex$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.getAllowedExceptionNameRegex:()Lkotlin/text/Regex;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        87,
+        1,
+        87
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.getEXCEPTIONS_IGNORED_BY_DEFAULT:()Ljava/util/List;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.getIgnoredExceptionTypes$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.getIgnoredExceptionTypes:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        82,
+        1,
+        82
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        74
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.isExceptionSwallowed:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        114,
+        115,
+        116,
+        194,
+        195,
+        202,
+        203,
+        204,
+        195,
+        194,
+        119,
+        116
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.isExceptionSwallowedOrUnused:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        103
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.isExceptionUnused:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        106,
+        107,
+        108,
+        183,
+        184,
+        191,
+        192,
+        193,
+        184,
+        183,
+        108
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.parameterReferences:(Lorg/jetbrains/kotlin/psi/KtThrowExpression;Ljava/lang/String;Lorg/jetbrains/kotlin/psi/KtExpression;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        126,
+        126,
+        128,
+        127,
+        128,
+        127,
+        128,
+        205,
+        206,
+        212,
+        219,
+        220,
+        221,
+        222,
+        212,
+        206,
+        128,
+        129,
+        128,
+        129,
+        223,
+        231,
+        232,
+        231,
+        130,
+        131,
+        132,
+        134,
+        135,
+        136,
+        137,
+        135,
+        135,
+        131,
+        231,
+        233,
+        231,
+        231,
+        231,
+        232,
+        234,
+        235,
+        223,
+        128,
+        140,
+        127
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.SwallowedException.visitCatchSection:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        90,
+        91,
+        92,
+        180,
+        181,
+        92,
+        181,
+        182,
+        92,
+        93,
+        94,
+        96,
+        98,
+        90,
+        90,
+        99,
+        100
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$$inlined$forEachDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$$inlined$forEachDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ThrowingExceptionFromFinally;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        40
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally$visitFinallySection$1.invoke:(Lorg/jetbrains/kotlin/psi/KtThrowExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        41,
+        42
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        30,
+        32,
+        33,
+        34,
+        35,
+        36,
+        32,
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        30,
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        32
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionFromFinally.visitFinallySection:(Lorg/jetbrains/kotlin/psi/KtFinallySection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        40,
+        46,
+        53,
+        54,
+        47,
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$1.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        241
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        241
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$2.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain$containsThrowExpression$$inlined$anyDescendantOfType$default$2.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        28,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        26,
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain.containsThrowExpression:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        42,
+        45,
+        46,
+        47,
+        54,
+        55,
+        56,
+        47,
+        46,
+        42
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionInMain.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        36,
+        37,
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        52
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        40,
+        42,
+        43,
+        44,
+        45,
+        48,
+        42,
+        52,
+        54,
+        55,
+        54,
+        56,
+        54,
+        57,
+        54,
+        58,
+        54,
+        59,
+        54,
+        60,
+        54,
+        61,
+        54,
+        62,
+        54,
+        53,
+        52,
+        40
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        40,
+        75
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.getExceptions$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.getExceptions:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        52,
+        1,
+        52
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        42
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingExceptionsWithoutMessageOrCause.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        67,
+        68,
+        77,
+        78,
+        68,
+        78,
+        79,
+        68,
+        69,
+        71,
+        73,
+        74
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$$inlined$findDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$$inlined$findDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$throwExpression$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ThrowingNewInstanceOfSameException;Ljava/lang/String;Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$throwExpression$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        54
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException$visitCatchSection$throwExpression$1.invoke:(Lorg/jetbrains/kotlin/psi/KtThrowExpression;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        55,
+        56,
+        57,
+        58,
+        56
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        42,
+        44,
+        45,
+        46,
+        47,
+        48,
+        44,
+        42
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        42,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.access$createsSameExceptionType:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ThrowingNewInstanceOfSameException;Lorg/jetbrains/kotlin/psi/KtCallExpression;Ljava/lang/String;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.access$hasSameExceptionParameter:(Lio/gitlab/arturbosch/detekt/rules/exceptions/ThrowingNewInstanceOfSameException;Ljava/util/List;Ljava/lang/String;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.createsSameExceptionType:(Lorg/jetbrains/kotlin/psi/KtCallExpression;Ljava/lang/String;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.hasSameExceptionParameter:(Ljava/util/List;Ljava/lang/String;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        70
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.ThrowingNewInstanceOfSameException.visitCatchSection:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        52,
+        53,
+        54,
+        74,
+        81,
+        82,
+        83,
+        74,
+        54,
+        60,
+        61,
+        63
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        70
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$Companion.getCaughtExceptionDefaults:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R083",
+      "lineNumbers" : [
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$allowedExceptionNameRegex$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$allowedExceptionNameRegex$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$allowedExceptionNameRegex$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$allowedExceptionNameRegex$2.invoke:(Ljava/lang/String;)Lkotlin/text/Regex;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        53,
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$exceptionNames$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$exceptionNames$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$exceptionNames$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught$exceptionNames$2.invoke:(Ljava/util/List;)Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        50,
+        53,
+        71,
+        72,
+        73,
+        72,
+        74,
+        72,
+        75,
+        72,
+        76,
+        72,
+        77,
+        72,
+        78,
+        72,
+        79,
+        72,
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        39,
+        41,
+        42,
+        43,
+        44,
+        46,
+        41,
+        50,
+        53,
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.access$getCaughtExceptionDefaults$cp:()Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        38
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.getAllowedExceptionNameRegex$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.getAllowedExceptionNameRegex:()Lkotlin/text/Regex;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        53,
+        1,
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.getExceptionNames$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.getExceptionNames:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        50,
+        1,
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.isTooGenericException:(Lorg/jetbrains/kotlin/psi/KtTypeReference;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        67
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionCaught.visitCatchSection:(Lorg/jetbrains/kotlin/psi/KtCatchClause;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        56,
+        57,
+        58,
+        60,
+        62,
+        56,
+        56,
+        63,
+        64
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown$exceptionNames$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown$exceptionNames$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown$exceptionNames$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown$exceptionNames$2.invoke:(Ljava/util/List;)Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        56
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        41,
+        49,
+        51,
+        52,
+        51,
+        53,
+        51,
+        54,
+        51,
+        50,
+        49,
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown.getExceptionNames$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown.getExceptionNames:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        49,
+        1,
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        41
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.exceptions.TooGenericExceptionThrown.visitThrowExpression:(Lorg/jetbrains/kotlin/psi/KtThrowExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        62,
+        61,
+        70,
+        59,
+        59,
+        71,
+        72
+      ]
+    }
+  }
+}

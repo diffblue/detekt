@@ -1,0 +1,315 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+WARN  E118: JUnit Vintage Engine not found
+      Diffblue Cover cannot validate tests because JUnit Vintage Engine was not found,
+      but we have detected dependencies on both JUnit 4 and JUnit Jupiter 5.
+      While JUnit 5 tests created by Diffblue will run, JUnit 4 tests will not run.
+      Please make the following updates to your configuration:
+        testImplementation("org.junit.vintage:junit-vintage-engine:5.9.3")
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 87 callable methods in 24 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  ##___________________________ 4% ___________________________
+INFO  ####_________________________ 6% ___________________________
+INFO  ####_________________________ 8% ___________________________
+INFO  #####________________________ 9% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO  ######______________________ 11% ___________________________
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [1/24] io.github.detekt.psi.FilePath
+INFO  #######_____________________ 12% ___________________________
+INFO                                                              
+INFO   [1/24]   Tests created: 5
+INFO  #######_____________________ 12% ___________________________
+INFO  ########____________________ 13% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO                                                              
+INFO   [2/24] io.github.detekt.psi.FilePath$Companion
+INFO  ########____________________ 14% ___________________________
+INFO                                                              
+INFO   [2/24]   Tests created: 0
+INFO  ########____________________ 14% ___________________________
+INFO  ###########_________________ 18% ___________________________
+INFO                                                              
+INFO   [3/24] io.github.detekt.psi.KeysKt
+INFO  ###########_________________ 18% ___________________________
+INFO                                                              
+INFO   [3/24]   Tests created: 0
+INFO  ###########_________________ 18% ___________________________
+INFO  ###########_________________ 19% ___________________________
+INFO  ############________________ 20% ___________________________
+INFO  #############_______________ 21% ___________________________
+INFO  #############_______________ 22% ___________________________
+INFO  ##############______________ 24% ___________________________
+INFO  ###############_____________ 25% ___________________________
+INFO  ###############_____________ 26% ___________________________
+INFO  ################____________ 27% ___________________________
+INFO                                                              
+INFO   [4/24] io.github.detekt.psi.KtFilesKt
+INFO  ################____________ 27% ___________________________
+INFO                                                              
+INFO   [4/24]   Tests created: 1
+INFO  ################____________ 27% ___________________________
+INFO  #################___________ 28% ___________________________
+INFO  #################___________ 29% ___________________________
+INFO  ##################__________ 31% ___________________________
+INFO                                                              
+INFO   [5/24] io.github.detekt.psi.internal.FullQualifiedNameGuesser
+INFO  ##################__________ 31% ___________________________
+INFO                                                              
+INFO   [5/24]   Tests created: 0
+INFO  ##################__________ 31% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO   [6/24] io.github.detekt.psi.internal.KotlinNoImportClassesKt
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO   [6/24]   Tests created: 0
+INFO  ###################_________ 32% ___________________________
+INFO  ####################________ 33% ___________________________
+INFO                                                              
+INFO   [7/24] io.gitlab.arturbosch.detekt.rules.AllowedExceptionNamePatternKt
+INFO  ####################________ 33% ___________________________
+INFO                                                              
+INFO   [7/24]   Tests created: 0
+INFO  ####################________ 33% ___________________________
+INFO  ####################________ 34% ___________________________
+INFO  #####################_______ 35% ___________________________
+INFO  ######################______ 36% ___________________________
+INFO                                                              
+INFO   [8/24] io.gitlab.arturbosch.detekt.rules.GuardClausesKt
+INFO  ######################______ 36% ___________________________
+INFO                                                              
+INFO   [8/24]   Tests created: 0
+INFO  ######################______ 36% ___________________________
+INFO  ######################______ 37% ___________________________
+INFO                                                              
+INFO   [9/24] io.gitlab.arturbosch.detekt.rules.IdentifierNameKt
+INFO  ######################______ 37% ___________________________
+INFO                                                              
+INFO   [9/24]   Tests created: 0
+INFO  ######################______ 37% ___________________________
+INFO  #######################_____ 39% ___________________________
+INFO                                                              
+INFO  [10/24] io.gitlab.arturbosch.detekt.rules.IsPartOfUtilsKt
+INFO  #######################_____ 39% ___________________________
+INFO                                                              
+INFO  [10/24]   Tests created: 0
+INFO  #######################_____ 39% ___________________________
+INFO  ########################____ 40% ___________________________
+INFO  ########################____ 41% ___________________________
+INFO  #########################___ 42% ___________________________
+INFO  ##########################__ 43% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO                                                              
+INFO  [11/24] io.gitlab.arturbosch.detekt.rules.JunkKt
+INFO  ###########################_ 45% ___________________________
+INFO                                                              
+INFO  [11/24]   Tests created: 0
+INFO  ###########################_ 45% ___________________________
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO  [12/24] io.gitlab.arturbosch.detekt.rules.KtAnnotatedExtensionsKt
+INFO  ############################ 47% ___________________________
+INFO                                                              
+INFO  [12/24]   Tests created: 0
+INFO  ############################ 47% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 49% ___________________________
+INFO                                                              
+INFO  [13/24] io.gitlab.arturbosch.detekt.rules.KtBinaryExpressionKt
+INFO  ############################ 49% ___________________________
+INFO                                                              
+INFO  [13/24]   Tests created: 0
+INFO  ############################ 49% ___________________________
+INFO  ############################ 50% ___________________________
+INFO  ############################ 51% ___________________________
+INFO  ############################ 52% ___________________________
+INFO  ############################ 54% ___________________________
+INFO                                                              
+INFO  [14/24] io.gitlab.arturbosch.detekt.rules.KtCallExpressionKt
+INFO  ############################ 54% ___________________________
+INFO                                                              
+INFO  [14/24]   Tests created: 0
+INFO  ############################ 54% ___________________________
+INFO  ############################ 55% ___________________________
+INFO                                                              
+INFO  [15/24] io.gitlab.arturbosch.detekt.rules.KtExpressionKt
+INFO  ############################ 55% ___________________________
+INFO                                                              
+INFO  [15/24]   Tests created: 0
+INFO  ############################ 55% ___________________________
+INFO  ############################ 56% ___________________________
+INFO                                                              
+INFO  [16/24] io.gitlab.arturbosch.detekt.rules.KtIfExpressionKt
+INFO  ############################ 56% ___________________________
+INFO                                                              
+INFO  [16/24]   Tests created: 0
+INFO  ############################ 56% ___________________________
+INFO  ############################ 57% #__________________________
+INFO  ############################ 58% ##_________________________
+INFO  ############################ 59% ##_________________________
+INFO                                                              
+INFO  [17/24] io.gitlab.arturbosch.detekt.rules.KtLambdaExpressionKt
+INFO  ############################ 59% ##_________________________
+INFO                                                              
+INFO  [17/24]   Tests created: 0
+INFO  ############################ 59% ##_________________________
+INFO  ############################ 60% ###________________________
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 63% ####_______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 66% #######____________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 68% ########___________________
+INFO  ############################ 70% #########__________________
+INFO  ############################ 71% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 73% ###########________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 75% ############_______________
+INFO                                                              
+INFO  [18/24] io.gitlab.arturbosch.detekt.rules.KtModifierListKt
+INFO  ############################ 75% ############_______________
+INFO                                                              
+INFO  [18/24]   Tests created: 0
+INFO  ############################ 75% ############_______________
+INFO  ############################ 77% #############______________
+INFO  ############################ 78% #############______________
+INFO                                                              
+INFO  [19/24] io.gitlab.arturbosch.detekt.rules.KtValueArgumentKt
+INFO  ############################ 78% #############______________
+INFO                                                              
+INFO  [19/24]   Tests created: 0
+INFO  ############################ 78% #############______________
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 80% ###############____________
+INFO  ############################ 81% ###############____________
+INFO  ############################ 82% ################___________
+INFO  ############################ 83% #################__________
+INFO  ############################ 85% ##################_________
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [20/24] io.gitlab.arturbosch.detekt.rules.MethodSignatureKt
+INFO  ############################ 86% ##################_________
+INFO                                                              
+INFO  [20/24]   Tests created: 3
+INFO  ############################ 86% ##################_________
+INFO  ############################ 87% ###################________
+INFO  ############################ 88% ####################_______
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [21/24] io.gitlab.arturbosch.detekt.rules.StringExtensionsKt
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [21/24]   Tests created: 8
+INFO  ############################ 89% ####################_______
+INFO  ############################ 90% #####################______
+INFO  ############################ 91% ######################_____
+INFO  ############################ 93% ######################_____
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [22/24] io.gitlab.arturbosch.detekt.rules.ThrowExtensionsKt
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [22/24]   Tests created: 0
+INFO  ############################ 94% #######################____
+INFO  ############################ 95% ########################___
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [23/24] io.gitlab.arturbosch.detekt.rules.TraversingKt
+INFO  ############################ 96% ########################___
+INFO                                                              
+INFO  [23/24]   Tests created: 0
+INFO  ############################ 96% ########################___
+INFO  ############################ 97% #########################__
+INFO  ############################ 98% ##########################_
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [24/24] io.gitlab.arturbosch.detekt.rules.TypeUtilsKt
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [24/24]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              87 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  17 tests created for:                               10 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               77 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     68 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      3 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 17 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-psi-utils/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E118: JUnit Vintage Engine not found
+      Diffblue Cover cannot validate tests because JUnit Vintage Engine was not found,
+      but we have detected dependencies on both JUnit 4 and JUnit Jupiter 5.
+      While JUnit 5 tests created by Diffblue will run, JUnit 4 tests will not run.
+      Please make the following updates to your configuration:
+        testImplementation("org.junit.vintage:junit-vintage-engine:5.9.3")
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-psi-utils/.diffblue/log/user-20230706T122303.log
+INFO  Finished in 2m 1s

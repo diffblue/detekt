@@ -1,0 +1,1173 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T12:38:02.765138+01:00",
+    "command" : "dcover create --working-directory detekt-utils io.github io.gitlab",
+    "totalTime" : 49.689,
+    "environmentDetectionTime" : 0.541,
+    "indexingTime" : 0.208,
+    "entryPointsTime" : 0.525,
+    "generationTime" : 35.437,
+    "timeToFirstTest" : 16.087,
+    "timeToLastTest" : 49.15,
+    "indexQueryTime" : 2.6,
+    "verificationTime" : 5.117,
+    "validationTime" : 0.445
+  },
+  "codes" : {
+    "R000" : "Success",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T002" : "Trivial setter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T012" : "Synthetic method",
+    "T020" : "Other trivial method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 10,
+    "methodsCount" : 85,
+    "completeTestCount" : 62,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 51,
+      "T001" : 4,
+      "T002" : 3,
+      "T003" : 6,
+      "T004" : 4,
+      "T012" : 14,
+      "T020" : 3
+    },
+    "perMethodOutcome" : {
+      "R000" : 41,
+      "R013" : 20,
+      "T003" : 6,
+      "T004" : 4,
+      "T012" : 14
+    },
+    "perTestOutcome" : {
+      "R000" : 62
+    },
+    "perTestValidation" : {
+      "V000" : 62
+    }
+  },
+  "classes" : {
+    "io.github.detekt.utils.Markdown" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 3,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "io.github.detekt.utils.MarkdownContent" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 10,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 6,
+        "T001" : 1,
+        "T002" : 1,
+        "T012" : 2,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 9,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 10
+      }
+    },
+    "io.github.detekt.utils.MarkdownKt" : {
+      "methodsCount" : 17,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 16,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "R013" : 15,
+        "T012" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownList" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 10,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 6,
+        "T001" : 1,
+        "T002" : 1,
+        "T012" : 2,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 9,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 10
+      }
+    },
+    "io.github.detekt.utils.ResourcesKt" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R013" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    },
+    "io.github.detekt.utils.YML" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T003" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 4,
+        "T003" : 2,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 6
+      }
+    },
+    "io.github.detekt.utils.YamlKt" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 16,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 6,
+        "T003" : 3,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R013" : 4,
+        "T003" : 3,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 16
+      }
+    },
+    "io.github.detekt.utils.YamlKt$listOfMaps$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.utils.YamlKt$map$$inlined$sortedBy$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.github.detekt.utils.YamlNode" : {
+      "methodsCount" : 13,
+      "completeTestCount" : 12,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 7,
+        "T001" : 2,
+        "T002" : 1,
+        "T012" : 2,
+        "T020" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 11,
+        "T012" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 12
+      }
+    }
+  },
+  "methods" : {
+    "io.github.detekt.utils.Markdown.<init>:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        5
+      ]
+    },
+    "io.github.detekt.utils.Markdown.<init>:(Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        5,
+        14
+      ]
+    },
+    "io.github.detekt.utils.Markdown.<init>:(Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.utils.Markdown.append:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        7,
+        7,
+        8,
+        8,
+        9,
+        11,
+        8,
+        13
+      ]
+    },
+    "io.github.detekt.utils.Markdown.getContent:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        5
+      ]
+    },
+    "io.github.detekt.utils.Markdown.setContent:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        5
+      ]
+    },
+    "io.github.detekt.utils.MarkdownContent.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownContent.<init>:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.utils.MarkdownContent.<init>:(Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.utils.MarkdownContent.component1:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownContent.copy$default:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;ILjava/lang/Object;)Lio/github/detekt/utils/MarkdownContent;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.utils.MarkdownContent.copy:(Ljava/lang/String;)Lio/github/detekt/utils/MarkdownContent;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownContent.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "io.github.detekt.utils.MarkdownContent.getContent:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.utils.MarkdownContent.hashCode:()I" : {
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "io.github.detekt.utils.MarkdownContent.setContent:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.utils.MarkdownContent.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownKt.bold:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.code:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        44
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.codeBlock$default:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        46,
+        46
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.codeBlock:(Lio/github/detekt/utils/MarkdownContent;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        46
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.crossOut:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.description:(Lio/github/detekt/utils/MarkdownList;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        60
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.emptyLine:(Lio/github/detekt/utils/MarkdownContent;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        48
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.h1:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        32
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.h2:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        33
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.h3:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        34
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.h4:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        35
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.item:(Lio/github/detekt/utils/MarkdownList;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        59
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.list:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        51,
+        52,
+        53,
+        53,
+        54,
+        56,
+        51,
+        51
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.markdown:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        26
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.markdown:(Lkotlin/jvm/functions/Function1;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        20,
+        21,
+        22,
+        20,
+        20
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.orderedList:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        38,
+        39,
+        38,
+        41
+      ]
+    },
+    "io.github.detekt.utils.MarkdownKt.paragraph:(Lio/github/detekt/utils/MarkdownContent;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "io.github.detekt.utils.MarkdownList.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownList.<init>:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.utils.MarkdownList.<init>:(Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.utils.MarkdownList.component1:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownList.copy$default:(Lio/github/detekt/utils/MarkdownList;Ljava/lang/String;ILjava/lang/Object;)Lio/github/detekt/utils/MarkdownList;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.utils.MarkdownList.copy:(Ljava/lang/String;)Lio/github/detekt/utils/MarkdownList;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.MarkdownList.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "io.github.detekt.utils.MarkdownList.getContent:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.utils.MarkdownList.hashCode:()I" : {
+      "completeTestCount" : 5,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 5
+      }
+    },
+    "io.github.detekt.utils.MarkdownList.setContent:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        17
+      ]
+    },
+    "io.github.detekt.utils.MarkdownList.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.ResourcesKt.getSafeResourceAsStream:(Ljava/lang/Class;Ljava/lang/String;)Ljava/io/InputStream;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        20
+      ]
+    },
+    "io.github.detekt.utils.ResourcesKt.getSafeResourceAsStream:(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/io/InputStream;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        24
+      ]
+    },
+    "io.github.detekt.utils.ResourcesKt.openSafeStream:(Ljava/net/URL;)Ljava/io/InputStream;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        7,
+        15,
+        27,
+        15,
+        15,
+        16,
+        7
+      ]
+    },
+    "io.github.detekt.utils.YML.<init>:(ILjava/lang/String;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        3
+      ]
+    },
+    "io.github.detekt.utils.YML.<init>:(ILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        3,
+        17
+      ]
+    },
+    "io.github.detekt.utils.YML.<init>:(ILjava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.utils.YML.append:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 3,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 3
+      },
+      "lineNumbers" : [
+        5,
+        5,
+        6,
+        8,
+        5,
+        10
+      ]
+    },
+    "io.github.detekt.utils.YML.emptyLine:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        13,
+        14
+      ]
+    },
+    "io.github.detekt.utils.YML.getContent:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        3
+      ]
+    },
+    "io.github.detekt.utils.YML.getIndent:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        16
+      ]
+    },
+    "io.github.detekt.utils.YML.setContent:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        3
+      ]
+    },
+    "io.github.detekt.utils.YamlKt$listOfMaps$1.<init>:(Ljava/util/List;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.utils.YamlKt$listOfMaps$1.invoke:(Lio/github/detekt/utils/YamlNode;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        60,
+        98,
+        60,
+        98,
+        99,
+        61
+      ]
+    },
+    "io.github.detekt.utils.YamlKt$listOfMaps$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        59
+      ]
+    },
+    "io.github.detekt.utils.YamlKt$map$$inlined$sortedBy$1.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.github.detekt.utils.YamlKt$map$$inlined$sortedBy$1.compare:(Ljava/lang/Object;Ljava/lang/Object;)I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        102,
+        329,
+        102,
+        329,
+        102,
+        102
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.access$map:(Lio/github/detekt/utils/YamlNode;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        1
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.ensureQuoted:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        82,
+        83,
+        84,
+        85,
+        86,
+        82
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.keyValue$default:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        34,
+        35,
+        36,
+        37,
+        39,
+        41
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.keyValue:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        35,
+        36,
+        37,
+        39,
+        41
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.list:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Ljava/util/List;)V" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      },
+      "lineNumbers" : [
+        44,
+        45,
+        98,
+        99,
+        45,
+        99,
+        100,
+        101,
+        103,
+        105,
+        47,
+        48,
+        106,
+        49,
+        50,
+        106,
+        107,
+        52
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.listOfMaps:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Ljava/util/List;)V" : {
+      "completeTestCount" : 10,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 10
+      },
+      "lineNumbers" : [
+        55,
+        108,
+        109,
+        55,
+        55,
+        109,
+        110,
+        108,
+        55,
+        56,
+        57,
+        59,
+        63
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.map:(Lio/github/detekt/utils/YamlNode;Ljava/util/Map;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        66,
+        67,
+        111,
+        112,
+        67,
+        112,
+        113,
+        111,
+        68,
+        114,
+        114,
+        69,
+        115,
+        116,
+        116,
+        69,
+        69,
+        69,
+        70,
+        71,
+        73,
+        70,
+        75,
+        117,
+        118,
+        75,
+        118,
+        119,
+        120,
+        122,
+        124,
+        76,
+        116,
+        125,
+        77
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.node:(Lio/github/detekt/utils/YamlNode;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.quoted:(Ljava/lang/String;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        90
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.yaml:(Lio/github/detekt/utils/YamlNode;Lkotlin/jvm/functions/Function0;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        79
+      ]
+    },
+    "io.github.detekt.utils.YamlKt.yaml:(Lkotlin/jvm/functions/Function1;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        22,
+        23,
+        24,
+        22,
+        22
+      ]
+    },
+    "io.github.detekt.utils.YamlNode.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.YamlNode.<init>:(ILjava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.utils.YamlNode.<init>:(ILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.utils.YamlNode.component1:()I" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.YamlNode.component2:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.YamlNode.copy$default:(Lio/github/detekt/utils/YamlNode;ILjava/lang/String;ILjava/lang/Object;)Lio/github/detekt/utils/YamlNode;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.utils.YamlNode.copy:(ILjava/lang/String;)Lio/github/detekt/utils/YamlNode;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.utils.YamlNode.equals:(Ljava/lang/Object;)Z" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      }
+    },
+    "io.github.detekt.utils.YamlNode.getContent:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.utils.YamlNode.getIndent:()I" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.utils.YamlNode.hashCode:()I" : {
+      "completeTestCount" : 6,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 6
+      }
+    },
+    "io.github.detekt.utils.YamlNode.setContent:(Ljava/lang/String;)V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T002",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        19
+      ]
+    },
+    "io.github.detekt.utils.YamlNode.toString:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T020",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    }
+  }
+}

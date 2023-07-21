@@ -1,0 +1,45 @@
+name: com.diffblue.cover.refactoring.Recipe
+recipeList:
+- org.openrewrite.java.format.AutoFormat: &id001 {}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.FilterOutputStream,
+    fieldName: closeLock}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.FilterOutputStream,
+    fieldName: closed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.FilterOutputStream,
+    fieldName: out}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: autoFlush}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: charOut}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: closing}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: formatter}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: textOut}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: trouble}
+- org.openrewrite.java.format.AutoFormat: *id001
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.github.detekt.test.utils.StringPrintStream,
+    fieldName: stream}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.FilterOutputStream,
+    fieldName: closeLock}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.FilterOutputStream,
+    fieldName: closed}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.FilterOutputStream,
+    fieldName: out}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: autoFlush}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: charOut}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: closing}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: formatter}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: textOut}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: java.io.PrintStream,
+    fieldName: trouble}
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+type: specs.openrewrite.org/v1beta/recipe

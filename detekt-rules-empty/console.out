@@ -1,0 +1,213 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 37 callable methods in 17 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  #____________________________ 2% ___________________________
+INFO  ###__________________________ 5% ___________________________
+INFO                                                              
+INFO   [1/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyCatchBlock
+INFO  ###__________________________ 5% ___________________________
+INFO                                                              
+INFO   [1/17]   Tests created: 0
+INFO  ###__________________________ 5% ___________________________
+INFO  ####_________________________ 8% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO                                                              
+INFO   [2/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyClassBlock
+INFO  ######______________________ 10% ___________________________
+INFO                                                              
+INFO   [2/17]   Tests created: 0
+INFO  ######______________________ 10% ___________________________
+INFO  #########___________________ 16% ___________________________
+INFO  ###########_________________ 18% ___________________________
+INFO                                                              
+INFO   [3/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyCodeProvider
+INFO  ###########_________________ 18% ___________________________
+INFO                                                              
+INFO   [3/17]   Tests created: 1
+INFO  ###########_________________ 18% ___________________________
+INFO  ############________________ 21% ___________________________
+INFO  ##############______________ 24% ___________________________
+INFO                                                              
+INFO   [4/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyDefaultConstructor
+INFO  ##############______________ 24% ___________________________
+INFO                                                              
+INFO   [4/17]   Tests created: 0
+INFO  ##############______________ 24% ___________________________
+INFO  ################____________ 27% ___________________________
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO   [5/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyDoWhileBlock
+INFO  #################___________ 29% ___________________________
+INFO                                                              
+INFO   [5/17]   Tests created: 0
+INFO  #################___________ 29% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO  #####################_______ 35% ___________________________
+INFO                                                              
+INFO   [6/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyElseBlock
+INFO  #####################_______ 35% ___________________________
+INFO                                                              
+INFO   [6/17]   Tests created: 0
+INFO  #####################_______ 35% ___________________________
+INFO  ######################______ 37% ___________________________
+INFO  ########################____ 40% ___________________________
+INFO                                                              
+INFO   [7/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyFinallyBlock
+INFO  ########################____ 40% ___________________________
+INFO                                                              
+INFO   [7/17]   Tests created: 0
+INFO  ########################____ 40% ___________________________
+INFO  #########################___ 43% ___________________________
+INFO  ###########################_ 45% ___________________________
+INFO                                                              
+INFO   [8/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyForBlock
+INFO  ###########################_ 45% ___________________________
+INFO                                                              
+INFO   [8/17]   Tests created: 0
+INFO  ###########################_ 45% ___________________________
+INFO  ############################ 48% ___________________________
+INFO  ############################ 51% ___________________________
+INFO                                                              
+INFO   [9/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyFunctionBlock
+INFO  ############################ 51% ___________________________
+INFO                                                              
+INFO   [9/17]   Tests created: 0
+INFO  ############################ 51% ___________________________
+INFO  ############################ 54% ___________________________
+INFO  ############################ 56% #__________________________
+INFO                                                              
+INFO  [10/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyIfBlock
+INFO  ############################ 56% #__________________________
+INFO                                                              
+INFO  [10/17]   Tests created: 0
+INFO  ############################ 56% #__________________________
+INFO  ############################ 59% ##_________________________
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO  [11/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyInitBlock
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO  [11/17]   Tests created: 0
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 67% #######____________________
+INFO                                                              
+INFO  [12/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyKtFile
+INFO  ############################ 67% #######____________________
+INFO                                                              
+INFO  [12/17]   Tests created: 0
+INFO  ############################ 67% #######____________________
+INFO  ############################ 70% #########__________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 75% ############_______________
+INFO  ############################ 78% ##############_____________
+INFO                                                              
+INFO  [13/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyRule
+INFO  ############################ 78% ##############_____________
+INFO                                                              
+INFO  [13/17]   Tests created: 0
+INFO  ############################ 78% ##############_____________
+INFO  ############################ 81% ###############____________
+INFO  ############################ 83% #################__________
+INFO                                                              
+INFO  [14/17] io.gitlab.arturbosch.detekt.rules.empty.EmptySecondaryConstructor
+INFO  ############################ 83% #################__________
+INFO                                                              
+INFO  [14/17]   Tests created: 0
+INFO  ############################ 83% #################__________
+INFO  ############################ 86% ##################_________
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [15/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyTryBlock
+INFO  ############################ 89% ####################_______
+INFO                                                              
+INFO  [15/17]   Tests created: 0
+INFO  ############################ 89% ####################_______
+INFO  ############################ 91% ######################_____
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [16/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyWhenBlock
+INFO  ############################ 94% #######################____
+INFO                                                              
+INFO  [16/17]   Tests created: 0
+INFO  ############################ 94% #######################____
+INFO  ############################ 97% #########################__
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [17/17] io.gitlab.arturbosch.detekt.rules.empty.EmptyWhileBlock
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [17/17]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              37 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  1 test created for:                                  2 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               35 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     32 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      2 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  1 created test was successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-rules-empty/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-rules-empty/.diffblue/log/user-20230706T131308.log
+INFO  Finished in 1m 58s

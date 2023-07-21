@@ -1,0 +1,1499 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:28:20.899528+01:00",
+    "command" : "dcover create --working-directory detekt-rules-coroutines io.github io.gitlab",
+    "totalTime" : 44.284,
+    "environmentDetectionTime" : 0.912,
+    "indexingTime" : 0.21,
+    "entryPointsTime" : 0.894,
+    "generationTime" : 32.181,
+    "timeToFirstTest" : 28.955,
+    "timeToLastTest" : 43.602,
+    "indexQueryTime" : 11.108,
+    "verificationTime" : 0.968,
+    "validationTime" : 0.501
+  },
+  "codes" : {
+    "R000" : "Success",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R034" : "Diffblue Cover can't complete test",
+    "R081" : "Exception in arrange section",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 21,
+    "methodsCount" : 95,
+    "completeTestCount" : 1,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 18,
+      "T001" : 9,
+      "T003" : 21,
+      "T004" : 22,
+      "T005" : 1,
+      "T012" : 24
+    },
+    "perMethodOutcome" : {
+      "R000" : 2,
+      "R011" : 3,
+      "R013" : 4,
+      "R034" : 11,
+      "R081" : 8,
+      "T003" : 21,
+      "T004" : 22,
+      "T012" : 24
+    },
+    "perTestOutcome" : {
+      "R000" : 1
+    },
+    "perTestValidation" : {
+      "V000" : 1
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.rules.coroutines.CoroutinesProvider" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R034" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 2,
+        "R013" : 1,
+        "R081" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$dispatcherNames$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$$inlined$anyDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay" : {
+      "methodsCount" : 14,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 1,
+        "T003" : 7,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R034" : 3,
+        "R081" : 1,
+        "T003" : 7,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T003" : 4,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 4,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$$inlined$anyDescendantOfType$1" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$2" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 2,
+        "T003" : 2
+      },
+      "perMethodOutcome" : {
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 2,
+        "T003" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$1" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 4,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 4,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 2,
+        "T001" : 1,
+        "T003" : 1
+      },
+      "perMethodOutcome" : {
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$1" : {
+      "methodsCount" : 5,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 4,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 4,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$2" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 2
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.rules.coroutines.CoroutinesProvider.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        11,
+        14,
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.CoroutinesProvider.getRuleSetId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.CoroutinesProvider.instance:(Lio/gitlab/arturbosch/detekt/api/Config;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        16,
+        17,
+        19,
+        20,
+        19,
+        21,
+        19,
+        22,
+        19,
+        23,
+        19,
+        24,
+        19,
+        25,
+        19,
+        18,
+        16,
+        27
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        60
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        43,
+        42
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        42,
+        64
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.GlobalCoroutineUsage.visitDotQualifiedExpression:(Lorg/jetbrains/kotlin/psi/KtDotQualifiedExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        51,
+        52,
+        54,
+        57,
+        58
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$dispatcherNames$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$dispatcherNames$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$dispatcherNames$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher$dispatcherNames$2.invoke:(Ljava/util/List;)Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        47,
+        77
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        44,
+        47,
+        49,
+        50,
+        51,
+        52,
+        54,
+        49,
+        44
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher.getDispatcherNames$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher.getDispatcherNames:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        47,
+        1,
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        49
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.InjectDispatcher.visitSimpleNameExpression:(Lorg/jetbrains/kotlin/psi/KtSimpleNameExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        58,
+        59,
+        60,
+        61,
+        62,
+        81,
+        82,
+        62,
+        82,
+        83,
+        61,
+        63,
+        84,
+        64,
+        85,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        67,
+        66,
+        74
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$$inlined$anyDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$$inlined$anyDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/coroutines/RedundantSuspendModifier;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier$visitNamedFunction$1.invoke:(Lorg/jetbrains/kotlin/psi/KtExpression;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        59,
+        61,
+        62,
+        63,
+        64,
+        65,
+        61,
+        59
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier.access$hasSuspendCalls:(Lio/gitlab/arturbosch/detekt/rules/coroutines/RedundantSuspendModifier;Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        57
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier.hasSuspendCalls:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        96,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        146,
+        147,
+        104,
+        147,
+        148,
+        107,
+        108,
+        110,
+        109,
+        111,
+        111,
+        112,
+        149,
+        150,
+        114,
+        113,
+        115,
+        150,
+        151,
+        118,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        98
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier.isValidCandidateExpression:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        82,
+        83,
+        85,
+        86,
+        87,
+        89,
+        82
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.RedundantSuspendModifier.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        69,
+        70,
+        71,
+        73,
+        74,
+        76,
+        135,
+        136,
+        143,
+        144,
+        145,
+        136,
+        135,
+        76,
+        77,
+        79
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        138
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        51,
+        50
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        50,
+        143
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.checkAndReport:(Lorg/jetbrains/kotlin/psi/KtExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        69,
+        70,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        51
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.isInSuspendBlock:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        130,
+        131,
+        132,
+        130,
+        134,
+        130,
+        129,
+        135
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.isSuspendAllowedLambdaArgument:(Lorg/jetbrains/kotlin/psi/KtLambdaArgument;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        113,
+        145,
+        113,
+        114,
+        115,
+        118,
+        119,
+        120,
+        117
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.isSuspendScope:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        124,
+        125
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.isSuspendingBlock:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        94,
+        95,
+        96,
+        97,
+        98,
+        100,
+        103,
+        104,
+        107,
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.isThreadSleepFunction$isSleepCallableRef:(Lorg/jetbrains/kotlin/psi/KtCallableReferenceExpression;Lio/gitlab/arturbosch/detekt/rules/coroutines/SleepInsteadOfDelay;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        76,
+        78,
+        80,
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.isThreadSleepFunction:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        83,
+        84,
+        87,
+        86,
+        87,
+        86,
+        87,
+        88,
+        87,
+        88,
+        89,
+        88,
+        89,
+        87,
+        89,
+        83
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        59,
+        60,
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SleepInsteadOfDelay.visitCallableReferenceExpression:(Lorg/jetbrains/kotlin/psi/KtCallableReferenceExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        64,
+        65,
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        181
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$$inlined$anyDescendantOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;Lorg/jetbrains/kotlin/psi/KtCallExpression;Lio/gitlab/arturbosch/detekt/rules/coroutines/SuspendFunSwallowedCancellation;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        261
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$$inlined$anyDescendantOfType$1.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        263,
+        264,
+        265,
+        266,
+        269,
+        504,
+        269,
+        270,
+        272
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$2.<init>:(Lio/gitlab/arturbosch/detekt/rules/coroutines/SuspendFunSwallowedCancellation;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        114
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation$visitCallExpression$2.invoke:(Lorg/jetbrains/kotlin/psi/KtExpression;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        115
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        182,
+        186
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        95,
+        96,
+        97,
+        98,
+        99,
+        101,
+        96,
+        95
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.access$hasSuspendCalls:(Lio/gitlab/arturbosch/detekt/rules/coroutines/SuspendFunSwallowedCancellation;Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.access$visitCallExpression$shouldTraverseInside:(Lorg/jetbrains/kotlin/psi/KtCallExpression;Lio/gitlab/arturbosch/detekt/rules/coroutines/SuspendFunSwallowedCancellation;Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        96
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.hasSuspendCalls:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        142,
+        143,
+        144,
+        146,
+        145,
+        147,
+        148,
+        196,
+        197,
+        149,
+        197,
+        198,
+        152,
+        153,
+        154,
+        156,
+        157,
+        158,
+        159,
+        162,
+        142
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.report:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        170,
+        171,
+        172,
+        173,
+        174,
+        171,
+        170,
+        179
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.shouldTraverseInside:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;Lorg/jetbrains/kotlin/resolve/BindingContext;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        121,
+        122,
+        124,
+        125,
+        124,
+        123,
+        127,
+        129,
+        130,
+        195,
+        130,
+        132,
+        131,
+        134,
+        136,
+        121
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.visitCallExpression$shouldTraverseInside:(Lorg/jetbrains/kotlin/psi/KtCallExpression;Lio/gitlab/arturbosch/detekt/rules/coroutines/SuspendFunSwallowedCancellation;Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        112
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunSwallowedCancellation.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        105,
+        107,
+        109,
+        114,
+        190,
+        191,
+        192,
+        193,
+        190,
+        116,
+        194,
+        116,
+        194,
+        117
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$1.<init>:(Lorg/jetbrains/kotlin/types/KotlinType;Lkotlin/coroutines/Continuation;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$1.create:(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$1.invoke:(Lkotlin/sequences/SequenceScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$1.invokeSuspend:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        86,
+        87,
+        86,
+        88,
+        86,
+        89,
+        86
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        90
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver$isCoroutineScope$2.invoke:(Lorg/jetbrains/kotlin/types/KotlinType;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        90
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        51,
+        53,
+        54,
+        55,
+        56,
+        59,
+        53,
+        62,
+        51
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver.checkReceiver:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        69,
+        70,
+        71,
+        70,
+        71,
+        72,
+        71,
+        72,
+        73,
+        72,
+        73,
+        70,
+        74,
+        70,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        77,
+        76,
+        84
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver.getDefaultRuleIdAliases:()Ljava/util/Set;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        62
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        53
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver.isCoroutineScope:(Lorg/jetbrains/kotlin/types/KotlinType;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        86,
+        90,
+        91
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithCoroutineScopeReceiver.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        65,
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$1.<init>:(Lorg/jetbrains/kotlin/types/KotlinType;Lkotlin/coroutines/Continuation;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$1.create:(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$1.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$1.invoke:(Lkotlin/sequences/SequenceScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$1.invokeSuspend:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        92,
+        93,
+        92,
+        94,
+        92,
+        95,
+        92
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$2.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$2.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$2.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        96
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType$isCoroutinesFlow$2.invoke:(Lorg/jetbrains/kotlin/types/KotlinType;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        96
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        64,
+        66,
+        67,
+        68,
+        69,
+        72,
+        66,
+        64
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        66
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType.isCoroutinesFlow:(Lorg/jetbrains/kotlin/types/KotlinType;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        92,
+        96,
+        97,
+        92
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.coroutines.SuspendFunWithFlowReturnType.visitNamedFunction:(Lorg/jetbrains/kotlin/psi/KtNamedFunction;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        76,
+        78,
+        77,
+        78,
+        77,
+        78,
+        79,
+        78,
+        79,
+        101,
+        79,
+        79,
+        79,
+        80,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        82,
+        81,
+        88,
+        80,
+        78,
+        89
+      ]
+    }
+  }
+}

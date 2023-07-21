@@ -1,0 +1,150 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 28 callable methods in 7 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  ##___________________________ 3% ___________________________
+INFO  ####_________________________ 7% ___________________________
+INFO  ######______________________ 10% ___________________________
+INFO  ########____________________ 14% ___________________________
+INFO  ##########__________________ 17% ___________________________
+INFO                                                              
+INFO  [1/7] io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive
+INFO  ##########__________________ 17% ___________________________
+INFO                                                              
+INFO  [1/7]   Tests created: 0
+INFO  ##########__________________ 17% ___________________________
+INFO  ############________________ 21% ___________________________
+INFO  ###############_____________ 25% ___________________________
+INFO  #################___________ 28% ___________________________
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO  [2/7] io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence
+INFO  ###################_________ 32% ___________________________
+INFO                                                              
+INFO  [2/7]   Tests created: 0
+INFO  ###################_________ 32% ___________________________
+INFO  #####################_______ 35% ___________________________
+INFO  #######################_____ 39% ___________________________
+INFO  #########################___ 42% ___________________________
+INFO  ###########################_ 46% ___________________________
+INFO                                                              
+INFO  [3/7] io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange
+INFO  ###########################_ 46% ___________________________
+INFO                                                              
+INFO  [3/7]   Tests created: 0
+INFO  ###########################_ 46% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 57% #__________________________
+INFO                                                              
+INFO  [4/7] io.gitlab.arturbosch.detekt.rules.performance.PerformanceProvider
+INFO  ############################ 57% #__________________________
+INFO                                                              
+INFO  [4/7]   Tests created: 1
+INFO  ############################ 57% #__________________________
+INFO  ############################ 60% ###________________________
+INFO  ############################ 64% #####______________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 71% #########__________________
+INFO                                                              
+INFO  [5/7] io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator
+INFO  ############################ 71% #########__________________
+INFO                                                              
+INFO  [5/7]   Tests created: 0
+INFO  ############################ 71% #########__________________
+INFO  ############################ 75% ############_______________
+INFO  ############################ 78% ##############_____________
+INFO  ############################ 82% ################___________
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [6/7] io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression
+INFO  ############################ 85% ##################_________
+INFO                                                              
+INFO  [6/7]   Tests created: 0
+INFO  ############################ 85% ##################_________
+INFO  ############################ 89% ####################_______
+INFO  ############################ 92% ######################_____
+INFO  ############################ 96% ########################___
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [7/7] io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [7/7]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              28 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  1 test created for:                                  2 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               26 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      8 R034: Diffblue Cover can't complete test
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      7 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      6 R081: Exception in arrange section
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      5 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  1 created test was successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-rules-performance/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-rules-performance/.diffblue/log/user-20230706T132451.log
+INFO  Finished in 57s

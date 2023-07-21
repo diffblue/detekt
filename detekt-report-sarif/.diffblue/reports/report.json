@@ -1,0 +1,515 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:12:18.757146+01:00",
+    "command" : "dcover create --working-directory detekt-report-sarif io.github io.gitlab",
+    "totalTime" : 49.143,
+    "environmentDetectionTime" : 0.858,
+    "indexingTime" : 0.215,
+    "entryPointsTime" : 0.842,
+    "generationTime" : 37.385,
+    "timeToFirstTest" : 47.075,
+    "timeToLastTest" : 48.509,
+    "indexQueryTime" : 8.675,
+    "verificationTime" : 1.153,
+    "validationTime" : 0.471
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 4,
+    "methodsCount" : 17,
+    "completeTestCount" : 3,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 5,
+      "T001" : 3,
+      "T003" : 7,
+      "T012" : 2
+    },
+    "perMethodOutcome" : {
+      "F009" : 1,
+      "R000" : 5,
+      "R011" : 1,
+      "R013" : 1,
+      "T003" : 7,
+      "T012" : 2
+    },
+    "perTestOutcome" : {
+      "R000" : 3
+    },
+    "perTestValidation" : {
+      "V000" : 3
+    }
+  },
+  "classes" : {
+    "io.github.detekt.report.sarif.ResultsKt" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 3
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "T003" : 3
+      }
+    },
+    "io.github.detekt.report.sarif.ResultsKt$WhenMappings" : {
+      "methodsCount" : 1,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T012" : 1
+      }
+    },
+    "io.github.detekt.report.sarif.RuleDescriptorsKt" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T003" : 2
+      },
+      "perMethodOutcome" : {
+        "R000" : 1,
+        "T003" : 2
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport" : {
+      "methodsCount" : 9,
+      "completeTestCount" : 2,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 3,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 4,
+        "R011" : 1,
+        "R013" : 1,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 2
+      }
+    }
+  },
+  "methods" : {
+    "io.github.detekt.report.sarif.ResultsKt$WhenMappings.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.github.detekt.report.sarif.ResultsKt.toLocation:(Lio/gitlab/arturbosch/detekt/api/Location;Ljava/lang/String;)Lio/github/detekt/sarif4k/Location;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        47,
+        50,
+        51,
+        52,
+        53,
+        49,
+        53,
+        52,
+        49,
+        51,
+        50,
+        49,
+        55,
+        56,
+        57,
+        58,
+        56,
+        61,
+        55,
+        48,
+        55,
+        48,
+        49,
+        48,
+        47
+      ]
+    },
+    "io.github.detekt.report.sarif.ResultsKt.toResult:(Lio/gitlab/arturbosch/detekt/api/Finding;Ljava/lang/String;)Lio/github/detekt/sarif4k/Result;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        27,
+        30,
+        31,
+        32,
+        77,
+        78,
+        79,
+        32,
+        79,
+        80,
+        77,
+        32,
+        77,
+        78,
+        79,
+        32,
+        79,
+        80,
+        77,
+        32,
+        33,
+        29,
+        31,
+        32,
+        33,
+        29,
+        30,
+        29
+      ]
+    },
+    "io.github.detekt.report.sarif.ResultsKt.toResultLevel:(Lio/gitlab/arturbosch/detekt/api/SeverityLevel;)Lio/github/detekt/sarif4k/Level;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    "io.github.detekt.report.sarif.ResultsKt.toResults:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        16,
+        67,
+        68,
+        68,
+        69,
+        16,
+        16,
+        16,
+        17,
+        70,
+        71,
+        72,
+        17,
+        72,
+        73,
+        70,
+        17,
+        69,
+        74,
+        76,
+        67,
+        18
+      ]
+    },
+    "io.github.detekt.report.sarif.RuleDescriptorsKt.toDescriptor:(Lio/gitlab/arturbosch/detekt/api/Rule;Ljava/lang/String;)Lio/github/detekt/sarif4k/ReportingDescriptor;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        44,
+        44,
+        45,
+        45,
+        48,
+        49,
+        50,
+        51,
+        47,
+        51,
+        48,
+        47,
+        49,
+        47,
+        50,
+        47
+      ]
+    },
+    "io.github.detekt.report.sarif.RuleDescriptorsKt.toDescriptors:(Lio/gitlab/arturbosch/detekt/api/MultiRule;Ljava/lang/String;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        41,
+        71,
+        72,
+        73,
+        41,
+        73,
+        74,
+        71,
+        41
+      ]
+    },
+    "io.github.detekt.report.sarif.RuleDescriptorsKt.toReportingDescriptors:(Lio/gitlab/arturbosch/detekt/api/Config;)Ljava/util/List;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        17,
+        18,
+        55,
+        56,
+        57,
+        18,
+        57,
+        58,
+        55,
+        18,
+        16,
+        19,
+        59,
+        60,
+        61,
+        20,
+        62,
+        63,
+        64,
+        21,
+        64,
+        65,
+        62,
+        20,
+        61,
+        66,
+        68,
+        59,
+        19,
+        24,
+        24,
+        25,
+        69,
+        25,
+        27,
+        28,
+        29,
+        30,
+        29,
+        28,
+        33,
+        35,
+        69,
+        70,
+        36
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        31
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        25,
+        27,
+        28,
+        29,
+        31,
+        25
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.getConfig:()Lio/gitlab/arturbosch/detekt/api/Config;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        31,
+        1,
+        31
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.getEnding:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        27
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.getId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        28
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.getName:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        29
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.init:(Lio/gitlab/arturbosch/detekt/api/SetupContext;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        36,
+        37,
+        38,
+        37,
+        75,
+        76,
+        77,
+        75,
+        78,
+        75,
+        79,
+        37,
+        38,
+        38,
+        37,
+        38,
+        39,
+        38,
+        39,
+        40,
+        39,
+        40,
+        41,
+        40,
+        38,
+        37,
+        43
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.render:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        46,
+        47,
+        48,
+        49,
+        47,
+        52,
+        54,
+        60,
+        53,
+        54,
+        53,
+        55,
+        53,
+        56,
+        57,
+        53,
+        58,
+        53,
+        59,
+        53,
+        61,
+        53,
+        60,
+        62,
+        53,
+        63,
+        53,
+        52,
+        66,
+        80,
+        66,
+        66,
+        66,
+        67,
+        51,
+        66,
+        51,
+        67,
+        51,
+        52,
+        51,
+        50,
+        47,
+        71
+      ]
+    },
+    "io.github.detekt.report.sarif.SarifOutputReport.setConfig:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        31,
+        1,
+        31
+      ]
+    }
+  }
+}

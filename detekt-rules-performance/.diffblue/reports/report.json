@@ -1,0 +1,1136 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:24:52.170052+01:00",
+    "command" : "dcover create --working-directory detekt-rules-performance io.github io.gitlab",
+    "totalTime" : 57.73,
+    "environmentDetectionTime" : 0.83,
+    "indexingTime" : 0.216,
+    "entryPointsTime" : 0.813,
+    "generationTime" : 45.743,
+    "timeToFirstTest" : 55.371,
+    "timeToLastTest" : 57.078,
+    "indexQueryTime" : 11.239,
+    "verificationTime" : 0.905,
+    "validationTime" : 0.486
+  },
+  "codes" : {
+    "R000" : "Success",
+    "R011" : "Sandboxing policy violation",
+    "R013" : "No inputs found that don't throw a trivial exception",
+    "R034" : "Diffblue Cover can't complete test",
+    "R081" : "Exception in arrange section",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T003" : "Private method",
+    "T004" : "In anonymous inner class",
+    "T005" : "Trivial constructor",
+    "T012" : "Synthetic method",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 13,
+    "methodsCount" : 67,
+    "completeTestCount" : 1,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 20,
+      "T001" : 7,
+      "T003" : 17,
+      "T004" : 6,
+      "T005" : 1,
+      "T012" : 16
+    },
+    "perMethodOutcome" : {
+      "R000" : 2,
+      "R011" : 7,
+      "R013" : 5,
+      "R034" : 8,
+      "R081" : 6,
+      "T003" : 17,
+      "T004" : 6,
+      "T012" : 16
+    },
+    "perTestOutcome" : {
+      "R000" : 1
+    },
+    "perTestValidation" : {
+      "V000" : 1
+    }
+  },
+  "classes" : {
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive" : {
+      "methodsCount" : 11,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 4,
+        "T001" : 1,
+        "T003" : 3,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 2,
+        "R081" : 1,
+        "T003" : 3,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$2" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2
+      },
+      "perMethodOutcome" : {
+        "T004" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$1" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T004" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T004" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence" : {
+      "methodsCount" : 10,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 3,
+        "T012" : 3
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 3,
+        "T012" : 3
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange" : {
+      "methodsCount" : 7,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.PerformanceProvider" : {
+      "methodsCount" : 3,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 1,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "R000" : 2,
+        "R034" : 1
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 3,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 2,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 3,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression" : {
+      "methodsCount" : 8,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 2,
+        "T012" : 2
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 2,
+        "T012" : 2
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression$Companion" : {
+      "methodsCount" : 2,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "T003" : 1,
+        "T012" : 1
+      }
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation" : {
+      "methodsCount" : 6,
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 3,
+        "T001" : 1,
+        "T003" : 1,
+        "T012" : 1
+      },
+      "perMethodOutcome" : {
+        "R011" : 1,
+        "R013" : 1,
+        "R034" : 1,
+        "R081" : 1,
+        "T003" : 1,
+        "T012" : 1
+      }
+    }
+  },
+  "methods" : {
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        89
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$1.<init>:(Lkotlin/jvm/functions/Function1;Ljava/util/Collection;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        291
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$1.invoke:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        292,
+        293,
+        295
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$2.<init>:(Lkotlin/jvm/functions/Function1;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        228
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$$inlined$collectDescendantsOfType$2.visitElement:(Lorg/jetbrains/kotlin/com/intellij/psi/PsiElement;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        230,
+        504,
+        230,
+        231,
+        234,
+        235,
+        237
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$1.<init>:(Lio/gitlab/arturbosch/detekt/rules/performance/ArrayPrimitive;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$1.invoke:(Ljava/lang/Object;)Ljava/lang/Object;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive$reportArrayPrimitives$1.invoke:(Lorg/jetbrains/kotlin/psi/KtTypeReference;)Ljava/lang/Boolean;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T004",
+      "perMethodOutcome" : "T004",
+      "lineNumbers" : [
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        90,
+        116,
+        117,
+        118,
+        90,
+        118,
+        117,
+        119,
+        116,
+        90,
+        91,
+        92,
+        120,
+        121,
+        122,
+        92,
+        122,
+        123,
+        120,
+        92
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        46,
+        45
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        45,
+        94
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.access$isArrayPrimitive:(Lio/gitlab/arturbosch/detekt/rules/performance/ArrayPrimitive;Lorg/jetbrains/kotlin/psi/KtTypeReference;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        43
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        46
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.isArrayPrimitive:(Lorg/jetbrains/kotlin/descriptors/CallableDescriptor;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        77,
+        78
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.isArrayPrimitive:(Lorg/jetbrains/kotlin/psi/KtTypeReference;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        82,
+        83,
+        84,
+        96,
+        84,
+        84,
+        84,
+        86
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.reportArrayPrimitives:(Lorg/jetbrains/kotlin/psi/KtTypeReference;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        72,
+        97,
+        103,
+        110,
+        111,
+        112,
+        113,
+        103,
+        97,
+        73,
+        114,
+        73,
+        114,
+        115,
+        74
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        54,
+        55,
+        57,
+        58,
+        59,
+        61
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ArrayPrimitive.visitNamedDeclaration:(Lorg/jetbrains/kotlin/psi/KtNamedDeclaration;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        64,
+        65,
+        66,
+        96,
+        66,
+        66,
+        66,
+        67,
+        96,
+        67,
+        67,
+        67,
+        69
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        86
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        45,
+        87,
+        88,
+        89,
+        88,
+        90,
+        88,
+        91,
+        88,
+        92,
+        88,
+        93,
+        88,
+        94,
+        88,
+        95,
+        88,
+        87
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        35,
+        37,
+        38,
+        39,
+        40,
+        41,
+        37,
+        45,
+        47,
+        47,
+        35
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        35,
+        98
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        37
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.getThreshold$annotations:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.getThreshold:()I" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        45,
+        1,
+        45
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.isCalling:(Lorg/jetbrains/kotlin/psi/KtExpression;Ljava/util/List;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        80,
+        81,
+        100,
+        101,
+        81,
+        101,
+        102,
+        100,
+        81,
+        82,
+        83
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.nextChainedCall:(Lorg/jetbrains/kotlin/psi/KtExpression;)Lorg/jetbrains/kotlin/psi/KtExpression;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        75,
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.CouldBeSequence.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        50,
+        52,
+        54,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        64,
+        65,
+        68,
+        69,
+        70,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        48,
+        55,
+        46
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        46,
+        110
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.isRangeOperator:(Lorg/jetbrains/kotlin/psi/KtElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        94,
+        95,
+        96,
+        99,
+        100,
+        104,
+        94,
+        108
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.isRangeOperatorsChainCall:(Lorg/jetbrains/kotlin/psi/KtElement;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        72,
+        73,
+        75,
+        76,
+        77,
+        78,
+        81,
+        82,
+        83,
+        87,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.ForEachOnRange.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        58,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        68,
+        60,
+        60,
+        69
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.PerformanceProvider.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        11,
+        14,
+        12
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.PerformanceProvider.getRuleSetId:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.PerformanceProvider.instance:(Lio/gitlab/arturbosch/detekt/api/Config;)Lio/gitlab/arturbosch/detekt/api/RuleSet;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        16,
+        17,
+        19,
+        20,
+        19,
+        21,
+        19,
+        22,
+        19,
+        23,
+        19,
+        24,
+        19,
+        18,
+        16,
+        26
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        55,
+        57,
+        58,
+        59,
+        60,
+        62,
+        57,
+        55
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        55,
+        120
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.canSkipArrayCopyForSpreadArgument:(Lorg/jetbrains/kotlin/psi/KtValueArgument;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        111,
+        112,
+        113,
+        114,
+        116,
+        117,
+        118,
+        116
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.checkCanSkipArrayCopy:(Lorg/jetbrains/kotlin/psi/KtValueArgument;Lorg/jetbrains/kotlin/psi/KtValueArgumentList;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        86,
+        87,
+        88,
+        90,
+        92,
+        93,
+        95,
+        96,
+        97,
+        98,
+        99,
+        96,
+        95,
+        104
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        57
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.isSimplePassThroughVararg:(Lorg/jetbrains/kotlin/psi/KtValueArgument;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        79,
+        81,
+        80,
+        127,
+        80,
+        81,
+        80,
+        81,
+        82,
+        81,
+        82,
+        128,
+        129,
+        82,
+        129,
+        130,
+        82,
+        81,
+        80
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.SpreadOperator.visitValueArgumentList:(Lorg/jetbrains/kotlin/psi/KtValueArgumentList;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011",
+      "lineNumbers" : [
+        66,
+        67,
+        68,
+        122,
+        123,
+        68,
+        123,
+        124,
+        122,
+        69,
+        70,
+        125,
+        70,
+        125,
+        126,
+        71
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression$Companion.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        75
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression$Companion.<init>:(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.<clinit>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        76,
+        76
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        39,
+        37
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        37,
+        78
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.expressions$collect:(Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;Ljava/util/List;Lorg/jetbrains/kotlin/psi/KtExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        64,
+        65,
+        66,
+        68,
+        70
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.expressions:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;Lorg/jetbrains/kotlin/com/intellij/psi/tree/IElementType;)Ljava/util/List;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        62,
+        62,
+        71,
+        72
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        39
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryPartOfBinaryExpression.visitBinaryExpression:(Lorg/jetbrains/kotlin/psi/KtBinaryExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        47,
+        49,
+        50,
+        52,
+        53,
+        55,
+        80,
+        81,
+        82,
+        55,
+        55,
+        82,
+        83,
+        80,
+        55,
+        56,
+        57,
+        59
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation.<init>:()V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R011"
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R013",
+      "lineNumbers" : [
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        30,
+        37,
+        28
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation.<init>:(Lio/gitlab/arturbosch/detekt/api/Config;ILkotlin/jvm/internal/DefaultConstructorMarker;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T012",
+      "perMethodOutcome" : "T012",
+      "lineNumbers" : [
+        28,
+        48
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation.getIssue:()Lio/gitlab/arturbosch/detekt/api/Issue;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R081",
+      "lineNumbers" : [
+        30
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation.isPrimitiveWrapperType:(Lorg/jetbrains/kotlin/psi/KtExpression;)Z" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T003",
+      "perMethodOutcome" : "T003",
+      "lineNumbers" : [
+        47
+      ]
+    },
+    "io.gitlab.arturbosch.detekt.rules.performance.UnnecessaryTemporaryInstantiation.visitCallExpression:(Lorg/jetbrains/kotlin/psi/KtCallExpression;)V" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "R034",
+      "lineNumbers" : [
+        40,
+        41,
+        43,
+        45
+      ]
+    }
+  }
+}

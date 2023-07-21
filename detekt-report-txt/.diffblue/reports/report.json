@@ -1,0 +1,136 @@
+{
+  "meta" : {
+    "reportVersion" : "2.5"
+  },
+  "run" : {
+    "version" : "2023.07.02-SNAPSHOT-0623e01-local",
+    "creationTimestamp" : "2023-07-06T13:08:10.439579+01:00",
+    "command" : "dcover create --working-directory detekt-report-txt io.github io.gitlab",
+    "totalTime" : 52.806,
+    "environmentDetectionTime" : 0.635,
+    "indexingTime" : 0.202,
+    "entryPointsTime" : 0.617,
+    "generationTime" : 41.576,
+    "timeToFirstTest" : 17.957,
+    "timeToLastTest" : 52.19,
+    "indexQueryTime" : 8.252,
+    "verificationTime" : 0.954,
+    "validationTime" : 0.484
+  },
+  "codes" : {
+    "F009" : "Internal error",
+    "R000" : "Success",
+    "T000" : "Method eligible for test creation",
+    "T001" : "Trivial getter",
+    "T005" : "Trivial constructor",
+    "V000" : "Validated successfully"
+  },
+  "summary" : {
+    "classesCount" : 1,
+    "methodsCount" : 4,
+    "completeTestCount" : 1,
+    "incompleteTestCount" : 0,
+    "skeletonTestCount" : 0,
+    "perMethodTestability" : {
+      "T000" : 1,
+      "T001" : 2,
+      "T005" : 1
+    },
+    "perMethodOutcome" : {
+      "F009" : 1,
+      "R000" : 3
+    },
+    "perTestOutcome" : {
+      "R000" : 1
+    },
+    "perTestValidation" : {
+      "V000" : 1
+    }
+  },
+  "classes" : {
+    "io.github.detekt.report.txt.TxtOutputReport" : {
+      "methodsCount" : 4,
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : {
+        "T000" : 1,
+        "T001" : 2,
+        "T005" : 1
+      },
+      "perMethodOutcome" : {
+        "F009" : 1,
+        "R000" : 3
+      },
+      "perTestOutcome" : {
+        "R000" : 1
+      }
+    }
+  },
+  "methods" : {
+    "io.github.detekt.report.txt.TxtOutputReport.<init>:()V" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T005",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        10,
+        12,
+        14,
+        10
+      ]
+    },
+    "io.github.detekt.report.txt.TxtOutputReport.getEnding:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        12
+      ]
+    },
+    "io.github.detekt.report.txt.TxtOutputReport.getName:()Ljava/lang/String;" : {
+      "completeTestCount" : 1,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T001",
+      "perMethodOutcome" : "R000",
+      "perTestOutcome" : {
+        "R000" : 1
+      },
+      "lineNumbers" : [
+        14
+      ]
+    },
+    "io.github.detekt.report.txt.TxtOutputReport.render:(Lio/gitlab/arturbosch/detekt/api/Detektion;)Ljava/lang/String;" : {
+      "completeTestCount" : 0,
+      "incompleteTestCount" : 0,
+      "perMethodTestability" : "T000",
+      "perMethodOutcome" : "F009",
+      "lineNumbers" : [
+        17,
+        18,
+        19,
+        25,
+        26,
+        26,
+        27,
+        19,
+        27,
+        28,
+        30,
+        25,
+        20,
+        31,
+        20,
+        31,
+        32,
+        21
+      ]
+    }
+  }
+}

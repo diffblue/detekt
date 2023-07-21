@@ -1,0 +1,179 @@
+INFO  Diffblue Cover 2023.07.02-SNAPSHOT-0623e01-local
+INFO  
+INFO  Detecting environment:
+INFO  ----------------------
+INFO  Detected Java version 11.0.18
+INFO  Selected build system: Gradle
+INFO  Selected classpath from build system Gradle
+INFO  Selected test framework: JUnit Jupiter
+INFO  Selected Java language compliance level: 1.8
+INFO  Selected test validation: enabled
+INFO  Prefixes for filtering classes/methods:
+INFO  - io.github
+INFO  - io.gitlab
+INFO  Gathering methods to test...
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Found 43 callable methods in 11 classes
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  Creating tests:
+INFO  _____________________________ 0% ___________________________
+INFO                                                              
+INFO  ---------------
+INFO  _____________________________ 0% ___________________________
+INFO  #####________________________ 9% ___________________________
+INFO                                                              
+INFO   [1/11] io.gitlab.arturbosch.detekt.test.FindingAssert
+INFO  #####________________________ 9% ___________________________
+INFO                                                              
+INFO   [1/11]   Tests created: 0
+INFO  #####________________________ 9% ___________________________
+INFO  ####################________ 34% ___________________________
+INFO                                                              
+INFO   [2/11] io.gitlab.arturbosch.detekt.test.FindingsAssert
+INFO  ####################________ 34% ___________________________
+INFO                                                              
+INFO   [2/11]   Tests created: 0
+INFO  ####################________ 34% ___________________________
+INFO  #########################___ 41% ___________________________
+INFO                                                              
+INFO   [3/11] io.gitlab.arturbosch.detekt.test.FindingsAssertionsKt
+INFO  #########################___ 41% ___________________________
+INFO                                                              
+INFO   [3/11]   Tests created: 0
+INFO  #########################___ 41% ___________________________
+INFO  ##########################__ 44% ___________________________
+INFO                                                              
+INFO   [4/11] io.gitlab.arturbosch.detekt.test.KotlinCoreEnvironmentExtensionsKt
+INFO  ##########################__ 44% ___________________________
+INFO                                                              
+INFO   [4/11]   Tests created: 0
+INFO  ##########################__ 44% ___________________________
+INFO  ###########################_ 46% ___________________________
+INFO  ############################ 48% ___________________________
+INFO                                                              
+INFO   [5/11] io.gitlab.arturbosch.detekt.test.ResourcesKt
+INFO  ############################ 48% ___________________________
+INFO                                                              
+INFO   [5/11]   Tests created: 2
+INFO  ############################ 48% ___________________________
+INFO  ############################ 51% ___________________________
+INFO  ############################ 53% ___________________________
+INFO  ############################ 55% ___________________________
+INFO  ############################ 58% #__________________________
+INFO  ############################ 60% ###________________________
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO   [6/11] io.gitlab.arturbosch.detekt.test.RuleExtensionsKt
+INFO  ############################ 62% ####_______________________
+INFO                                                              
+INFO   [6/11]   Tests created: 0
+INFO  ############################ 62% ####_______________________
+INFO  ############################ 65% ######_____________________
+INFO  ############################ 67% #######____________________
+INFO  ############################ 69% ########___________________
+INFO  ############################ 72% ##########_________________
+INFO  ############################ 74% ###########________________
+INFO  ############################ 76% #############______________
+INFO  ############################ 79% ##############_____________
+INFO                                                              
+INFO   [7/11] io.gitlab.arturbosch.detekt.test.TestConfig
+INFO  ############################ 79% ##############_____________
+INFO                                                              
+INFO   [7/11]   Tests created: 7
+INFO  ############################ 79% ##############_____________
+INFO  ############################ 81% ###############____________
+INFO                                                              
+INFO   [8/11] io.gitlab.arturbosch.detekt.test.TestConfig$Companion
+INFO  ############################ 81% ###############____________
+INFO                                                              
+INFO   [8/11]   Tests created: 0
+INFO  ############################ 81% ###############____________
+INFO  ############################ 83% #################__________
+INFO                                                              
+INFO   [9/11] io.gitlab.arturbosch.detekt.test.TestConfigKt
+INFO  ############################ 83% #################__________
+INFO                                                              
+INFO   [9/11]   Tests created: 1
+INFO  ############################ 83% #################__________
+INFO  ############################ 95% ########################___
+INFO                                                              
+INFO  [10/11] io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssert
+INFO  ############################ 95% ########################___
+INFO                                                              
+INFO  [10/11]   Tests created: 0
+INFO  ############################ 95% ########################___
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [11/11] io.gitlab.arturbosch.detekt.test.ThresholdedCodeSmellAssertKt
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  [11/11]   Tests created: 0
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Summary:
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  --------
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Total:                                              43 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  10 tests created for:                                8 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  No tests created for:                               35 methods
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO     25 R005: Unable to load class
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      7 R013: No inputs found that don't throw a trivial exception
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R011: Sandboxing policy violation
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO      1 R083: Can't find a suitable constructor
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  Could not find the following classes - please check your classpath
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  org.assertj.core.api.AbstractAssert
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  org.assertj.core.api.AbstractListAssert
+INFO  ########################### 100% ###########################
+INFO                                                              
+INFO  
+INFO  Running validation command.
+INFO  This can take a couple of minutes.
+INFO  All 10 created tests were successfully validated.
+INFO  Writing JSON report to /Users/mnedzelskii/gits/detekt/detekt-test/.diffblue/reports/report.json
+INFO  
+WARN  Cover completed with warnings
+        The following warnings should be addressed to ensure that
+        the highest quantity and quality of tests can be created:
+      -----------------------------------------------------------
+WARN  E052: Missing dependency
+      Unable to mock method inputs because Mockito 2.22.0 or later is not present on the classpath.
+      Required dependencies were not found.
+      Please add the following dependencies to your project:
+        testImplementation("org.mockito:mockito-core:4.11.0")
+INFO  Log file: /Users/mnedzelskii/gits/detekt/detekt-test/.diffblue/log/user-20230706T133014.log
+INFO  Finished in 1m 11s

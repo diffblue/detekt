@@ -1,0 +1,21 @@
+name: com.diffblue.cover.refactoring.Recipe
+recipeList:
+- org.openrewrite.java.format.AutoFormat: &id001 {}
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.cli.MultipleClasspathResourceConverter,
+    fieldName: converter}
+- org.openrewrite.java.format.AutoFormat: *id001
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.cli.MultipleExistingPathConverter,
+    fieldName: converter}
+- org.openrewrite.java.format.AutoFormat: *id001
+- org.openrewrite.java.format.AutoFormat: *id001
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter,
+    fieldName: indent}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter,
+    fieldName: lastLine}
+- com.diffblue.cover.refactoring.recipes.AddGetter: {className: io.gitlab.arturbosch.detekt.cli.runners.ElementPrinter,
+    fieldName: sb}
+- org.openrewrite.java.format.AutoFormat: *id001
+type: specs.openrewrite.org/v1beta/recipe
