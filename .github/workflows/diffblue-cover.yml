@@ -18,7 +18,7 @@ jobs:
     # Go to https://hub.docker.com/r/diffblue/cover-cli for details.
     # Note: To use the latest version of Diffblue Cover, use one of the latest-jdk<nn> tags.
     # To use a specific release version, use one of the yyyy.mm.dd-jdk<nn> tags
-    container: docker.io/diffblue/internal-cover-cli:release-2024.01.02-2024.01.02-rc2-jdk17
+    container: diffblue/internal-cover-cli:202401-github-2024.01.01-snapshot-jdk17
 
     steps:
       # Diffblue Cover requires the project to be built before creating any tests.
