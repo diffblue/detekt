@@ -50,6 +50,7 @@ jobs:
         env:
           GITHUB_OAUTH: ${{ secrets.DCOVER_TOKEN }}
           GITHUB_PR_NUMBER: ${{ github.event.number }}
+          JVM_ARGS: -Xmx4g
         run: |
           git config --global --add safe.directory /__w/detekt/detekt
           dcover ci activate ${{ secrets.DIFFBLUE_LICENSE }} validate create
